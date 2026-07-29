@@ -1,0 +1,20 @@
+import BottleDefs from "../../components/BottleDefs";
+import SiteHeader from "../../components/SiteHeader";
+import CheckoutClient from "./CheckoutClient";
+
+export const metadata = {
+  title: "Checkout — Grace Spring Water",
+  robots: { index: false },
+};
+
+export default function CheckoutPage() {
+  return (
+    <>
+      <BottleDefs />
+      <SiteHeader variant="simple" />
+      <main className="container" id="checkoutMain">
+        <CheckoutClient />
+      </main>
+    </>
+  );
+}

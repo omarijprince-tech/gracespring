@@ -1,0 +1,18 @@
+import SiteHeader from "../../../components/SiteHeader";
+import SuccessClient from "./SuccessClient";
+
+export const metadata = {
+  title: "Order Confirmed — Grace Spring Water",
+  robots: { index: false },
+};
+
+export default function CheckoutSuccessPage() {
+  return (
+    <>
+      <SiteHeader variant="simple" />
+      <main className="container">
+        <SuccessClient />
+      </main>
+    </>
+  );
+}

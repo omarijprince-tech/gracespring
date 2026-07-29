@@ -1,0 +1,21 @@
+"use client";
+
+import { useCart } from "../lib/cart-context";
+import { track } from "../lib/analytics";
+
+/* Offer-card CTA: switches purchase mode and scrolls to the shop section. */
+export default function OfferCtaButton({ mode, className, targetId = "shop", lpSource, children }) {
+  const { setMode } = useCart();
+  const onClick = () => {
+    setMode(mode);
+    track("promotion_viewed", {
+      promotion: mode === "monthly" ? "monthly_refill" : "one_time_order",
+      trigger: "offer_cta",
+    });
+    if (lpSource) {
+      track(mode === "monthly" ? "monthly_refill_click" : "start_order_click", { source: lpSource });
+    }
+    document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth" });
+  };
+  return <button className={className} onClick={onClick}>{children}</button>;
+}

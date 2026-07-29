@@ -1,0 +1,22 @@
+/* Shared SVG bottle illustration, referenced via <use href="#bottle"/>.
+   Rendered once per page (product-photo fallback + decorative use). */
+export default function BottleDefs() {
+  return (
+    <svg width="0" height="0" style={{ position: "absolute" }} aria-hidden="true">
+      <defs>
+        <linearGradient id="bottleGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stopColor="#dff0fb" /><stop offset="0.5" stopColor="#a8cfea" /><stop offset="1" stopColor="#5da3dd" />
+        </linearGradient>
+        <g id="bottle">
+          <rect x="26" y="2" width="16" height="10" rx="3" fill="#1b3f73" />
+          <path d="M28 12 h12 l6 18 v82 a8 8 0 0 1 -8 8 H30 a8 8 0 0 1 -8 -8 V30 Z" fill="url(#bottleGrad)" stroke="#7fb8e6" strokeWidth="1.5" />
+          <rect x="25" y="46" width="18" height="42" rx="4" fill="#ffffff" opacity="0.92" />
+          <path d="M34 50 c-2.4 4 -5 6.6 -5 9.6 a5 5 0 0 0 10 0 c0 -3 -2.6 -5.6 -5 -9.6 Z" fill="#2d7dd2" />
+          <path d="M34 55 l1.3 3.6 3.8 0.1 -3 2.3 1.1 3.7 -3.2 -2.2 -3.2 2.2 1.1 -3.7 -3 -2.3 3.8 -0.1 Z" fill="#1b3f73" />
+          <text x="34" y="76" textAnchor="middle" fontFamily="Poppins, sans-serif" fontWeight="700" fontSize="7.5" fill="#1b3f73">GRACE SPRING</text>
+          <text x="34" y="84" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="4" fill="#2d7dd2" letterSpacing="0.5">9.5 pH</text>
+        </g>
+      </defs>
+    </svg>
+  );
+}

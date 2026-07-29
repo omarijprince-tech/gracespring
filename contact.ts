@@ -1,0 +1,20 @@
+{
+  "name": "alkaid-website",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 4173",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@auth/core": "^0.41.3",
+    "@convex-dev/auth": "^0.0.94",
+    "convex": "^1.42.3",
+    "next": "^15.4.5",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "resend": "^6.18.0",
+    "stripe": "^22.3.2"
+  }
+}
