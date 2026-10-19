@@ -1,0 +1,36 @@
+{%- assign collection = section.settings.collection -%}
+<section class="section" id="{{ section.settings.anchor }}"{% if section.settings.white_bg %} style="background:#fff"{% endif %}>
+  <div class="container">
+    {% render 'section-head', s: section.settings %}
+    <div class="products-grid{% if section.settings.columns == '3' %} grid-3{% endif %}">
+      {%- if collection != blank and collection.products_count > 0 -%}
+        {%- for product in collection.products limit: section.settings.limit -%}
+          {% render 'product-card', product: product %}
+        {%- endfor -%}
+      {%- else -%}
+        {%- for product in collections.all.products limit: section.settings.limit -%}
+          {% render 'product-card', product: product %}
+        {%- else -%}
+          <p class="empty-state" style="grid-column:1/-1">{{ 'collections.empty' | t }}</p>
+        {%- endfor -%}
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Product grid",
+  "settings": [
+    { "type": "text", "id": "anchor", "label": "Anchor ID", "default": "shop" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Shop Blue Star" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Choose your water" },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "Fresh 5-gallon bottles of purified, spring, and alkaline water — plus cases and coolers." },
+    { "type": "collection", "id": "collection", "label": "Collection", "info": "Leave empty to show all products." },
+    { "type": "range", "id": "limit", "label": "Products to show", "min": 2, "max": 24, "step": 1, "default": 8 },
+    { "type": "select", "id": "columns", "label": "Columns", "default": "2", "options": [ { "value": "2", "label": "2 (Grace Spring style)" }, { "value": "3", "label": "3" } ] },
+    { "type": "checkbox", "id": "white_bg", "label": "White background", "default": true }
+  ],
+  "presets": [ { "name": "Product grid" } ]
+}
+{% endschema %}

@@ -1,0 +1,16 @@
+{
+  "type": "footer",
+  "name": "Footer group",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "shop": { "type": "menu", "settings": { "heading": "Shop", "menu": "main-menu" } },
+        "company": { "type": "menu", "settings": { "heading": "Company", "menu": "footer" } }
+      },
+      "block_order": ["shop", "company"],
+      "settings": {}
+    }
+  },
+  "order": ["footer"]
+}

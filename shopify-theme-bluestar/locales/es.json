@@ -1,0 +1,118 @@
+{
+  "general": {
+    "skip_to_content": "Ir al contenido",
+    "tagged_with": "Etiquetado \"{{ tags }}\"",
+    "page": "Página {{ page }}",
+    "pagination": "Paginación",
+    "404_title": "Página no encontrada",
+    "404_text": "La página que buscas no existe."
+  },
+  "header": {
+    "main_nav": "Navegación principal",
+    "menu": "Menú",
+    "account": "Cuenta",
+    "my_account": "Mi Cuenta",
+    "cart": "Carrito",
+    "open_cart": "Abrir carrito"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  },
+  "products": {
+    "add_to_order": "Agregar al pedido",
+    "choose_options": "Elegir opciones",
+    "sold_out": "Agotado",
+    "sale": "Oferta",
+    "decrease": "Disminuir cantidad",
+    "increase": "Aumentar cantidad"
+  },
+  "collections": {
+    "empty": "Aún no hay productos.",
+    "all_title": "Colecciones",
+    "products": "productos"
+  },
+  "cart": {
+    "title": "Tu pedido",
+    "close": "Cerrar carrito",
+    "empty": "Tu carrito está vacío. Regresa a la tienda y agrega agua.",
+    "subtotal": "Subtotal",
+    "taxes_shipping": "Envío y depósitos se calculan al pagar.",
+    "checkout": "Pagar",
+    "view": "Ver carrito",
+    "continue": "Seguir comprando",
+    "remove": "Quitar",
+    "quantity": "Cantidad",
+    "update": "Actualizar carrito",
+    "summary": "Resumen del pedido",
+    "note": "Notas de entrega (código, piso, etc.)",
+    "added": "Agregado a tu pedido ✓",
+    "error": "Algo salió mal — inténtalo de nuevo."
+  },
+  "delivery": {
+    "zip_label": "Código postal",
+    "zip_placeholder": "Escribe tu código postal",
+    "check": "Verificar",
+    "zip_ok": "✓ ¡Buenas noticias — entregamos en [zip]!",
+    "zip_no": "Todavía no llegamos a [zip] — ¡estamos creciendo! Vuelve pronto.",
+    "zip_invalid": "Ingresa un código postal válido de 5 dígitos."
+  },
+  "contact": {
+    "name": "Nombre",
+    "phone": "Teléfono",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "send": "Enviar mensaje",
+    "success": "¡Gracias! Te responderemos pronto."
+  },
+  "search": {
+    "title": "Buscar",
+    "placeholder": "Buscar productos",
+    "submit": "Buscar",
+    "no_results": "Sin resultados para \"{{ terms }}\"."
+  },
+  "password": {
+    "label": "Contraseña",
+    "enter": "Entrar"
+  },
+  "gift_card": {
+    "title": "Tu tarjeta de regalo",
+    "expired": "Esta tarjeta de regalo ya no es válida."
+  },
+  "customer": {
+    "login_title": "Iniciar sesión",
+    "sign_in": "Iniciar sesión",
+    "password": "Contraseña",
+    "password_confirm": "Confirmar contraseña",
+    "forgot": "¿Olvidaste tu contraseña?",
+    "create": "Crear cuenta",
+    "recover_title": "Restablecer contraseña",
+    "recover_sent": "Te enviamos un enlace para restablecer tu contraseña.",
+    "submit": "Enviar",
+    "cancel": "Cancelar",
+    "first_name": "Nombre",
+    "last_name": "Apellido",
+    "hello": "Hola, {{ name }}",
+    "logout": "Cerrar sesión",
+    "orders": "Tus pedidos",
+    "no_orders": "Aún no has hecho pedidos.",
+    "address": "Dirección de entrega",
+    "manage_addresses": "Administrar direcciones",
+    "back": "Volver a la cuenta",
+    "product": "Producto",
+    "total": "Total",
+    "default": "Predeterminada",
+    "edit": "Editar",
+    "save": "Guardar dirección",
+    "delete": "Eliminar",
+    "delete_confirm": "¿Eliminar esta dirección?",
+    "add_address": "Agregar dirección",
+    "address1": "Dirección",
+    "address2": "Apto, suite, etc.",
+    "city": "Ciudad",
+    "country": "País",
+    "province": "Estado",
+    "set_default": "Usar como dirección predeterminada",
+    "activate": "Activar cuenta",
+    "reset": "Restablecer contraseña"
+  }
+}

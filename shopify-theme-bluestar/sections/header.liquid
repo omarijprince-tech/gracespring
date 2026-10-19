@@ -1,0 +1,68 @@
+<header class="site-header" data-header>
+  <div class="container header-inner">
+    <a class="brand" href="{{ routes.root_url }}" aria-label="{{ shop.name }}">
+      {% render 'brand' %}
+    </a>
+
+    {%- assign menu = linklists[section.settings.menu] -%}
+    {%- if menu.links.size > 0 -%}
+      <nav class="main-nav" aria-label="{{ 'header.main_nav' | t }}">
+        {%- for link in menu.links -%}
+          <a href="{{ link.url }}"{% if link.current %} aria-current="page"{% endif %}>{{ link.title }}</a>
+        {%- endfor -%}
+      </nav>
+    {%- endif -%}
+
+    <div class="header-actions">
+      {%- if menu.links.size > 0 -%}
+        <button class="nav-menu-btn" type="button" aria-expanded="false" aria-controls="mobileMenu" data-menu-toggle>
+          ☰<span class="nav-menu-label"> {{ 'header.menu' | t }}</span>
+        </button>
+      {%- endif -%}
+
+      {%- if localization.available_languages.size > 1 -%}
+        {%- form 'localization', class: 'localization-form' -%}
+          {%- for language in localization.available_languages -%}
+            {%- unless language.iso_code == localization.language.iso_code -%}
+              <button class="lang-toggle" type="submit" name="language_code" value="{{ language.iso_code }}" lang="{{ language.iso_code }}">
+                {{ language.iso_code | upcase }}
+              </button>
+              {%- break -%}
+            {%- endunless -%}
+          {%- endfor -%}
+          <input type="hidden" name="return_to" value="{{ request.path }}">
+        {%- endform -%}
+      {%- endif -%}
+
+      {%- if shop.customer_accounts_enabled -%}
+        <a class="account-link" href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}">{{ 'header.account' | t }}</a>
+      {%- endif -%}
+
+      <a class="cart-btn" href="{{ routes.cart_url }}" data-cart-open aria-label="{{ 'header.open_cart' | t }}">
+        <span class="label">{{ 'header.cart' | t }}</span>
+        <span class="cart-count" data-cart-count aria-live="polite">{{ cart.item_count }}</span>
+      </a>
+    </div>
+  </div>
+
+  {%- if menu.links.size > 0 -%}
+    <nav class="mobile-menu" id="mobileMenu" hidden aria-label="{{ 'header.main_nav' | t }}">
+      {%- for link in menu.links -%}
+        <a href="{{ link.url }}">{{ link.title }}</a>
+      {%- endfor -%}
+      {%- if shop.customer_accounts_enabled -%}
+        <a class="menu-account" href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}">{{ 'header.my_account' | t }}</a>
+      {%- endif -%}
+    </nav>
+  {%- endif -%}
+</header>
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": [
+    { "type": "link_list", "id": "menu", "label": "Menu", "default": "main-menu",
+      "info": "Tip: point items at #shop, #offers, #how, #delivery and #faq to scroll the home page like the Grace Spring site." }
+  ]
+}
+{% endschema %}

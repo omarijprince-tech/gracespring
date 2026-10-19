@@ -1,0 +1,8 @@
+{%- comment -%} Logo mark + two-line wordmark. Pass on_dark: true in the footer. {%- endcomment -%}
+{%- if settings.logo != blank -%}
+  {{ settings.logo | image_url: width: 192 | image_tag: width: settings.logo_width, height: settings.logo_width, alt: shop.name, class: 'brand-logo', style: 'width:auto' }}
+{%- endif -%}
+<span>
+  <span class="brand-name"{% if on_dark %} style="color:#fff"{% endif %}>{{ settings.brand_name | default: shop.name }}</span>
+  {%- if settings.brand_sub != blank -%}<span class="brand-sub">{{ settings.brand_sub }}</span>{%- endif -%}
+</span>

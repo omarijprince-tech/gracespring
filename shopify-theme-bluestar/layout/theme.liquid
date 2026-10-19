@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="{{ settings.color_navy }}">
+    <link rel="canonical" href="{{ canonical_url }}">
+    {%- if settings.favicon != blank -%}
+      <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 64, height: 64 }}">
+    {%- endif -%}
+
+    <title>
+      {{ page_title }}
+      {%- if current_tags %} &ndash; {{ 'general.tagged_with' | t: tags: current_tags | join: ', ' }}{% endif -%}
+      {%- if current_page != 1 %} &ndash; {{ 'general.page' | t: page: current_page }}{% endif -%}
+      {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+    </title>
+    {%- if page_description -%}
+      <meta name="description" content="{{ page_description | escape }}">
+    {%- endif -%}
+
+    {% render 'meta-tags' %}
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&family=Anton&family=Yellowtail&display=swap" rel="stylesheet">
+
+    {%- style -%}
+      :root {
+        --navy-900: {{ settings.color_navy_900 }};
+        --navy: {{ settings.color_navy }};
+        --blue: {{ settings.color_blue }};
+        --blue-600: {{ settings.color_blue_600 }};
+        --sky: {{ settings.color_sky }};
+        --sky-100: {{ settings.color_sky_100 }};
+        --pale: {{ settings.color_pale }};
+        --bg: {{ settings.color_bg }};
+        --ink: {{ settings.color_ink }};
+        --muted: {{ settings.color_muted }};
+        --line: {{ settings.color_line }};
+        --success: #0e8a5f;
+        --success-bg: #e7f6ef;
+        --free: {{ settings.color_free }};
+        --water: #2d7dd2;
+        --white: #ffffff;
+        --radius: 14px;
+        --radius-sm: 9px;
+        --shadow: 0 8px 28px rgba(18, 41, 74, 0.1);
+        --shadow-sm: 0 2px 10px rgba(18, 41, 74, 0.08);
+        --font-head: "Poppins", "Segoe UI", system-ui, sans-serif;
+        --font-body: "Inter", "Segoe UI", system-ui, sans-serif;
+      }
+    {%- endstyle -%}
+
+    {{ 'base.css' | asset_url | stylesheet_tag }}
+    <script src="{{ 'theme.js' | asset_url }}" defer></script>
+
+    {{ content_for_header }}
+  </head>
+
+  <body class="template-{{ template.name }}">
+    <a class="skip-link" href="#main">{{ 'general.skip_to_content' | t }}</a>
+
+    {% sections 'header-group' %}
+
+    <main id="main" role="main">
+      {{ content_for_layout }}
+    </main>
+
+    {% sections 'footer-group' %}
+
+    {% render 'cart-drawer' %}
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script>
+      window.theme = {
+        routes: {
+          cart: {{ routes.cart_url | json }},
+          cartAdd: {{ routes.cart_add_url | json }},
+          cartChange: {{ routes.cart_change_url | json }},
+          root: {{ routes.root_url | json }}
+        },
+        moneyFormat: {{ shop.money_format | json }},
+        strings: {
+          added: {{ 'cart.added' | t | json }},
+          error: {{ 'cart.error' | t | json }}
+        }
+      };
+    </script>
+  </body>
+</html>

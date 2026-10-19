@@ -1,0 +1,33 @@
+<div class="cart-body">
+  {%- for item in cart.items -%}
+    <div class="cart-item">
+      <div class="cart-item-thumb">{%- if item.image -%}{{ item.image | image_url: width: 120 | image_tag: alt: item.title }}{%- endif -%}</div>
+      <div class="cart-item-info">
+        <h4>{{ item.product.title }}</h4>
+        {%- unless item.product.has_only_default_variant -%}<div class="line-price">{{ item.variant.title }}</div>{%- endunless -%}
+        <div class="line-price">{{ item.final_line_price | money }}</div>
+      </div>
+      <div class="qty-stepper">
+        <button type="button" data-line-change="{{ item.key }}" data-qty-to="{{ item.quantity | minus: 1 }}" aria-label="{{ 'products.decrease' | t }}">−</button>
+        <output>{{ item.quantity }}</output>
+        <button type="button" data-line-change="{{ item.key }}" data-qty-to="{{ item.quantity | plus: 1 }}" aria-label="{{ 'products.increase' | t }}">+</button>
+      </div>
+    </div>
+  {%- else -%}
+    <p class="cart-empty">{{ 'cart.empty' | t }}</p>
+  {%- endfor -%}
+</div>
+{%- if cart.item_count > 0 -%}
+  <div class="cart-foot">
+    {%- for discount in cart.cart_level_discount_applications -%}
+      <div class="total-row savings"><span>{{ discount.title }}</span><span>-{{ discount.total_allocated_amount | money }}</span></div>
+    {%- endfor -%}
+    <div class="total-row grand"><span>{{ 'cart.subtotal' | t }}</span><span>{{ cart.total_price | money }}</span></div>
+    <p class="cart-note">{{ 'cart.taxes_shipping' | t }}</p>
+    <form action="{{ routes.cart_url }}" method="post">
+      <button class="btn btn-primary btn-block" type="submit" name="checkout">{{ 'cart.checkout' | t }}</button>
+    </form>
+    <a class="btn btn-outline btn-block" href="{{ routes.cart_url }}">{{ 'cart.view' | t }}</a>
+  </div>
+{%- endif -%}
+<span hidden data-drawer-count>{{ cart.item_count }}</span>

@@ -1,0 +1,92 @@
+{%- assign variant = product.selected_or_first_available_variant -%}
+<div class="container product-layout">
+  <div class="product-gallery" data-gallery>
+    <div class="product-gallery-main">
+      {%- if product.featured_media -%}
+        {{ product.featured_media | image_url: width: 900 | image_tag: widths: '450, 700, 900', sizes: '(max-width: 920px) 92vw, 560px', loading: 'eager' }}
+      {%- else -%}
+        {% render 'bottle-svg' %}
+      {%- endif -%}
+    </div>
+    {%- if product.media.size > 1 -%}
+      <div class="product-thumbs">
+        {%- for media in product.media -%}
+          {%- if media.media_type == 'image' -%}
+            <button type="button" class="{% if forloop.first %}active{% endif %}" data-thumb="{{ media | image_url: width: 900 }}" aria-label="{{ media.alt | default: product.title | escape }}">
+              {{ media | image_url: width: 160 | image_tag: loading: 'lazy' }}
+            </button>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+
+  <div class="product-info">
+    {%- if product.vendor != blank and section.settings.show_vendor -%}<span class="eyebrow">{{ product.vendor }}</span>{%- endif -%}
+    <h1>{{ product.title }}</h1>
+    <div class="price-row">
+      <span class="price-now" data-price>{{ variant.price | money }}</span>
+      <span class="price-was" data-compare{% unless variant.compare_at_price > variant.price %} hidden{% endunless %}>{{ variant.compare_at_price | money }}</span>
+      {%- if product.tags contains settings.deposit_tag -%}<span class="price-tag" style="background:var(--pale);color:var(--navy)">{{ settings.deposit_badge }}</span>{%- endif -%}
+    </div>
+
+    {%- form 'product', product, data-ajax-add: '', data-product-form: '' -%}
+      <script type="application/json" data-variants>{{ product.variants | json }}</script>
+      <input type="hidden" name="id" value="{{ variant.id }}" data-variant-id>
+
+      {%- unless product.has_only_default_variant -%}
+        <div class="variant-picker">
+          {%- for option in product.options_with_values -%}
+            <fieldset class="opt-group">
+              <legend>{{ option.name }}</legend>
+              <div class="opt-row">
+                {%- for value in option.values -%}
+                  <input type="radio" id="opt-{{ section.id }}-{{ forloop.parentloop.index }}-{{ forloop.index }}"
+                         name="option{{ forloop.parentloop.index }}" value="{{ value | escape }}" data-option
+                         {% if option.selected_value == value %}checked{% endif %}>
+                  <label for="opt-{{ section.id }}-{{ forloop.parentloop.index }}-{{ forloop.index }}">{{ value }}</label>
+                {%- endfor -%}
+              </div>
+            </fieldset>
+          {%- endfor -%}
+        </div>
+      {%- endunless -%}
+
+      <div class="product-actions">
+        <div class="qty-stepper" data-qty>
+          <button type="button" data-step="-1" aria-label="{{ 'products.decrease' | t }}">−</button>
+          <output>1</output>
+          <button type="button" data-step="1" aria-label="{{ 'products.increase' | t }}">+</button>
+          <input type="hidden" name="quantity" value="1">
+        </div>
+        <button class="btn btn-primary" type="submit" style="flex:1" data-add-btn
+                data-label-add="{{ 'products.add_to_order' | t }}" data-label-sold="{{ 'products.sold_out' | t }}"
+                {% unless variant.available %}disabled{% endunless %}>
+          {%- if variant.available -%}{{ 'products.add_to_order' | t }}{%- else -%}{{ 'products.sold_out' | t }}{%- endif -%}
+        </button>
+      </div>
+      {%- if section.settings.show_dynamic_checkout -%}
+        <div style="margin-top:12px">{{ form | payment_button }}</div>
+      {%- endif -%}
+    {%- endform -%}
+
+    {%- if product.description != blank -%}<div class="rte">{{ product.description }}</div>{%- endif -%}
+
+    {%- assign points = section.settings.trust | newline_to_br | split: '<br />' -%}
+    <ul class="trust-list">
+      {%- for p in points -%}{%- assign t = p | strip -%}{%- if t != blank -%}<li>{{ t }}</li>{%- endif -%}{%- endfor -%}
+    </ul>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product",
+  "settings": [
+    { "type": "checkbox", "id": "show_vendor", "label": "Show vendor", "default": false },
+    { "type": "checkbox", "id": "show_dynamic_checkout", "label": "Show dynamic checkout buttons", "default": true },
+    { "type": "textarea", "id": "trust", "label": "Trust points (one per line)",
+      "default": "Next-day local delivery across northern NJ & NYC\nFlat $5.00 shipping per delivery\nDamaged? Keep it — free replacement" }
+  ]
+}
+{% endschema %}

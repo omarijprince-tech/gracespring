@@ -1,0 +1,52 @@
+<section class="section" id="{{ section.settings.anchor }}">
+  <div class="container">
+    {% render 'section-head', s: section.settings %}
+    <div class="offers-grid">
+      {%- for block in section.blocks -%}
+        <article class="offer-card{% if block.settings.featured %} featured{% endif %}" {{ block.shopify_attributes }}>
+          {%- if block.settings.badge != blank -%}
+            <span class="offer-badge{% unless block.settings.featured %} blue{% endunless %}">{{ block.settings.badge }}</span>
+          {%- endif -%}
+          <h3>{{ block.settings.title }}</h3>
+          <div class="offer-price">{{ block.settings.price }} <span>{{ block.settings.price_note }}</span></div>
+          {%- assign points = block.settings.points | newline_to_br | split: '<br />' -%}
+          <ul>
+            {%- for p in points -%}{%- assign t = p | strip -%}{%- if t != blank -%}<li>{{ t }}</li>{%- endif -%}{%- endfor -%}
+          </ul>
+          {%- if block.settings.button_label != blank -%}
+            <a class="btn {% if block.settings.featured %}btn-primary{% else %}btn-outline{% endif %}" href="{{ block.settings.button_link | default: '#shop' }}">{{ block.settings.button_label }}</a>
+          {%- endif -%}
+        </article>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Offers",
+  "settings": [
+    { "type": "text", "id": "anchor", "label": "Anchor ID", "default": "offers" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Ways to get your water" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Pick what fits your home or office" },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "No auto-charges. We remind you each month and you reply with how many jugs you want." }
+  ],
+  "blocks": [
+    {
+      "type": "offer",
+      "name": "Offer",
+      "settings": [
+        { "type": "checkbox", "id": "featured", "label": "Featured", "default": false },
+        { "type": "text", "id": "badge", "label": "Badge" },
+        { "type": "text", "id": "title", "label": "Title", "default": "One-Time Order" },
+        { "type": "text", "id": "price", "label": "Big line", "default": "No commitment" },
+        { "type": "text", "id": "price_note", "label": "Big line note", "default": "order exactly what you need" },
+        { "type": "textarea", "id": "points", "label": "Bullet points (one per line)", "default": "Great for events or a one-off stock-up\nNext-day local delivery\nNo account required" },
+        { "type": "text", "id": "button_label", "label": "Button", "default": "Shop Now" },
+        { "type": "url", "id": "button_link", "label": "Button link" }
+      ]
+    }
+  ],
+  "presets": [ { "name": "Offers", "blocks": [ { "type": "offer" }, { "type": "offer" }, { "type": "offer" } ] } ]
+}
+{% endschema %}

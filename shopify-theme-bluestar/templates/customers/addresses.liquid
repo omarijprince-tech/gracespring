@@ -1,0 +1,29 @@
+<div class="container account-layout">
+  <p><a href="{{ routes.account_url }}">← {{ 'customer.back' | t }}</a></p>
+  {%- paginate customer.addresses by 10 -%}
+    {%- for address in customer.addresses -%}
+      <div class="panel">
+        <p>{{ address | format_address }}</p>
+        {%- if address == customer.default_address -%}<span class="status-pill active">{{ 'customer.default' | t }}</span>{%- endif -%}
+        {%- form 'customer_address', address -%}
+          <details style="margin-top:12px"><summary class="linklike">{{ 'customer.edit' | t }}</summary>
+            {% render 'address-fields', form: form, prefix: address.id %}
+            <button class="btn btn-primary" type="submit" style="margin-top:12px">{{ 'customer.save' | t }}</button>
+          </details>
+        {%- endform -%}
+        <form method="post" action="{{ address.url }}" style="margin-top:8px">
+          <input type="hidden" name="_method" value="delete">
+          <button class="linklike" type="submit" onclick="return confirm('{{ 'customer.delete_confirm' | t }}')">{{ 'customer.delete' | t }}</button>
+        </form>
+      </div>
+    {%- endfor -%}
+    {% render 'pagination', paginate: paginate %}
+  {%- endpaginate -%}
+  <div class="panel">
+    <h2>{{ 'customer.add_address' | t }}</h2>
+    {%- form 'customer_address', customer.new_address -%}
+      {% render 'address-fields', form: form, prefix: 'new' %}
+      <button class="btn btn-primary" type="submit" style="margin-top:12px">{{ 'customer.save' | t }}</button>
+    {%- endform -%}
+  </div>
+</div>

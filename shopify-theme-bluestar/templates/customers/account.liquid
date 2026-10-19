@@ -1,0 +1,29 @@
+<div class="container account-layout">
+  <div class="user-bar">
+    <strong>{{ 'customer.hello' | t: name: customer.first_name | default: customer.email }}</strong>
+    <a class="linklike" href="{{ routes.account_logout_url }}">{{ 'customer.logout' | t }}</a>
+  </div>
+  <div class="account-grid">
+    <div class="panel">
+      <h2>{{ 'customer.orders' | t }}</h2>
+      {%- paginate customer.orders by 20 -%}
+        {%- for order in customer.orders -%}
+          <div class="order-row">
+            <a href="{{ order.customer_url }}"><strong>{{ order.name }}</strong></a>
+            <span>{{ order.created_at | date: format: 'abbreviated_date' }}</span>
+            <span class="status-pill active">{{ order.fulfillment_status_label }}</span>
+            <span>{{ order.total_price | money }}</span>
+          </div>
+        {%- else -%}
+          <p style="color:var(--muted)">{{ 'customer.no_orders' | t }}</p>
+        {%- endfor -%}
+        {% render 'pagination', paginate: paginate %}
+      {%- endpaginate -%}
+    </div>
+    <div class="panel">
+      <h2>{{ 'customer.address' | t }}</h2>
+      {%- if customer.default_address -%}<p>{{ customer.default_address | format_address }}</p>{%- endif -%}
+      <p style="margin-top:12px"><a class="btn btn-outline" href="{{ routes.account_addresses_url }}">{{ 'customer.manage_addresses' | t }} ({{ customer.addresses_count }})</a></p>
+    </div>
+  </div>
+</div>

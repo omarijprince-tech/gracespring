@@ -1,0 +1,53 @@
+{%- liquid
+  assign variant = product.selected_or_first_available_variant
+  assign size = variant.title
+  if product.has_only_default_variant
+    assign size = product.type
+  endif
+-%}
+<article class="product-card" data-product="{{ product.handle }}">
+  <div class="product-media">
+    <a href="{{ product.url }}" tabindex="-1" aria-hidden="true">
+      {%- if product.featured_image -%}
+        {{ product.featured_image | image_url: width: 600 | image_tag: widths: '300, 450, 600', sizes: '(max-width: 920px) 90vw, 420px', loading: 'lazy', alt: product.featured_image.alt | default: product.title }}
+      {%- else -%}
+        {% render 'bottle-svg' %}
+      {%- endif -%}
+    </a>
+    {%- if product.tags contains settings.deposit_tag -%}
+      <span class="per-unit">{{ settings.deposit_badge }}</span>
+    {%- endif -%}
+    {%- if product.compare_at_price > product.price -%}
+      <span class="per-bottle">{{ 'products.sale' | t }}</span>
+    {%- endif -%}
+  </div>
+  <div class="product-body">
+    <h3><a href="{{ product.url }}">{{ product.title }}</a></h3>
+    {%- if product.description != blank -%}
+      <p class="product-desc">{{ product.description | strip_html | truncatewords: 22 }}</p>
+    {%- endif -%}
+    <div class="price-row">
+      <span class="price-now">{{ product.price | money }}</span>
+      {%- if product.compare_at_price > product.price -%}<span class="price-was">{{ product.compare_at_price | money }}</span>{%- endif -%}
+      {%- if size != blank -%}<span class="per-size">/ {{ size }}</span>{%- endif -%}
+    </div>
+    <div class="product-actions">
+      {%- if product.has_only_default_variant and product.available -%}
+        {%- form 'product', product, data-ajax-add: '' -%}
+          <input type="hidden" name="id" value="{{ variant.id }}">
+          <div class="qty-stepper" data-qty>
+            <button type="button" data-step="-1" aria-label="{{ 'products.decrease' | t }}">−</button>
+            <output>1</output>
+            <button type="button" data-step="1" aria-label="{{ 'products.increase' | t }}">+</button>
+            <input type="hidden" name="quantity" value="1">
+          </div>
+          <button class="btn btn-primary" type="submit" style="flex:1">{{ 'products.add_to_order' | t }}</button>
+        {%- endform -%}
+      {%- elsif product.available -%}
+        <a class="btn btn-primary btn-block" href="{{ product.url }}">{{ 'products.choose_options' | t }}</a>
+      {%- else -%}
+        <button class="btn btn-block sold-out" disabled>{{ 'products.sold_out' | t }}</button>
+      {%- endif -%}
+    </div>
+  </div>
+</article>

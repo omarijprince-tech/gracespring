@@ -1,0 +1,13 @@
+<div class="form-grid" style="margin-top:12px">
+  <div class="field"><label for="af-first-{{ prefix }}">{{ 'customer.first_name' | t }}</label><input id="af-first-{{ prefix }}" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name"></div>
+  <div class="field"><label for="af-last-{{ prefix }}">{{ 'customer.last_name' | t }}</label><input id="af-last-{{ prefix }}" name="address[last_name]" value="{{ form.last_name }}" autocomplete="family-name"></div>
+  <div class="field full"><label for="af-a1-{{ prefix }}">{{ 'customer.address1' | t }}</label><input id="af-a1-{{ prefix }}" name="address[address1]" value="{{ form.address1 }}" autocomplete="address-line1"></div>
+  <div class="field full"><label for="af-a2-{{ prefix }}">{{ 'customer.address2' | t }}</label><input id="af-a2-{{ prefix }}" name="address[address2]" value="{{ form.address2 }}" autocomplete="address-line2"></div>
+  <div class="field"><label for="af-city-{{ prefix }}">{{ 'customer.city' | t }}</label><input id="af-city-{{ prefix }}" name="address[city]" value="{{ form.city }}" autocomplete="address-level2"></div>
+  <div class="field"><label for="af-zip-{{ prefix }}">{{ 'delivery.zip_label' | t }}</label><input id="af-zip-{{ prefix }}" name="address[zip]" value="{{ form.zip }}" autocomplete="postal-code"></div>
+  <div class="field"><label for="af-country-{{ prefix }}">{{ 'customer.country' | t }}</label>
+    <select id="af-country-{{ prefix }}" name="address[country]" data-default="{{ form.country }}">{{ all_country_option_tags }}</select></div>
+  <div class="field"><label for="af-prov-{{ prefix }}">{{ 'customer.province' | t }}</label><input id="af-prov-{{ prefix }}" name="address[province]" value="{{ form.province }}" autocomplete="address-level1"></div>
+  <div class="field full"><label for="af-phone-{{ prefix }}">{{ 'contact.phone' | t }}</label><input id="af-phone-{{ prefix }}" name="address[phone]" value="{{ form.phone }}" type="tel" autocomplete="tel"></div>
+  <label class="full" style="font-size:0.88rem">{{ form.set_as_default_checkbox }} {{ 'customer.set_default' | t }}</label>
+</div>

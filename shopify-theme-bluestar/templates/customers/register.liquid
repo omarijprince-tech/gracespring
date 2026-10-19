@@ -1,0 +1,16 @@
+<div class="container auth-layout">
+  <div class="panel auth-panel">
+    <h2>{{ 'customer.create' | t }}</h2>
+    {%- form 'create_customer' -%}
+      {%- if form.errors -%}<div class="form-msg err">{{ form.errors | default_errors }}</div>{%- endif -%}
+      <div class="form-grid">
+        <div class="field"><label for="g-first">{{ 'customer.first_name' | t }}</label><input id="g-first" name="customer[first_name]" autocomplete="given-name"></div>
+        <div class="field"><label for="g-last">{{ 'customer.last_name' | t }}</label><input id="g-last" name="customer[last_name]" autocomplete="family-name"></div>
+        <div class="field full"><label for="g-email">{{ 'contact.email' | t }}</label><input id="g-email" type="email" name="customer[email]" autocomplete="email" required></div>
+        <div class="field full"><label for="g-pw">{{ 'customer.password' | t }}</label><input id="g-pw" type="password" name="customer[password]" autocomplete="new-password" required></div>
+      </div>
+      <button class="btn btn-primary btn-block" type="submit" style="margin-top:16px">{{ 'customer.create' | t }}</button>
+    {%- endform -%}
+    <p style="margin-top:14px;text-align:center;font-size:0.9rem"><a href="{{ routes.account_login_url }}">{{ 'customer.sign_in' | t }}</a></p>
+  </div>
+</div>

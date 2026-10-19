@@ -1,0 +1,203 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "blocks": {
+        "c1": {
+          "type": "chip",
+          "settings": {
+            "text": "🚚 Next-day local delivery"
+          }
+        },
+        "c2": {
+          "type": "chip",
+          "settings": {
+            "text": "💧 Purified · Spring · Alkaline"
+          }
+        },
+        "c3": {
+          "type": "chip",
+          "settings": {
+            "text": "🎁 Cooler? 5 bottles + stand free"
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "settings": {}
+    },
+    "offers": {
+      "type": "offers",
+      "blocks": {
+        "o1": {
+          "type": "offer",
+          "settings": {
+            "featured": true,
+            "badge": "New customer special",
+            "title": "Buy 1 Cooler, Get 5 Bottles FREE",
+            "price": "+ a bottle stand, free",
+            "price_note": "with any cooler purchase",
+            "points": "Buy any Avalon water cooler — $180.00\nGet 5 free 5-gallon bottles of Blue Star water\nPlus a 5-bottle storage stand, free\nAdd monthly refill service anytime — optional",
+            "button_label": "Claim the Offer",
+            "button_link": "#shop"
+          }
+        },
+        "o2": {
+          "type": "offer",
+          "settings": {
+            "featured": false,
+            "badge": "No auto-charge",
+            "title": "Monthly Refill Service",
+            "price": "We remind you",
+            "price_note": "the day before delivery",
+            "points": "Reminder by text, email, or phone call\nReply with how many jugs — that's it\nWe swap your empties for full bottles\nPause or stop anytime — no commitment",
+            "button_label": "Start Refill Service",
+            "button_link": "#shop"
+          }
+        },
+        "o3": {
+          "type": "offer",
+          "settings": {
+            "featured": false,
+            "badge": "",
+            "title": "One-Time Order",
+            "price": "No commitment",
+            "price_note": "order exactly what you need",
+            "points": "Great for events or a one-off stock-up\nSame next-day local delivery · $5.00 shipping\nNo account required",
+            "button_label": "Shop Now",
+            "button_link": "#shop"
+          }
+        }
+      },
+      "block_order": [
+        "o1",
+        "o2",
+        "o3"
+      ],
+      "settings": {}
+    },
+    "shop": {
+      "type": "featured-collection",
+      "settings": {}
+    },
+    "how": {
+      "type": "how-it-works",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "title": "Choose your water",
+            "text": "Pick your bottles and add a cooler if you need one. Complete your first order online."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "title": "We confirm your route",
+            "text": "A Blue Star team member calls to confirm your address, delivery route, and first delivery date."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "title": "We deliver & remind you",
+            "text": "We drop full bottles and take your empties. Each month we remind you the day before — just reply with your count."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {}
+    },
+    "delivery": {
+      "type": "delivery",
+      "settings": {}
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "q1": {
+          "type": "question",
+          "settings": {
+            "question": "What's the bottle deposit?",
+            "answer": "<p>Your first order includes a one-time $5.00 deposit per 5-gallon bottle. It's non-recurring as long as we swap your empties for full bottles, and it's refundable when you return your empties for good.</p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "question": "How does monthly delivery work?",
+            "answer": "<p>There are no auto-charges. Each month, the day before your route runs, we remind you by text, email, or phone call. Just reply with how many jugs you'd like and we'll bring them.</p>"
+          }
+        },
+        "q3": {
+          "type": "question",
+          "settings": {
+            "question": "How much is delivery?",
+            "answer": "<p>Shipping is a flat $5.00 per delivery anywhere in our service area, no matter how many bottles you order.</p>"
+          }
+        },
+        "q4": {
+          "type": "question",
+          "settings": {
+            "question": "What's the difference between your waters?",
+            "answer": "<p>Purified is Blue Star multi-stage water, clean and neutral. Natural is Grace Spring 100% natural spring water from a protected source. Alkaline is ALKAID 9.5 pH water with electrolytes. We also carry ALKAID alkaline in retail cases.</p>"
+          }
+        },
+        "q5": {
+          "type": "question",
+          "settings": {
+            "question": "Can I add a water cooler?",
+            "answer": "<p>Buy any Avalon cooler ($180.00) and we add 5 free 5-gallon bottles and a bottle stand. Hot & cold, top or bottom loader, black or white.</p>"
+          }
+        },
+        "q6": {
+          "type": "question",
+          "settings": {
+            "question": "Do you deliver to my area?",
+            "answer": "<p>We cover northern New Jersey — Bergen, Hudson, Passaic, Essex, Union, and Morris counties — plus all five NYC boroughs. Check your ZIP in the Delivery section above.</p>"
+          }
+        },
+        "q7": {
+          "type": "question",
+          "settings": {
+            "question": "What if my order arrives damaged or goes missing?",
+            "answer": "<p>If your water arrives damaged, keep it — we'll send a replacement at no charge. If a delivery is stolen after drop-off, we'll issue a refund. Every delivery is photo-documented by our driver.</p>"
+          }
+        },
+        "q8": {
+          "type": "question",
+          "settings": {
+            "question": "Is Blue Star the same company as Grace Spring and ALKAID?",
+            "answer": "<p>Yes — Blue Star, Grace Spring, and ALKAID are all from the same family water company in Paterson, NJ, serving New Jersey and New York since 2010.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6",
+        "q7",
+        "q8"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "hero",
+    "offers",
+    "shop",
+    "how",
+    "delivery",
+    "faq"
+  ]
+}

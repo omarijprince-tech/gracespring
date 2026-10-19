@@ -1,0 +1,11 @@
+<div class="container auth-layout">
+  <div class="panel auth-panel">
+    <h2>{{ 'customer.activate' | t }}</h2>
+    {%- form 'activate_customer_password' -%}
+      {%- if form.errors -%}<div class="form-msg err">{{ form.errors | default_errors }}</div>{%- endif -%}
+      <div class="field" style="margin-bottom:12px"><label for="a-pw">{{ 'customer.password' | t }}</label><input id="a-pw" type="password" name="customer[password]" autocomplete="new-password" required></div>
+      <div class="field"><label for="a-pw2">{{ 'customer.password_confirm' | t }}</label><input id="a-pw2" type="password" name="customer[password_confirmation]" autocomplete="new-password" required></div>
+      <button class="btn btn-primary btn-block" type="submit" style="margin-top:16px">{{ 'customer.activate' | t }}</button>
+    {%- endform -%}
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="page-head container">
+  <h1>{{ 'search.title' | t }}</h1>
+  <form class="search-form" action="{{ routes.search_url }}" method="get" role="search">
+    <input type="search" name="q" value="{{ search.terms | escape }}" placeholder="{{ 'search.placeholder' | t }}" aria-label="{{ 'search.placeholder' | t }}">
+    <input type="hidden" name="type" value="product">
+    <button class="btn btn-primary" type="submit">{{ 'search.submit' | t }}</button>
+  </form>
+</div>
+<section class="section" style="padding-top:36px">
+  <div class="container">
+    {%- if search.performed -%}
+      {%- paginate search.results by 12 -%}
+        <div class="products-grid grid-3">
+          {%- for item in search.results -%}
+            {%- if item.object_type == 'product' -%}{% render 'product-card', product: item %}{%- endif -%}
+          {%- else -%}
+            <p class="empty-state" style="grid-column:1/-1">{{ 'search.no_results' | t: terms: search.terms }}</p>
+          {%- endfor -%}
+        </div>
+        {% render 'pagination', paginate: paginate %}
+      {%- endpaginate -%}
+    {%- endif -%}
+  </div>
+</section>
+{% schema %}{ "name": "Search" }{% endschema %}

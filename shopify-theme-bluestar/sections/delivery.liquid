@@ -1,0 +1,46 @@
+<section class="section delivery" id="{{ section.settings.anchor }}">
+  <div class="container">
+    {% render 'section-head', s: section.settings, light: true %}
+    <div class="delivery-grid">
+      <div class="delivery-card">
+        <h3>{{ section.settings.zip_heading }}</h3>
+        <form class="zip-form" data-zip-checker data-prefixes="{{ section.settings.zip_prefixes | escape }}">
+          <label class="skip-link" for="zipInput-{{ section.id }}">{{ 'delivery.zip_label' | t }}</label>
+          <input id="zipInput-{{ section.id }}" name="zip" inputmode="numeric" pattern="[0-9]{5}" maxlength="5"
+                 placeholder="{{ 'delivery.zip_placeholder' | t }}" required>
+          <button class="btn btn-light" type="submit">{{ 'delivery.check' | t }}</button>
+        </form>
+        <p class="zip-result" aria-live="polite" data-zip-result
+           data-ok="{{ 'delivery.zip_ok' | t | escape }}" data-no="{{ 'delivery.zip_no' | t | escape }}"
+           data-invalid="{{ 'delivery.zip_invalid' | t | escape }}"></p>
+        {%- if section.settings.zip_note != blank -%}<p class="placeholder-note">{{ section.settings.zip_note }}</p>{%- endif -%}
+      </div>
+      <div class="delivery-card">
+        <h3>{{ section.settings.list_heading }}</h3>
+        {%- assign points = section.settings.points | newline_to_br | split: '<br />' -%}
+        <ul>
+          {%- for p in points -%}{%- assign t = p | strip -%}{%- if t != blank -%}<li>{{ t }}</li>{%- endif -%}{%- endfor -%}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Delivery area",
+  "settings": [
+    { "type": "text", "id": "anchor", "label": "Anchor ID", "default": "delivery" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Delivery" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Local, reliable, on your schedule" },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "We deliver across northern New Jersey and all five NYC boroughs. Check your ZIP." },
+    { "type": "text", "id": "zip_heading", "label": "ZIP checker heading", "default": "Check your delivery area" },
+    { "type": "text", "id": "zip_prefixes", "label": "Covered ZIP prefixes", "default": "070-079,100-104,110-114",
+      "info": "3-digit ZIP prefixes, comma separated; ranges allowed (070-079)." },
+    { "type": "textarea", "id": "zip_note", "label": "Note under the checker", "default": "Delivering across northern New Jersey and the NYC metro area — Manhattan, Brooklyn, Queens, the Bronx, and Staten Island." },
+    { "type": "text", "id": "list_heading", "label": "List heading", "default": "What to expect" },
+    { "type": "textarea", "id": "points", "label": "List (one per line)", "default": "Serving Bergen, Hudson, Passaic, Essex, Union & Morris counties, NJ\nAll five NYC boroughs — Manhattan, Brooklyn, Queens, the Bronx, Staten Island\nFlat $5.00 shipping per delivery\nOne-time $5.00 bottle deposit — refundable on empty return\nReminders by text, email, or phone call" }
+  ],
+  "presets": [ { "name": "Delivery area" } ]
+}
+{% endschema %}

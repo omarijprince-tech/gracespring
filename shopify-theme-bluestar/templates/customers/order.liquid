@@ -1,0 +1,23 @@
+<div class="container account-layout">
+  <p><a href="{{ routes.account_url }}">← {{ 'customer.back' | t }}</a></p>
+  <div class="panel">
+    <h2>{{ order.name }} · {{ order.created_at | date: format: 'abbreviated_date' }}</h2>
+    <table class="table">
+      <thead><tr><th>{{ 'customer.product' | t }}</th><th>{{ 'cart.quantity' | t }}</th><th>{{ 'customer.total' | t }}</th></tr></thead>
+      <tbody>
+        {%- for line in order.line_items -%}
+          <tr><td>{{ line.title }}</td><td>{{ line.quantity }}</td><td>{{ line.final_line_price | money }}</td></tr>
+        {%- endfor -%}
+      </tbody>
+    </table>
+    <div class="cart-foot" style="border:none;padding:16px 0 0">
+      <div class="total-row"><span>{{ 'cart.subtotal' | t }}</span><span>{{ order.line_items_subtotal_price | money }}</span></div>
+      {%- for line in order.shipping_lines -%}<div class="total-row"><span>{{ line.title }}</span><span>{{ line.price | money }}</span></div>{%- endfor -%}
+      {%- for line in order.tax_lines -%}<div class="total-row"><span>{{ line.title }}</span><span>{{ line.price | money }}</span></div>{%- endfor -%}
+      <div class="total-row grand"><span>{{ 'customer.total' | t }}</span><span>{{ order.total_price | money }}</span></div>
+    </div>
+  </div>
+  {%- if order.shipping_address -%}
+    <div class="panel"><h2>{{ 'customer.address' | t }}</h2><p>{{ order.shipping_address | format_address }}</p></div>
+  {%- endif -%}
+</div>

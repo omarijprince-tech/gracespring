@@ -1,0 +1,12 @@
+<div class="page-head container"><h1>{{ 'collections.all_title' | t }}</h1></div>
+<section class="section" style="padding-top:36px">
+  <div class="container articles-grid">
+    {%- for collection in collections -%}
+      <a class="article-card" href="{{ collection.url }}">
+        {%- if collection.featured_image -%}{{ collection.featured_image | image_url: width: 600 | image_tag: loading: 'lazy' }}{%- endif -%}
+        <div class="product-body"><h3>{{ collection.title }}</h3><span class="article-meta">{{ collection.products_count }} {{ 'collections.products' | t }}</span></div>
+      </a>
+    {%- endfor -%}
+  </div>
+</section>
+{% schema %}{ "name": "Collections list" }{% endschema %}

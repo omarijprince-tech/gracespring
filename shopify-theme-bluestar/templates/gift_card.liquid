@@ -1,0 +1,32 @@
+{% layout none %}
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ 'gift_card.title' | t }} — {{ shop.name }}</title>
+  <script src="{{ 'vendor/qrcode.js' | shopify_asset_url }}" defer></script>
+  {{ content_for_header }}
+  <style>
+    body{font-family:system-ui,sans-serif;background:#f6fafd;color:#13233a;display:flex;justify-content:center;padding:48px 16px}
+    .card{background:#fff;border:1.5px solid #d9e6f2;border-radius:14px;padding:32px;max-width:440px;width:100%;text-align:center}
+    .code{font-size:1.3rem;font-weight:700;letter-spacing:.08em;margin:16px 0;color:#1b3f73}
+    a{color:#2d7dd2}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>{{ shop.name }}</h1>
+    <p>{{ gift_card.balance | money }}{% if gift_card.balance != gift_card.initial_value %} / {{ gift_card.initial_value | money }}{% endif %}</p>
+    <div class="code">{{ gift_card.code | format_code }}</div>
+    {%- if gift_card.expired or gift_card.enabled == false -%}<p>{{ 'gift_card.expired' | t }}</p>{%- endif -%}
+    <div id="QrCode" data-identifier="{{ gift_card.qr_identifier }}"></div>
+    <p><a href="{{ shop.url }}">{{ 'cart.continue' | t }}</a></p>
+  </div>
+  <script>
+    window.addEventListener('load', function () {
+      var el = document.getElementById('QrCode');
+      if (window.QRCode) new QRCode(el, { text: el.dataset.identifier, width: 120, height: 120 });
+    });
+  </script>
+</body>
+</html>

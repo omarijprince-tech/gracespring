@@ -1,0 +1,118 @@
+{
+  "general": {
+    "skip_to_content": "Skip to content",
+    "tagged_with": "Tagged \"{{ tags }}\"",
+    "page": "Page {{ page }}",
+    "pagination": "Pagination",
+    "404_title": "Page not found",
+    "404_text": "The page you were looking for doesn't exist."
+  },
+  "header": {
+    "main_nav": "Main navigation",
+    "menu": "Menu",
+    "account": "Account",
+    "my_account": "My Account",
+    "cart": "Cart",
+    "open_cart": "Open cart"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "products": {
+    "add_to_order": "Add to Order",
+    "choose_options": "Choose options",
+    "sold_out": "Sold out",
+    "sale": "Sale",
+    "decrease": "Decrease quantity",
+    "increase": "Increase quantity"
+  },
+  "collections": {
+    "empty": "No products yet — add products in Shopify admin and they'll appear here.",
+    "all_title": "Collections",
+    "products": "products"
+  },
+  "cart": {
+    "title": "Your Order",
+    "close": "Close cart",
+    "empty": "Your cart is empty. Head to the shop to add some water.",
+    "subtotal": "Subtotal",
+    "taxes_shipping": "Shipping and deposits calculated at checkout.",
+    "checkout": "Checkout",
+    "view": "View cart",
+    "continue": "Continue shopping",
+    "remove": "Remove",
+    "quantity": "Quantity",
+    "update": "Update cart",
+    "summary": "Order summary",
+    "note": "Delivery notes (gate code, floor, etc.)",
+    "added": "Added to your order ✓",
+    "error": "Something went wrong — please try again."
+  },
+  "delivery": {
+    "zip_label": "ZIP code",
+    "zip_placeholder": "Enter your ZIP code",
+    "check": "Check",
+    "zip_ok": "✓ Great news — we deliver to [zip]!",
+    "zip_no": "We're not in [zip] yet — we're expanding! Check back soon.",
+    "zip_invalid": "Please enter a valid 5-digit ZIP code."
+  },
+  "contact": {
+    "name": "Name",
+    "phone": "Phone",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send message",
+    "success": "Thanks! We'll get back to you shortly."
+  },
+  "search": {
+    "title": "Search",
+    "placeholder": "Search products",
+    "submit": "Search",
+    "no_results": "No results for \"{{ terms }}\"."
+  },
+  "password": {
+    "label": "Password",
+    "enter": "Enter"
+  },
+  "gift_card": {
+    "title": "Your gift card",
+    "expired": "This gift card is no longer valid."
+  },
+  "customer": {
+    "login_title": "Sign in",
+    "sign_in": "Sign in",
+    "password": "Password",
+    "password_confirm": "Confirm password",
+    "forgot": "Forgot your password?",
+    "create": "Create account",
+    "recover_title": "Reset your password",
+    "recover_sent": "We've emailed you a link to reset your password.",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "first_name": "First name",
+    "last_name": "Last name",
+    "hello": "Hi, {{ name }}",
+    "logout": "Sign out",
+    "orders": "Your orders",
+    "no_orders": "You haven't placed any orders yet.",
+    "address": "Delivery address",
+    "manage_addresses": "Manage addresses",
+    "back": "Back to account",
+    "product": "Product",
+    "total": "Total",
+    "default": "Default",
+    "edit": "Edit",
+    "save": "Save address",
+    "delete": "Delete",
+    "delete_confirm": "Delete this address?",
+    "add_address": "Add a new address",
+    "address1": "Street address",
+    "address2": "Apt, suite, etc.",
+    "city": "City",
+    "country": "Country",
+    "province": "State",
+    "set_default": "Set as default address",
+    "activate": "Activate account",
+    "reset": "Reset password"
+  }
+}

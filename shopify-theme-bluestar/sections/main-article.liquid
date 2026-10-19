@@ -1,0 +1,12 @@
+<article>
+  <div class="page-head container">
+    <span class="eyebrow">{{ article.published_at | time_tag: format: 'date' }}</span>
+    <h1>{{ article.title }}</h1>
+  </div>
+  <div class="container page-content">
+    {%- if article.image -%}{{ article.image | image_url: width: 1200 | image_tag: style: 'border-radius:14px;margin-bottom:24px' }}{%- endif -%}
+    <div class="rte">{{ article.content }}</div>
+    <p style="margin-top:32px"><a class="btn btn-outline" href="{{ blog.url }}">← {{ blog.title }}</a></p>
+  </div>
+</article>
+{% schema %}{ "name": "Article" }{% endschema %}
