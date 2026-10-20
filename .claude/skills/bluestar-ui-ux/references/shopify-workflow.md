@@ -25,6 +25,7 @@ Store: Blue Star Pure Water. Work only on the unpublished theme **bluestar-theme
 
 ## Gotchas already hit
 
+- A setting with `"default": ""` makes Shopify reject the whole section file silently — omit `default` instead.
 - `range` settings need 3–101 steps (`(max-min)/step`), otherwise the file is rejected → use `select` for 1–2 options.
 - Liquid ends an output tag at `}` even inside a string: no `{` or `}` inside `{{ '...' }}` literals.
 - Filters can't be used inside tag parameters (`image_tag: style: 'a' | append: x` fails) — capture first.

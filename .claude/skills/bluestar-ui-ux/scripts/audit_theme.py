@@ -49,6 +49,8 @@ def check_setting_defs(defs, where):
         if sid in seen:
             report("ERROR", where, f"duplicate setting id '{sid}'")
         seen.add(sid)
+        if d.get("default") == "":
+            report("ERROR", where, f"'{sid}' has an empty default; Shopify rejects the file silently — omit 'default'")
         if d.get("type") == "range":
             steps = (d["max"] - d["min"]) / d["step"]
             if not 3 <= steps <= 101:
