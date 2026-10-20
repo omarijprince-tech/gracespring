@@ -25,7 +25,8 @@
     "sold_out": "Agotado",
     "sale": "Oferta",
     "decrease": "Disminuir cantidad",
-    "increase": "Aumentar cantidad"
+    "increase": "Aumentar cantidad",
+    "save": "Ahorra {{ amount }}"
   },
   "collections": {
     "empty": "Aún no hay productos.",

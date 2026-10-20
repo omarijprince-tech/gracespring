@@ -3,7 +3,7 @@
     "main": {
       "type": "main-product",
       "settings": {
-        "offer_note": "<p>🎁 Get 5 <strong>PURIFIED</strong> bottles <strong>FREE</strong> when you buy a <strong>Water Cooler for $100</strong> — see our <a href=\"/products/refurbished-water-dispenser-5-bottles-free\">sales page</a> for details.</p>",
+        "offer_note": "<p>🎁 Get 5 <strong>PURIFIED</strong> bottles <strong>FREE</strong> + 1 bottle stand when you buy a <strong>water cooler</strong> — <a href=\"/products/refurbished-water-dispenser-5-bottles-free\">see the deal</a>.</p>",
         "show_vendor": false,
         "show_dynamic_checkout": true,
         "trust": "Delivery to New Jersey\nDelivery to New York\nSe Habla Español"

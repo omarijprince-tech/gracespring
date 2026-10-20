@@ -1,12 +1,35 @@
-<section class="hero" id="{{ section.settings.anchor | default: 'top' }}">
+{%- liquid
+  assign promo = section.settings.product
+  assign tag = section.settings.heading_tag | default: 'h1'
+  assign primary_link = section.settings.button_link
+  if primary_link == blank and promo != blank
+    assign primary_link = promo.url
+  endif
+  assign visual = section.settings.image
+  if visual == blank and promo != blank
+    assign visual = promo.featured_image
+  endif
+-%}
+<section class="hero{% if promo != blank %} hero-promo{% endif %}" id="{{ section.settings.anchor | default: 'top' }}">
   <div class="container hero-inner">
     <div>
       {%- if section.settings.eyebrow != blank -%}<span class="eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
-      <h1>{{ section.settings.heading }}{% if section.settings.heading_accent != blank %} <em>{{ section.settings.heading_accent }}</em>{% endif %}</h1>
+      <{{ tag }} class="hero-title">{{ section.settings.heading }}{% if section.settings.heading_accent != blank %} <em>{{ section.settings.heading_accent }}</em>{% endif %}</{{ tag }}>
       {%- if section.settings.text != blank -%}<p class="hero-sub">{{ section.settings.text }}</p>{%- endif -%}
+      {%- if promo != blank and section.settings.show_price -%}
+        {%- assign v = promo.selected_or_first_available_variant -%}
+        <div class="price-row hero-price">
+          <span class="price-now">{{ v.price | money }}</span>
+          {%- if v.compare_at_price > v.price -%}
+            <span class="price-was">{{ v.compare_at_price | money }}</span>
+            {%- assign saved = v.compare_at_price | minus: v.price | money_without_trailing_zeros -%}
+            <span class="price-tag">{{ 'products.save' | t: amount: saved }}</span>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
       <div class="hero-ctas">
         {%- if section.settings.button_label != blank -%}
-          <a class="btn btn-primary" href="{{ section.settings.button_link | default: '#shop' }}">{{ section.settings.button_label }}</a>
+          <a class="btn btn-primary" href="{{ primary_link | default: '#shop' }}">{{ section.settings.button_label }}</a>
         {%- endif -%}
         {%- if section.settings.button2_label != blank -%}
           <a class="btn btn-outline" href="{{ section.settings.button2_link | default: '#delivery' }}">{{ section.settings.button2_label }}</a>
@@ -21,9 +44,16 @@
       {%- endif -%}
     </div>
     <div class="hero-visual photo">
-      {%- if section.settings.image != blank -%}
-        {%- assign hero_alt = section.settings.image_alt | default: section.settings.image.alt | default: section.settings.heading -%}
-        {{ section.settings.image | image_url: width: 1120 | image_tag: widths: '400, 560, 800, 1120', sizes: '(max-width: 920px) 92vw, 560px', loading: 'eager', fetchpriority: 'high', alt: hero_alt }}
+      {%- if visual != blank -%}
+        {%- assign hero_alt = section.settings.image_alt | default: visual.alt | default: section.settings.heading -%}
+        {%- if promo != blank and section.settings.image == blank -%}<a href="{{ promo.url }}" class="hero-visual-link">{%- endif -%}
+        {%- if section.settings.heading_tag == 'h2' -%}
+          {{ visual | image_url: width: 1120 | image_tag: widths: '400, 560, 800, 1120', sizes: '(max-width: 920px) 92vw, 560px', loading: 'lazy', alt: hero_alt }}
+        {%- else -%}
+          {{ visual | image_url: width: 1120 | image_tag: widths: '400, 560, 800, 1120', sizes: '(max-width: 920px) 92vw, 560px', loading: 'eager', fetchpriority: 'high', alt: hero_alt }}
+        {%- endif -%}
+        {%- if promo != blank and section.settings.image == blank -%}</a>{%- endif -%}
+        {%- if promo != blank and section.settings.badge != blank -%}<span class="hero-badge">{{ section.settings.badge }}</span>{%- endif -%}
       {%- else -%}
         <img src="{{ 'hero-bottle.png' | asset_url }}" alt="{{ shop.name }}" width="522" height="982" style="max-width:300px;box-shadow:none;margin:0 auto" loading="eager">
       {%- endif -%}
@@ -82,6 +112,32 @@
       "label": "Secondary button link"
     },
     {
+      "type": "header",
+      "content": "Promote a product (bundle)"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product",
+      "info": "Shows its price, links the main button to it and uses its photo when no image is set below."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_price",
+      "label": "Show price",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "badge",
+      "label": "Badge on the photo",
+      "default": "MEGA SALE"
+    },
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
       "type": "image_picker",
       "id": "image",
       "label": "Image"
@@ -91,6 +147,23 @@
       "id": "image_alt",
       "label": "Image description (alt text)",
       "info": "Helps Google Images and screen readers. Empty uses the image's alt text from Files."
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Heading level",
+      "default": "h1",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1 – main page title (use once per page)"
+        },
+        {
+          "value": "h2",
+          "label": "H2 – secondary banner"
+        }
+      ],
+      "info": "Search engines expect one H1 per page."
     },
     {
       "type": "text",

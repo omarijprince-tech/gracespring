@@ -85,3 +85,17 @@
   .cols-grid[style*="--cols-mobile: 2"] .product-actions { flex-wrap: wrap; }
   .cols-grid[style*="--cols-mobile: 2"] .product-actions .btn { width: 100%; padding: 11px 10px; font-size: 0.85rem; white-space: normal; }
 }
+
+/* Hero promoting a product (bundle) */
+.hero .hero-title { font-size: clamp(2rem, 4.4vw, 3.1rem); margin-bottom: 18px; }
+.hero .hero-title em { font-style: normal; color: var(--blue); }
+.hero-price { margin: -8px 0 24px; }
+.hero-price .price-now { font-size: 2rem; color: var(--blue); }
+.hero-promo .hero-visual { position: relative; }
+.hero-visual-link { display: block; width: 100%; max-width: 560px; }
+.hero-badge {
+  position: absolute; top: 18px; left: 18px; background: var(--free); color: var(--navy-900);
+  font-weight: 800; font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase;
+  border-radius: 999px; padding: 7px 16px; box-shadow: var(--shadow-sm);
+}
+@media (max-width: 920px) { .hero-price { justify-content: flex-start; } }

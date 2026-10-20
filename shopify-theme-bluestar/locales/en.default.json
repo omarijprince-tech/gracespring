@@ -25,7 +25,8 @@
     "sold_out": "Sold out",
     "sale": "Sale",
     "decrease": "Decrease quantity",
-    "increase": "Increase quantity"
+    "increase": "Increase quantity",
+    "save": "Save {{ amount }}"
   },
   "collections": {
     "empty": "No products yet — add products in Shopify admin and they'll appear here.",

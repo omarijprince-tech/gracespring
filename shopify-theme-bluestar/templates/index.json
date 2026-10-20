@@ -3,28 +3,31 @@
     "hero": {
       "type": "hero",
       "settings": {
-        "eyebrow": "Water delivery · New Jersey & New York",
-        "heading": "New Jersey's #1",
-        "heading_accent": "Water Delivery Service.",
-        "text": "Stay hydrated with ease! Our New Jersey water delivery service brings the crisp taste of purity straight to your doorstep, ensuring you never run dry. Experience convenience and freshness like never before – quench your thirst hassle-free with us today!",
-        "button_label": "Refill my Water",
-        "button_link": "shopify://pages/get-bottles",
-        "button2_label": "I need New Bottles",
+        "eyebrow": "Mega sale · while supplies last",
+        "heading": "Water Cooler + 5 Purified Bottles",
+        "heading_accent": "FREE + 1 bottle stand.",
+        "text": "Get a hot & cold water cooler with 5 purified 5-gallon bottles and a bottle stand included — delivered right to you in New Jersey & New York. Questions? Call us 973-742-0435.",
+        "product": "refurbished-water-dispenser-5-bottles-free",
+        "show_price": true,
+        "badge": "MEGA SALE",
+        "button_label": "Claim the Offer",
+        "button_link": "",
+        "button2_label": "Call Us",
         "button2_link": "tel:9737420435",
-        "image": "shopify://shop_images/heart_0ea11101-5b90-4a6d-afdd-8646445b2c8d.png",
+        "heading_tag": "h1",
         "anchor": "top"
       },
       "blocks": {
         "chip_1": {
           "type": "chip",
           "settings": {
-            "text": "🚚 Delivery to NJ & NY"
+            "text": "🎁 5 bottles + stand FREE"
           }
         },
         "chip_2": {
           "type": "chip",
           "settings": {
-            "text": "💧 Purified · Alkaline · Spring"
+            "text": "🚚 Delivered to NJ & NY"
           }
         },
         "chip_3": {
@@ -56,7 +59,7 @@
             "badge": "Mega sale · while supplies last",
             "title": "Water Cooler + 5 Purified Bottles FREE",
             "price": "+ 1 bottle stand, free",
-            "price_note": "hydration starting at $99",
+            "price_note": "free with your water cooler",
             "points": "Hot & cold water cooler\n5 purified 5-gallon bottles FREE\n1 bottle stand FREE\nDelivered right to you",
             "button_label": "Claim the Offer",
             "button_link": "shopify://products/refurbished-water-dispenser-5-bottles-free"
@@ -308,7 +311,7 @@
           "type": "question",
           "settings": {
             "question": "What's the water cooler deal?",
-            "answer": "<p>Our MEGA SALE: buy a water cooler and get <strong>5 purified bottles FREE + 1 bottle stand FREE</strong> — hydration starting at $99, while supplies last.</p>"
+            "answer": "<p>Our MEGA SALE: buy a water cooler and get <strong>5 purified bottles FREE + 1 bottle stand FREE</strong> — while supplies last.</p>"
           }
         },
         "question_4": {
@@ -358,12 +361,54 @@
         "text": "",
         "custom_liquid": "<script src=\"https://static.elfsight.com/platform/platform.js\" data-use-service-core></script>\n<div class=\"elfsight-app-e33227e2-9a76-4c08-a358-f9979413027a\" data-elfsight-app-lazy></div>"
       }
+    },
+    "nj": {
+      "type": "hero",
+      "settings": {
+        "eyebrow": "Water delivery · New Jersey & New York",
+        "heading": "New Jersey's #1",
+        "heading_accent": "Water Delivery Service.",
+        "text": "Stay hydrated with ease! Our New Jersey water delivery service brings the crisp taste of purity straight to your doorstep, ensuring you never run dry. Experience convenience and freshness like never before – quench your thirst hassle-free with us today!",
+        "button_label": "Refill my Water",
+        "button_link": "shopify://pages/get-bottles",
+        "button2_label": "I need New Bottles",
+        "button2_link": "tel:9737420435",
+        "image": "shopify://shop_images/heart_0ea11101-5b90-4a6d-afdd-8646445b2c8d.png",
+        "anchor": "about",
+        "heading_tag": "h2"
+      },
+      "blocks": {
+        "chip_1": {
+          "type": "chip",
+          "settings": {
+            "text": "🚚 Delivery to NJ & NY"
+          }
+        },
+        "chip_2": {
+          "type": "chip",
+          "settings": {
+            "text": "💧 Purified · Alkaline · Spring"
+          }
+        },
+        "chip_3": {
+          "type": "chip",
+          "settings": {
+            "text": "🗣️ Se Habla Español"
+          }
+        }
+      },
+      "block_order": [
+        "chip_1",
+        "chip_2",
+        "chip_3"
+      ]
     }
   },
   "order": [
     "hero",
     "offers",
     "shop",
+    "nj",
     "bundles",
     "how",
     "water",
