@@ -1,9 +1,14 @@
 {%- assign collection = section.settings.collection -%}
+{%- assign picked = section.settings.product_list -%}
 <section class="section" id="{{ section.settings.anchor }}"{% if section.settings.white_bg %} style="background:#fff"{% endif %}>
   <div class="container">
     {% render 'section-head', s: section.settings %}
     <div class="products-grid{% if section.settings.columns == '3' %} grid-3{% endif %}">
-      {%- if collection != blank and collection.products_count > 0 -%}
+      {%- if picked != blank and picked.count > 0 -%}
+        {%- for product in picked limit: section.settings.limit -%}
+          {% render 'product-card', product: product %}
+        {%- endfor -%}
+      {%- elsif collection != blank and collection.products_count > 0 -%}
         {%- for product in collection.products limit: section.settings.limit -%}
           {% render 'product-card', product: product %}
         {%- endfor -%}
@@ -15,6 +20,9 @@
         {%- endfor -%}
       {%- endif -%}
     </div>
+    {%- if section.settings.button_label != blank -%}
+      <p style="text-align:center;margin-top:28px"><a class="btn btn-outline" href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a></p>
+    {%- endif -%}
   </div>
 </section>
 
@@ -22,15 +30,89 @@
 {
   "name": "Product grid",
   "settings": [
-    { "type": "text", "id": "anchor", "label": "Anchor ID", "default": "shop" },
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Shop Blue Star" },
-    { "type": "text", "id": "heading", "label": "Heading", "default": "Choose your water" },
-    { "type": "textarea", "id": "text", "label": "Text", "default": "Fresh 5-gallon bottles of purified, spring, and alkaline water — plus cases and coolers." },
-    { "type": "collection", "id": "collection", "label": "Collection", "info": "Leave empty to show all products." },
-    { "type": "range", "id": "limit", "label": "Products to show", "min": 2, "max": 24, "step": 1, "default": 8 },
-    { "type": "select", "id": "columns", "label": "Columns", "default": "2", "options": [ { "value": "2", "label": "2 (Grace Spring style)" }, { "value": "3", "label": "3" } ] },
-    { "type": "checkbox", "id": "white_bg", "label": "White background", "default": true }
+    {
+      "type": "text",
+      "id": "anchor",
+      "label": "Anchor ID",
+      "default": "shop"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Shop Blue Star"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Choose your water"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Text",
+      "default": "Fresh 5-gallon bottles of purified, spring, and alkaline water — plus cases and coolers."
+    },
+    {
+      "type": "product_list",
+      "id": "product_list",
+      "label": "Products",
+      "limit": 24,
+      "info": "Pick products, or leave empty to use the collection below."
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection",
+      "info": "Used when no products are picked. Empty shows all products."
+    },
+    {
+      "type": "range",
+      "id": "limit",
+      "label": "Products to show",
+      "min": 2,
+      "max": 24,
+      "step": 1,
+      "default": 8
+    },
+    {
+      "type": "select",
+      "id": "columns",
+      "label": "Columns",
+      "default": "2",
+      "options": [
+        {
+          "value": "2",
+          "label": "2 (Grace Spring style)"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "white_bg",
+      "label": "White background",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    }
   ],
-  "presets": [ { "name": "Product grid" } ]
+  "presets": [
+    {
+      "name": "Product grid"
+    }
+  ]
 }
 {% endschema %}

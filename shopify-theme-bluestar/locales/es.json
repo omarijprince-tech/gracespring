@@ -68,7 +68,11 @@
     "title": "Buscar",
     "placeholder": "Buscar productos",
     "submit": "Buscar",
-    "no_results": "Sin resultados para \"{{ terms }}\"."
+    "no_results": "Sin resultados para \"{{ terms }}\".",
+    "products": "Productos",
+    "pages": "Páginas y artículos",
+    "no_suggestions": "Sin coincidencias — presiona Enter para buscar.",
+    "view_all": "Ver todos los resultados"
   },
   "password": {
     "label": "Contraseña",
@@ -114,5 +118,9 @@
     "set_default": "Usar como dirección predeterminada",
     "activate": "Activar cuenta",
     "reset": "Restablecer contraseña"
+  },
+  "newsletter": {
+    "success": "¡Gracias por suscribirte!",
+    "placeholder": "Tu correo electrónico"
   }
 }

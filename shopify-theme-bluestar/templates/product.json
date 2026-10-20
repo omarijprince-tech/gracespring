@@ -1,4 +1,61 @@
 {
-  "sections": { "main": { "type": "main-product", "settings": {} } },
-  "order": ["main"]
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "settings": {
+        "offer_note": "<p>🎁 Get 5 <strong>PURIFIED</strong> bottles <strong>FREE</strong> when you buy a <strong>Water Cooler for $100</strong> — see our <a href=\"/products/refurbished-water-dispenser-5-bottles-free\">sales page</a> for details.</p>",
+        "show_vendor": false,
+        "show_dynamic_checkout": true,
+        "trust": "Delivery to New Jersey\nDelivery to New York\nSe Habla Español"
+      }
+    },
+    "bundles": {
+      "type": "featured-collection",
+      "settings": {
+        "anchor": "bundles",
+        "eyebrow": "Bundle up & save",
+        "heading": "Bundle up & save",
+        "text": "Water coolers with free bottles.",
+        "product_list": [
+          "water-cooler-5-bottles-fre-bottledown",
+          "white-water-cooler-5-bottles-fre-bottledown",
+          "gray-water-cooler-5-bottles-fre-bottledown",
+          "small-black-water-coller-3-bottles-free",
+          "small-white-water-cooler-3-bottles-free"
+        ],
+        "limit": 12,
+        "columns": "3",
+        "white_bg": true,
+        "button_label": "Call Us",
+        "button_link": "tel:9737420435"
+      }
+    },
+    "water": {
+      "type": "featured-collection",
+      "settings": {
+        "anchor": "water",
+        "eyebrow": "Water for water drinkers",
+        "heading": "Water for water drinkers",
+        "text": "Questions? Call us 973-742-0435",
+        "product_list": [
+          "blue-star-purified-water",
+          "alkaid-alkaline-water",
+          "alkaid-spring-water",
+          "new-blue-star-purified-water",
+          "new-alkaid-alkaline-water",
+          "new-alkaid-spring-water"
+        ],
+        "limit": 12,
+        "columns": "3",
+        "white_bg": false,
+        "button_label": "",
+        "button_link": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "bundles",
+    "water"
+  ]
 }

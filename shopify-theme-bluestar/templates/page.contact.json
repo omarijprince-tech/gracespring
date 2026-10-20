@@ -1,4 +1,36 @@
 {
-  "sections": { "main": { "type": "main-contact", "settings": {} } },
-  "order": ["main"]
+  "sections": {
+    "main": {
+      "type": "main-contact",
+      "settings": {
+        "intro": "<p>We are the #1 water delivery service in New Jersey, our dedicated customer service team is here to ensure your experience is seamless and satisfying. Whether you have questions about our products, delivery schedules, or billing inquiries, we're ready to provide prompt and personalized assistance. Your satisfaction is our priority, and we're committed to addressing any and every concern you may have with care and expertise. Feel free to reach out – we're always here to help!</p>",
+        "show_form": false,
+        "button_label": "Call Us",
+        "button_link": "tel:9737420435",
+        "aside_heading": "Get in contact with us!",
+        "aside": "<p><strong>Send us an email</strong><br><a href=\"mailto:bluealkaiddistributor@gmail.com\">bluealkaiddistributor@gmail.com</a></p><p><strong>Give us a call</strong><br><a href=\"tel:9737420435\">973-742-0435</a></p><p><strong>Hours of Operation</strong><br>M-F 8am - 6pm EST<br>Saturday 8am - 4pm</p><p>Se Habla Español</p>"
+      }
+    },
+    "offer": {
+      "type": "featured-collection",
+      "settings": {
+        "anchor": "offer",
+        "eyebrow": "Get 5 free bottles!",
+        "heading": "Hydration starting at $99",
+        "text": "Buy a water cooler and get 5 purified bottles + 1 bottle stand FREE.",
+        "product_list": [
+          "refurbished-water-dispenser-5-bottles-free"
+        ],
+        "limit": 12,
+        "columns": "2",
+        "white_bg": true,
+        "button_label": "",
+        "button_link": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "offer"
+  ]
 }

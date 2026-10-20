@@ -68,7 +68,11 @@
     "title": "Search",
     "placeholder": "Search products",
     "submit": "Search",
-    "no_results": "No results for \"{{ terms }}\"."
+    "no_results": "No results for \"{{ terms }}\".",
+    "products": "Products",
+    "pages": "Pages & articles",
+    "no_suggestions": "No matches yet — press Enter to search.",
+    "view_all": "See all results"
   },
   "password": {
     "label": "Password",
@@ -114,5 +118,9 @@
     "set_default": "Set as default address",
     "activate": "Activate account",
     "reset": "Reset password"
+  },
+  "newsletter": {
+    "success": "Thanks for subscribing!",
+    "placeholder": "Your email address"
   }
 }

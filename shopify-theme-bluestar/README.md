@@ -33,6 +33,15 @@ O con Shopify CLI: `shopify theme push --unpublished --store blue-star-pure-wate
   el encabezado. Los textos de la tienda ya están traducidos (`locales/es.json`); los textos
   de las secciones se traducen con la app Translate & Adapt.
 
+## Buscador y contenido del sitio actual
+
+- Encabezado con buscador y sugerencias (`assets/search.js`, `snippets/icon.liquid`).
+- Estilos agregados en `assets/bluestar.css` (no se modifica `base.css`).
+- Secciones nuevas: `water-cards` (tarjetas con foto), `newsletter`, `custom-liquid` (widget de reseñas).
+- `featured-collection` acepta productos elegidos a mano y un botón; `main-product` tiene una nota de oferta;
+  `main-contact` tiene texto de introducción y el formulario se puede ocultar.
+- Plantillas con el contenido del sitio publicado: inicio, Order Water (`page.json`), About, Contact, Privacy y producto.
+
 ## Estructura
 
 - `assets/base.css`: hojas de estilo de Grace Spring (`app/globals.css`) + estilos para producto, colección, carrito y cuenta.

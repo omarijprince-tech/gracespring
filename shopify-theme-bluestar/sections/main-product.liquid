@@ -30,6 +30,10 @@
       {%- if product.tags contains settings.deposit_tag -%}<span class="price-tag" style="background:var(--pale);color:var(--navy)">{{ settings.deposit_badge }}</span>{%- endif -%}
     </div>
 
+    {%- if section.settings.offer_note != blank -%}
+      <div class="offer-note">{{ section.settings.offer_note }}</div>
+    {%- endif -%}
+
     {%- form 'product', product, data-ajax-add: '', data-product-form: '' -%}
       <script type="application/json" data-variants>{{ product.variants | json }}</script>
       <input type="hidden" name="id" value="{{ variant.id }}" data-variant-id>
@@ -83,10 +87,29 @@
 {
   "name": "Product",
   "settings": [
-    { "type": "checkbox", "id": "show_vendor", "label": "Show vendor", "default": false },
-    { "type": "checkbox", "id": "show_dynamic_checkout", "label": "Show dynamic checkout buttons", "default": true },
-    { "type": "textarea", "id": "trust", "label": "Trust points (one per line)",
-      "default": "Next-day local delivery across northern NJ & NYC\nFlat $5.00 shipping per delivery\nDamaged? Keep it — free replacement" }
+    {
+      "type": "richtext",
+      "id": "offer_note",
+      "label": "Offer note (highlighted box)"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "label": "Show vendor",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_dynamic_checkout",
+      "label": "Show dynamic checkout buttons",
+      "default": true
+    },
+    {
+      "type": "textarea",
+      "id": "trust",
+      "label": "Trust points (one per line)",
+      "default": "Next-day local delivery across northern NJ & NYC\nFlat $5.00 shipping per delivery\nDamaged? Keep it — free replacement"
+    }
   ]
 }
 {% endschema %}

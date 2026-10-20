@@ -14,6 +14,12 @@
     {%- endif -%}
 
     <div class="header-actions">
+      {%- if section.settings.show_search -%}
+        <button class="icon-btn search-toggle" type="button" data-search-toggle aria-expanded="false" aria-controls="headerSearch" aria-label="{{ 'search.title' | t }}">
+          {% render 'icon', name: 'search' %}
+        </button>
+      {%- endif -%}
+
       {%- if menu.links.size > 0 -%}
         <button class="nav-menu-btn" type="button" aria-expanded="false" aria-controls="mobileMenu" data-menu-toggle>
           ☰<span class="nav-menu-label"> {{ 'header.menu' | t }}</span>
@@ -45,6 +51,23 @@
     </div>
   </div>
 
+  {%- if section.settings.show_search -%}
+    <div class="header-search" id="headerSearch" hidden>
+      <div class="container">
+        <form class="search-form" action="{{ routes.search_url }}" method="get" role="search" data-predictive-search>
+          <span class="search-form-icon">{% render 'icon', name: 'search' %}</span>
+          <input type="search" name="q" value="{{ search.terms | escape }}" autocomplete="off" data-search-input
+                 placeholder="{% if section.settings.search_placeholder != blank %}{{ section.settings.search_placeholder | escape }}{% else %}{{ 'search.placeholder' | t }}{% endif %}"
+                 aria-label="{{ 'search.placeholder' | t }}">
+          <input type="hidden" name="options[prefix]" value="last">
+          <button class="btn btn-primary" type="submit">{{ 'search.submit' | t }}</button>
+          <button class="icon-btn" type="button" data-search-close aria-label="{{ 'cart.close' | t }}">{% render 'icon', name: 'close' %}</button>
+          <div class="predictive-results" data-search-results hidden></div>
+        </form>
+      </div>
+    </div>
+  {%- endif -%}
+
   {%- if menu.links.size > 0 -%}
     <nav class="mobile-menu" id="mobileMenu" hidden aria-label="{{ 'header.main_nav' | t }}">
       {%- for link in menu.links -%}
@@ -62,7 +85,9 @@
   "name": "Header",
   "settings": [
     { "type": "link_list", "id": "menu", "label": "Menu", "default": "main-menu",
-      "info": "Tip: point items at #shop, #offers, #how, #delivery and #faq to scroll the home page like the Grace Spring site." }
+      "info": "Tip: point items at #shop, #offers, #how, #delivery and #faq to scroll the home page like the Grace Spring site." },
+    { "type": "checkbox", "id": "show_search", "label": "Show search", "default": true },
+    { "type": "text", "id": "search_placeholder", "label": "Search placeholder", "default": "Search water, coolers, accessories…" }
   ]
 }
 {% endschema %}

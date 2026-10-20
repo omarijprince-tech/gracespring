@@ -1,0 +1,7 @@
+{%- comment -%} Inline stroke icons. Usage: {% render 'icon', name: 'search' %} {%- endcomment -%}
+<svg class="icon icon-{{ name }}" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+  {%- case name -%}
+    {%- when 'search' -%}<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>
+    {%- when 'close' -%}<path d="M18 6 6 18M6 6l12 12"/>
+  {%- endcase -%}
+</svg>

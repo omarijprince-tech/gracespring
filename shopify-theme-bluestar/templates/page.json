@@ -1,4 +1,70 @@
 {
-  "sections": { "main": { "type": "main-page", "settings": {} } },
-  "order": ["main"]
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    },
+    "refill": {
+      "type": "featured-collection",
+      "settings": {
+        "anchor": "refill",
+        "eyebrow": "Re-fill",
+        "heading": "Re-fill your bottles",
+        "text": "Delivered to you",
+        "product_list": [
+          "blue-star-purified-water",
+          "alkaid-alkaline-water",
+          "alkaid-spring-water"
+        ],
+        "limit": 12,
+        "columns": "3",
+        "white_bg": false,
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "new": {
+      "type": "featured-collection",
+      "settings": {
+        "anchor": "new-bottles",
+        "eyebrow": "New bottles",
+        "heading": "Brand new bottles",
+        "text": "Delivered to you",
+        "product_list": [
+          "new-alkaid-alkaline-water",
+          "new-blue-star-purified-water",
+          "new-alkaid-spring-water"
+        ],
+        "limit": 12,
+        "columns": "3",
+        "white_bg": true,
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "bundle": {
+      "type": "featured-collection",
+      "settings": {
+        "anchor": "bundle",
+        "eyebrow": "Bundle up & save",
+        "heading": "Bundle up & save",
+        "text": "Questions? Call us 973-742-0435",
+        "product_list": [
+          "refurbished-water-dispenser-5-bottles-free",
+          "new-alkaid-alkaline-water-1-lt-bottles"
+        ],
+        "limit": 12,
+        "columns": "2",
+        "white_bg": false,
+        "button_label": "Call Us",
+        "button_link": "tel:9737420435"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "refill",
+    "new",
+    "bundle"
+  ]
 }
