@@ -1,46 +1,32 @@
-{%- assign menu = linklists[section.settings.menu] -%}
-{%- capture account_url -%}{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}{%- endcapture -%}
-<header class="site-header{% if section.settings.sticky %} is-sticky{% endif %}" data-header>
+<header class="site-header" data-header>
   <div class="container header-inner">
     <a class="brand" href="{{ routes.root_url }}" aria-label="{{ shop.name }}">
       {% render 'brand' %}
     </a>
 
+    {%- assign menu = linklists[section.settings.menu] -%}
     {%- if menu.links.size > 0 -%}
       <nav class="main-nav" aria-label="{{ 'header.main_nav' | t }}">
         {%- for link in menu.links -%}
-          {%- if link.links.size > 0 -%}
-            <div class="nav-item has-sub">
-              <a href="{{ link.url }}"{% if link.active %} aria-current="page"{% endif %}>{{ link.title }} {% render 'icon', name: 'chevron-down' %}</a>
-              <div class="nav-sub">
-                {%- for child in link.links -%}<a href="{{ child.url }}">{{ child.title }}</a>{%- endfor -%}
-              </div>
-            </div>
-          {%- else -%}
-            <a href="{{ link.url }}"{% if link.active %} aria-current="page"{% endif %}>{{ link.title }}</a>
-          {%- endif -%}
+          <a href="{{ link.url }}"{% if link.current %} aria-current="page"{% endif %}>{{ link.title }}</a>
         {%- endfor -%}
       </nav>
     {%- endif -%}
 
     <div class="header-actions">
-      {%- if section.settings.show_search -%}
-        <button class="icon-btn header-icon" type="button" data-search-toggle aria-expanded="false" aria-controls="headerSearch" aria-label="{{ 'search.title' | t }}">
-          {% render 'icon', name: 'search' %}
+      {%- if menu.links.size > 0 -%}
+        <button class="nav-menu-btn" type="button" aria-expanded="false" aria-controls="mobileMenu" data-menu-toggle>
+          ☰<span class="nav-menu-label"> {{ 'header.menu' | t }}</span>
         </button>
       {%- endif -%}
 
-      {%- if section.settings.show_phone and settings.phone != blank -%}
-        <a class="header-phone" href="tel:{{ settings.phone | remove: '-' | remove: ' ' | remove: '(' | remove: ')' }}">
-          {% render 'icon', name: 'phone' %}<span>{{ settings.phone }}</span>
-        </a>
-      {%- endif -%}
-
-      {%- if section.settings.show_language and localization.available_languages.size > 1 -%}
+      {%- if localization.available_languages.size > 1 -%}
         {%- form 'localization', class: 'localization-form' -%}
           {%- for language in localization.available_languages -%}
             {%- unless language.iso_code == localization.language.iso_code -%}
-              <button class="lang-toggle" type="submit" name="language_code" value="{{ language.iso_code }}" lang="{{ language.iso_code }}">{{ language.iso_code | upcase }}</button>
+              <button class="lang-toggle" type="submit" name="language_code" value="{{ language.iso_code }}" lang="{{ language.iso_code }}">
+                {{ language.iso_code | upcase }}
+              </button>
               {%- break -%}
             {%- endunless -%}
           {%- endfor -%}
@@ -48,63 +34,24 @@
         {%- endform -%}
       {%- endif -%}
 
-      {%- if section.settings.show_country and localization.available_countries.size > 1 -%}
-        {%- form 'localization', class: 'localization-form' -%}
-          <label class="sr-only" for="hdr-country">{{ 'header.country' | t }}</label>
-          <select id="hdr-country" class="country-select" name="country_code" onchange="this.form.submit()">
-            {%- for country in localization.available_countries -%}
-              <option value="{{ country.iso_code }}"{% if country.iso_code == localization.country.iso_code %} selected{% endif %}>{{ country.iso_code }} {{ country.currency.symbol }}</option>
-            {%- endfor -%}
-          </select>
-          <input type="hidden" name="return_to" value="{{ request.path }}">
-        {%- endform -%}
-      {%- endif -%}
-
       {%- if shop.customer_accounts_enabled -%}
-        <a class="icon-btn header-icon account-icon" href="{{ account_url }}" aria-label="{{ 'header.account' | t }}">{% render 'icon', name: 'account' %}</a>
-      {%- endif -%}
-
-      {%- if menu.links.size > 0 -%}
-        <button class="nav-menu-btn" type="button" aria-expanded="false" aria-controls="mobileMenu" data-menu-toggle aria-label="{{ 'header.menu' | t }}">
-          {% render 'icon', name: 'menu' %}<span class="nav-menu-label">{{ 'header.menu' | t }}</span>
-        </button>
+        <a class="account-link" href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}">{{ 'header.account' | t }}</a>
       {%- endif -%}
 
       <a class="cart-btn" href="{{ routes.cart_url }}" data-cart-open aria-label="{{ 'header.open_cart' | t }}">
-        {% render 'icon', name: 'cart' %}
         <span class="label">{{ 'header.cart' | t }}</span>
         <span class="cart-count" data-cart-count aria-live="polite">{{ cart.item_count }}</span>
       </a>
     </div>
   </div>
 
-  {%- if section.settings.show_search -%}
-    <div class="header-search" id="headerSearch" hidden>
-      <div class="container">
-        <form class="search-form" action="{{ routes.search_url }}" method="get" role="search" data-predictive-search>
-          <span class="search-form-icon">{% render 'icon', name: 'search' %}</span>
-          <input type="search" name="q" value="{{ search.terms | escape }}" placeholder="{% if section.settings.search_placeholder != blank %}{{ section.settings.search_placeholder | escape }}{% else %}{{ 'search.placeholder' | t }}{% endif %}"
-                 aria-label="{{ 'search.placeholder' | t }}" autocomplete="off" data-search-input>
-          <input type="hidden" name="options[prefix]" value="last">
-          <button class="btn btn-primary" type="submit">{{ 'search.submit' | t }}</button>
-          <button class="icon-btn" type="button" data-search-close aria-label="{{ 'cart.close' | t }}">{% render 'icon', name: 'close' %}</button>
-          <div class="predictive-results" data-search-results hidden></div>
-        </form>
-      </div>
-    </div>
-  {%- endif -%}
-
   {%- if menu.links.size > 0 -%}
     <nav class="mobile-menu" id="mobileMenu" hidden aria-label="{{ 'header.main_nav' | t }}">
       {%- for link in menu.links -%}
         <a href="{{ link.url }}">{{ link.title }}</a>
-        {%- for child in link.links -%}<a class="sub" href="{{ child.url }}">{{ child.title }}</a>{%- endfor -%}
       {%- endfor -%}
       {%- if shop.customer_accounts_enabled -%}
-        <a class="menu-account" href="{{ account_url }}">{{ 'header.my_account' | t }}</a>
-      {%- endif -%}
-      {%- if settings.phone != blank -%}
-        <a class="menu-account" href="tel:{{ settings.phone | remove: '-' | remove: ' ' }}">☎ {{ settings.phone }}</a>
+        <a class="menu-account" href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}">{{ 'header.my_account' | t }}</a>
       {%- endif -%}
     </nav>
   {%- endif -%}
@@ -114,13 +61,8 @@
 {
   "name": "Header",
   "settings": [
-    { "type": "link_list", "id": "menu", "label": "Menu", "default": "main-menu" },
-    { "type": "checkbox", "id": "sticky", "label": "Sticky header", "default": true },
-    { "type": "checkbox", "id": "show_search", "label": "Show search", "default": true },
-    { "type": "text", "id": "search_placeholder", "label": "Search placeholder", "default": "Search water, coolers, accessories…" },
-    { "type": "checkbox", "id": "show_phone", "label": "Show phone number (wide screens)", "default": false },
-    { "type": "checkbox", "id": "show_language", "label": "Show language selector", "default": true },
-    { "type": "checkbox", "id": "show_country", "label": "Show country/currency selector", "default": true }
+    { "type": "link_list", "id": "menu", "label": "Menu", "default": "main-menu",
+      "info": "Tip: point items at #shop, #offers, #how, #delivery and #faq to scroll the home page like the Grace Spring site." }
   ]
 }
 {% endschema %}

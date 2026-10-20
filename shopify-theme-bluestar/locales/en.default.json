@@ -5,9 +5,7 @@
     "page": "Page {{ page }}",
     "pagination": "Pagination",
     "404_title": "Page not found",
-    "404_text": "The page you were looking for doesn't exist.",
-    "previous": "Previous",
-    "next": "Next"
+    "404_text": "The page you were looking for doesn't exist."
   },
   "header": {
     "main_nav": "Main navigation",
@@ -15,13 +13,10 @@
     "account": "Account",
     "my_account": "My Account",
     "cart": "Cart",
-    "open_cart": "Open cart",
-    "country": "Country/region"
+    "open_cart": "Open cart"
   },
   "footer": {
-    "rights": "All rights reserved.",
-    "language": "Language",
-    "payment": "Payment methods"
+    "rights": "All rights reserved."
   },
   "products": {
     "add_to_order": "Add to Order",
@@ -29,27 +24,12 @@
     "sold_out": "Sold out",
     "sale": "Sale",
     "decrease": "Decrease quantity",
-    "increase": "Increase quantity",
-    "share": "Share",
-    "copy_link": "Copy link",
-    "link_copied": "Link copied ✓",
-    "view_details": "View full details",
-    "placeholder": "Choose a product in the theme editor"
+    "increase": "Increase quantity"
   },
   "collections": {
     "empty": "No products yet — add products in Shopify admin and they'll appear here.",
     "all_title": "Collections",
-    "products": "products",
-    "filter": "Filter",
-    "clear": "Clear all",
-    "from": "From $",
-    "to": "To $",
-    "apply": "Apply",
-    "sort": "Sort by",
-    "count": {
-      "one": "1 product",
-      "other": "{{ count }} products"
-    }
+    "products": "products"
   },
   "cart": {
     "title": "Your Order",
@@ -88,16 +68,7 @@
     "title": "Search",
     "placeholder": "Search products",
     "submit": "Search",
-    "no_results": "No results for \"{{ terms }}\".",
-    "products": "Products",
-    "pages": "Pages & articles",
-    "no_suggestions": "No matches yet — press Enter to search.",
-    "view_all": "See all results",
-    "results_count": {
-      "one": "1 result for \"{{ terms }}\"",
-      "other": "{{ count }} results for \"{{ terms }}\""
-    },
-    "page": "Page"
+    "no_results": "No results for \"{{ terms }}\"."
   },
   "password": {
     "label": "Password",
@@ -143,13 +114,5 @@
     "set_default": "Set as default address",
     "activate": "Activate account",
     "reset": "Reset password"
-  },
-  "newsletter": {
-    "success": "Thanks for subscribing!",
-    "placeholder": "Your email address",
-    "subscribe": "Subscribe"
-  },
-  "blog": {
-    "empty": "No posts yet."
   }
 }

@@ -5,9 +5,7 @@
     "page": "Página {{ page }}",
     "pagination": "Paginación",
     "404_title": "Página no encontrada",
-    "404_text": "La página que buscas no existe.",
-    "previous": "Anterior",
-    "next": "Siguiente"
+    "404_text": "La página que buscas no existe."
   },
   "header": {
     "main_nav": "Navegación principal",
@@ -15,13 +13,10 @@
     "account": "Cuenta",
     "my_account": "Mi Cuenta",
     "cart": "Carrito",
-    "open_cart": "Abrir carrito",
-    "country": "País/región"
+    "open_cart": "Abrir carrito"
   },
   "footer": {
-    "rights": "Todos los derechos reservados.",
-    "language": "Idioma",
-    "payment": "Métodos de pago"
+    "rights": "Todos los derechos reservados."
   },
   "products": {
     "add_to_order": "Agregar al pedido",
@@ -29,27 +24,12 @@
     "sold_out": "Agotado",
     "sale": "Oferta",
     "decrease": "Disminuir cantidad",
-    "increase": "Aumentar cantidad",
-    "share": "Compartir",
-    "copy_link": "Copiar enlace",
-    "link_copied": "Enlace copiado ✓",
-    "view_details": "Ver todos los detalles",
-    "placeholder": "Elige un producto en el editor del tema"
+    "increase": "Aumentar cantidad"
   },
   "collections": {
     "empty": "Aún no hay productos.",
     "all_title": "Colecciones",
-    "products": "productos",
-    "filter": "Filtrar",
-    "clear": "Quitar todo",
-    "from": "Desde $",
-    "to": "Hasta $",
-    "apply": "Aplicar",
-    "sort": "Ordenar por",
-    "count": {
-      "one": "1 producto",
-      "other": "{{ count }} productos"
-    }
+    "products": "productos"
   },
   "cart": {
     "title": "Tu pedido",
@@ -88,16 +68,7 @@
     "title": "Buscar",
     "placeholder": "Buscar productos",
     "submit": "Buscar",
-    "no_results": "Sin resultados para \"{{ terms }}\".",
-    "products": "Productos",
-    "pages": "Páginas y artículos",
-    "no_suggestions": "Sin coincidencias — presiona Enter para buscar.",
-    "view_all": "Ver todos los resultados",
-    "results_count": {
-      "one": "1 resultado para \"{{ terms }}\"",
-      "other": "{{ count }} resultados para \"{{ terms }}\""
-    },
-    "page": "Página"
+    "no_results": "Sin resultados para \"{{ terms }}\"."
   },
   "password": {
     "label": "Contraseña",
@@ -143,13 +114,5 @@
     "set_default": "Usar como dirección predeterminada",
     "activate": "Activar cuenta",
     "reset": "Restablecer contraseña"
-  },
-  "newsletter": {
-    "success": "¡Gracias por suscribirte!",
-    "placeholder": "Tu correo electrónico",
-    "subscribe": "Suscribirse"
-  },
-  "blog": {
-    "empty": "Aún no hay artículos."
   }
 }

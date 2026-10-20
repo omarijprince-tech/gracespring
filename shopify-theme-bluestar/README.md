@@ -33,22 +33,6 @@ O con Shopify CLI: `shopify theme push --unpublished --store blue-star-pure-wate
   el encabezado. Los textos de la tienda ya están traducidos (`locales/es.json`); los textos
   de las secciones se traducen con la app Translate & Adapt.
 
-## Contenido del sitio actual (v2)
-
-El tema reproduce el sitio publicado (tema "Copy of Essentials--shailaworking") con el estilo de Grace:
-
-- **Inicio:** oferta "While supplies last" (cooler + 5 botellas gratis), "Choose your water", 2 banners,
-  "New Jersey's #1 Water Delivery Service", "Bundle deals", boletín, accesorios, presentación
-  Spring/Alkaline/Purified y el widget de reseñas de Elfsight.
-- **Order Water** (`page.json`), **About** (`page.about`), **Contact** (`page.contact`), **Privacy** (`page.privacy-policy`),
-  **Blogs** (`page.bluestar-blogs`), **producto** con bloques editables, recomendaciones y bundles, y **colección** con filtros y orden.
-- **Encabezado:** buscador con sugerencias, idioma, país, cuenta y carrito. **Pie:** logo del footer, Quick Links,
-  Helpful Links, boletín, redes y métodos de pago.
-
-Secciones disponibles en "Add section": Featured product, Product list, Image banners, Image with text,
-Slideshow with text, Newsletter, Contact info cards, Blog posts, Custom Liquid / widget, Apps, Rich text y
-las de Grace (Hero, Offers, How it works, Delivery area con ZIP, FAQ).
-
 ## Estructura
 
 - `assets/base.css`: hojas de estilo de Grace Spring (`app/globals.css`) + estilos para producto, colección, carrito y cuenta.

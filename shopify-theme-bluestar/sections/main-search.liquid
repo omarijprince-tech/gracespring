@@ -1,27 +1,18 @@
 <div class="page-head container">
-  <span class="eyebrow">{{ shop.name }}</span>
   <h1>{{ 'search.title' | t }}</h1>
-  <form class="search-form search-page-form" action="{{ routes.search_url }}" method="get" role="search">
-    <span class="search-form-icon">{% render 'icon', name: 'search' %}</span>
+  <form class="search-form" action="{{ routes.search_url }}" method="get" role="search">
     <input type="search" name="q" value="{{ search.terms | escape }}" placeholder="{{ 'search.placeholder' | t }}" aria-label="{{ 'search.placeholder' | t }}">
-    <input type="hidden" name="options[prefix]" value="last">
+    <input type="hidden" name="type" value="product">
     <button class="btn btn-primary" type="submit">{{ 'search.submit' | t }}</button>
   </form>
-  {%- if search.performed -%}<p class="article-meta" style="margin-top:12px">{{ 'search.results_count' | t: count: search.results_count, terms: search.terms }}</p>{%- endif -%}
 </div>
-<section class="section" style="padding-top:32px">
+<section class="section" style="padding-top:36px">
   <div class="container">
     {%- if search.performed -%}
       {%- paginate search.results by 12 -%}
         <div class="products-grid grid-3">
           {%- for item in search.results -%}
-            {%- case item.object_type -%}
-              {%- when 'product' -%}{% render 'product-card', product: item %}
-              {%- when 'article' -%}{% render 'article-card', article: item %}
-              {%- when 'page' -%}
-                <a class="article-card" href="{{ item.url }}"><div class="product-body"><span class="article-meta">{{ 'search.page' | t }}</span><h3>{{ item.title }}</h3>
-                  <p class="product-desc">{{ item.content | strip_html | truncatewords: 22 }}</p></div></a>
-            {%- endcase -%}
+            {%- if item.object_type == 'product' -%}{% render 'product-card', product: item %}{%- endif -%}
           {%- else -%}
             <p class="empty-state" style="grid-column:1/-1">{{ 'search.no_results' | t: terms: search.terms }}</p>
           {%- endfor -%}

@@ -1,94 +1,26 @@
-{%- paginate collection.products by section.settings.per_page -%}
 <div class="page-head container">
   <span class="eyebrow">{{ shop.name }}</span>
   <h1>{{ collection.title }}</h1>
-  {%- if collection.description != blank and section.settings.show_description -%}<div class="rte">{{ collection.description }}</div>{%- endif -%}
+  {%- if collection.description != blank -%}<div class="rte">{{ collection.description }}</div>{%- endif -%}
 </div>
-<section class="section" style="padding-top:32px">
-  <div class="container{% if section.settings.enable_filtering and collection.filters.size > 0 %} collection-layout{% endif %}">
-    {%- if section.settings.enable_filtering and collection.filters.size > 0 -%}
-      <aside class="panel filters">
-        <form id="FacetForm" data-facets>
-          {%- if collection.sort_by -%}<input type="hidden" name="sort_by" value="{{ collection.sort_by }}">{%- endif -%}
-          <div class="filters-head">
-            <h2>{% render 'icon', name: 'filter' %} {{ 'collections.filter' | t }}</h2>
-            <a href="{{ collection.url }}{% if collection.sort_by %}?sort_by={{ collection.sort_by }}{% endif %}" class="linklike">{{ 'collections.clear' | t }}</a>
-          </div>
-          {%- for filter in collection.filters -%}
-            <details class="filter-group" open>
-              <summary>{{ filter.label }}</summary>
-              {%- case filter.type -%}
-                {%- when 'price_range' -%}
-                  <div class="price-range">
-                    <div class="field"><label for="f-min">{{ 'collections.from' | t }}</label>
-                      <input id="f-min" type="number" name="{{ filter.min_value.param_name }}" min="0" max="{{ filter.range_max | money_without_currency | remove: ',' }}"
-                        placeholder="0" value="{% if filter.min_value.value %}{{ filter.min_value.value | money_without_currency | remove: ',' }}{% endif %}"></div>
-                    <div class="field"><label for="f-max">{{ 'collections.to' | t }}</label>
-                      <input id="f-max" type="number" name="{{ filter.max_value.param_name }}" min="0" max="{{ filter.range_max | money_without_currency | remove: ',' }}"
-                        placeholder="{{ filter.range_max | money_without_currency | remove: ',' }}" value="{% if filter.max_value.value %}{{ filter.max_value.value | money_without_currency | remove: ',' }}{% endif %}"></div>
-                  </div>
-                {%- else -%}
-                  <ul class="filter-values">
-                    {%- for value in filter.values -%}
-                      <li><label class="{% if value.count == 0 and value.active == false %}disabled{% endif %}">
-                        <input type="checkbox" name="{{ value.param_name }}" value="{{ value.value }}"{% if value.active %} checked{% endif %}{% if value.count == 0 and value.active == false %} disabled{% endif %}>
-                        {{ value.label }} <span class="count">({{ value.count }})</span>
-                      </label></li>
-                    {%- endfor -%}
-                  </ul>
-              {%- endcase -%}
-            </details>
-          {%- endfor -%}
-          <noscript><button class="btn btn-primary btn-block" type="submit">{{ 'collections.apply' | t }}</button></noscript>
-        </form>
-      </aside>
-    {%- endif -%}
-
-    <div>
-      <div class="collection-toolbar">
-        <span class="article-meta">{{ 'collections.count' | t: count: collection.products_count }}</span>
-        {%- if section.settings.enable_sorting -%}
-          <form data-sort>
-            {%- for filter in collection.filters -%}
-              {%- for value in filter.active_values -%}<input type="hidden" name="{{ value.param_name }}" value="{{ value.value }}">{%- endfor -%}
-              {%- if filter.type == 'price_range' -%}
-                {%- if filter.min_value.value -%}<input type="hidden" name="{{ filter.min_value.param_name }}" value="{{ filter.min_value.value | money_without_currency | remove: ',' }}">{%- endif -%}
-                {%- if filter.max_value.value -%}<input type="hidden" name="{{ filter.max_value.param_name }}" value="{{ filter.max_value.value | money_without_currency | remove: ',' }}">{%- endif -%}
-              {%- endif -%}
-            {%- endfor -%}
-            <label for="SortBy" class="sr-only">{{ 'collections.sort' | t }}</label>
-            {%- assign current_sort = collection.sort_by | default: collection.default_sort_by -%}
-            <select id="SortBy" name="sort_by" class="country-select" onchange="this.form.submit()">
-              {%- for option in collection.sort_options -%}
-                <option value="{{ option.value }}"{% if option.value == current_sort %} selected{% endif %}>{{ option.name }}</option>
-              {%- endfor -%}
-            </select>
-          </form>
-        {%- endif -%}
-      </div>
-      <div class="products-grid grid-{{ section.settings.columns }}">
+<section class="section" style="padding-top:36px">
+  <div class="container">
+    {%- paginate collection.products by section.settings.per_page -%}
+      <div class="products-grid grid-3">
         {%- for product in collection.products -%}
-          {% render 'product-card', product: product, compact: section.settings.compact %}
+          {% render 'product-card', product: product %}
         {%- else -%}
           <p class="empty-state" style="grid-column:1/-1">{{ 'collections.empty' | t }}</p>
         {%- endfor -%}
       </div>
       {% render 'pagination', paginate: paginate %}
-    </div>
+    {%- endpaginate -%}
   </div>
 </section>
-{%- endpaginate -%}
 
 {% schema %}
 {
   "name": "Collection",
-  "settings": [
-    { "type": "checkbox", "id": "show_description", "label": "Show collection description", "default": true },
-    { "type": "range", "id": "per_page", "label": "Products per page", "min": 6, "max": 36, "step": 3, "default": 12 },
-    { "type": "select", "id": "columns", "label": "Products per row", "default": "3", "options": [ { "value": "2", "label": "2" }, { "value": "3", "label": "3" }, { "value": "4", "label": "4" } ] },
-    { "type": "checkbox", "id": "compact", "label": "Compact cards (no description/quantity)", "default": false },
-    { "type": "checkbox", "id": "enable_filtering", "label": "Enable filters", "default": true, "info": "Choose filters in the Search & Discovery app." },
-    { "type": "checkbox", "id": "enable_sorting", "label": "Enable sorting", "default": true }
-  ]
+  "settings": [ { "type": "range", "id": "per_page", "label": "Products per page", "min": 6, "max": 36, "step": 3, "default": 12 } ]
 }
 {% endschema %}

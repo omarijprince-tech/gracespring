@@ -30,7 +30,7 @@
         "max": 120,
         "step": 4,
         "unit": "px",
-        "default": 52
+        "default": 60
       },
       {
         "type": "checkbox",
@@ -60,19 +60,7 @@
         "type": "text",
         "id": "phone",
         "label": "Phone number",
-        "default": "973-742-0435"
-      },
-      {
-        "type": "text",
-        "id": "email",
-        "label": "Email",
-        "default": "bluealkaiddistributor@gmail.com"
-      },
-      {
-        "type": "text",
-        "id": "address",
-        "label": "Address",
-        "default": "527 E 39th St, Paterson, NJ 07504"
+        "default": "973-742-0216"
       }
     ]
   },
@@ -81,31 +69,31 @@
     "settings": [
       {
         "type": "paragraph",
-        "content": "Grace Spring palette structure with the Blue Star brand blues (#2280cc / #102252) from the current site."
+        "content": "Same structure as the Grace Spring palette. Defaults are the Blue Star blues."
       },
       {
         "type": "color",
         "id": "color_navy_900",
         "label": "Darkest (footer)",
-        "default": "#0b1a3d"
+        "default": "#0f2747"
       },
       {
         "type": "color",
         "id": "color_navy",
         "label": "Brand dark (headings, dark sections)",
-        "default": "#102252"
+        "default": "#1b3f73"
       },
       {
         "type": "color",
         "id": "color_blue",
         "label": "Primary (buttons, links)",
-        "default": "#2280cc"
+        "default": "#2d7dd2"
       },
       {
         "type": "color",
         "id": "color_blue_600",
         "label": "Primary hover",
-        "default": "#1b6aab"
+        "default": "#2468b3"
       },
       {
         "type": "color",
@@ -186,18 +174,7 @@
       {
         "type": "text",
         "id": "social_instagram",
-        "label": "Instagram URL or username",
-        "default": "bluestarpurewater"
-      },
-      {
-        "type": "text",
-        "id": "social_tiktok",
-        "label": "TikTok URL"
-      },
-      {
-        "type": "text",
-        "id": "social_youtube",
-        "label": "YouTube URL"
+        "label": "Instagram URL"
       }
     ]
   }

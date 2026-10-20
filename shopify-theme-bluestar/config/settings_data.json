@@ -1,17 +1,8 @@
 {
   "current": {
     "logo": "shopify://shop_images/newlogo_cb2effd4-735a-47bc-b23d-0217007edb3d.png",
-    "logo_footer": "shopify://shop_images/footerlogo_3fc6e416-f1b3-40ef-9538-d6b230012e33.png",
     "favicon": "shopify://shop_images/logo-drop.png",
-    "logo_height": 52,
-    "phone": "973-742-0435",
-    "email": "bluealkaiddistributor@gmail.com",
-    "address": "527 E 39th St, Paterson, NJ 07504",
-    "color_navy_900": "#0b1a3d",
-    "color_navy": "#102252",
-    "color_blue": "#2280cc",
-    "color_blue_600": "#1b6aab",
-    "social_instagram": "bluestarpurewater"
+    "logo_height": 60
   },
   "presets": {
     "Default": {}
