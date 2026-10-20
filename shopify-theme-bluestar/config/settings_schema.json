@@ -10,44 +10,172 @@
   {
     "name": "Brand",
     "settings": [
-      { "type": "image_picker", "id": "logo", "label": "Logo mark", "info": "Square mark shown next to the brand name." },
-      { "type": "range", "id": "logo_width", "label": "Logo size", "min": 32, "max": 96, "step": 4, "unit": "px", "default": 44 },
-      { "type": "text", "id": "brand_name", "label": "Brand name", "default": "BLUE STAR" },
-      { "type": "text", "id": "brand_sub", "label": "Brand tagline", "default": "Pure Water" },
-      { "type": "image_picker", "id": "favicon", "label": "Favicon" },
-      { "type": "text", "id": "phone", "label": "Phone number", "default": "973-742-0216" }
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo",
+        "info": "Choose the same logo the previous theme used (it's already in your Files)."
+      },
+      {
+        "type": "image_picker",
+        "id": "logo_footer",
+        "label": "Footer logo (optional)",
+        "info": "Light version for the dark footer. Falls back to the main logo."
+      },
+      {
+        "type": "range",
+        "id": "logo_height",
+        "label": "Logo height",
+        "min": 32,
+        "max": 120,
+        "step": 4,
+        "unit": "px",
+        "default": 56
+      },
+      {
+        "type": "checkbox",
+        "id": "logo_show_text",
+        "label": "Show brand name next to the logo",
+        "default": false,
+        "info": "Leave off if the logo already includes the name."
+      },
+      {
+        "type": "text",
+        "id": "brand_name",
+        "label": "Brand name",
+        "default": "BLUE STAR"
+      },
+      {
+        "type": "text",
+        "id": "brand_sub",
+        "label": "Brand tagline",
+        "default": "Pure Water"
+      },
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "Favicon"
+      },
+      {
+        "type": "text",
+        "id": "phone",
+        "label": "Phone number",
+        "default": "973-742-0216"
+      }
     ]
   },
   {
     "name": "Colors",
     "settings": [
-      { "type": "paragraph", "content": "Same structure as the Grace Spring palette. Defaults are the Blue Star blues." },
-      { "type": "color", "id": "color_navy_900", "label": "Darkest (footer)", "default": "#0f2747" },
-      { "type": "color", "id": "color_navy", "label": "Brand dark (headings, dark sections)", "default": "#1b3f73" },
-      { "type": "color", "id": "color_blue", "label": "Primary (buttons, links)", "default": "#2d7dd2" },
-      { "type": "color", "id": "color_blue_600", "label": "Primary hover", "default": "#2468b3" },
-      { "type": "color", "id": "color_sky", "label": "Light accent (focus ring)", "default": "#8cc4ee" },
-      { "type": "color", "id": "color_sky_100", "label": "Pale accent on dark", "default": "#d6eaf8" },
-      { "type": "color", "id": "color_pale", "label": "Pale surfaces", "default": "#eaf4fc" },
-      { "type": "color", "id": "color_bg", "label": "Page background", "default": "#f6fafd" },
-      { "type": "color", "id": "color_ink", "label": "Text", "default": "#13233a" },
-      { "type": "color", "id": "color_muted", "label": "Muted text", "default": "#5a6b80" },
-      { "type": "color", "id": "color_line", "label": "Borders", "default": "#d9e6f2" },
-      { "type": "color", "id": "color_free", "label": "Gold accent (badges, cart count)", "default": "#f5a623" }
+      {
+        "type": "paragraph",
+        "content": "Same structure as the Grace Spring palette. Defaults are the Blue Star blues."
+      },
+      {
+        "type": "color",
+        "id": "color_navy_900",
+        "label": "Darkest (footer)",
+        "default": "#0f2747"
+      },
+      {
+        "type": "color",
+        "id": "color_navy",
+        "label": "Brand dark (headings, dark sections)",
+        "default": "#1b3f73"
+      },
+      {
+        "type": "color",
+        "id": "color_blue",
+        "label": "Primary (buttons, links)",
+        "default": "#2d7dd2"
+      },
+      {
+        "type": "color",
+        "id": "color_blue_600",
+        "label": "Primary hover",
+        "default": "#2468b3"
+      },
+      {
+        "type": "color",
+        "id": "color_sky",
+        "label": "Light accent (focus ring)",
+        "default": "#8cc4ee"
+      },
+      {
+        "type": "color",
+        "id": "color_sky_100",
+        "label": "Pale accent on dark",
+        "default": "#d6eaf8"
+      },
+      {
+        "type": "color",
+        "id": "color_pale",
+        "label": "Pale surfaces",
+        "default": "#eaf4fc"
+      },
+      {
+        "type": "color",
+        "id": "color_bg",
+        "label": "Page background",
+        "default": "#f6fafd"
+      },
+      {
+        "type": "color",
+        "id": "color_ink",
+        "label": "Text",
+        "default": "#13233a"
+      },
+      {
+        "type": "color",
+        "id": "color_muted",
+        "label": "Muted text",
+        "default": "#5a6b80"
+      },
+      {
+        "type": "color",
+        "id": "color_line",
+        "label": "Borders",
+        "default": "#d9e6f2"
+      },
+      {
+        "type": "color",
+        "id": "color_free",
+        "label": "Gold accent (badges, cart count)",
+        "default": "#f5a623"
+      }
     ]
   },
   {
     "name": "Products",
     "settings": [
-      { "type": "text", "id": "deposit_tag", "label": "Deposit product tag", "default": "deposit", "info": "Products with this tag show the deposit badge." },
-      { "type": "text", "id": "deposit_badge", "label": "Deposit badge text", "default": "+ $5 deposit" }
+      {
+        "type": "text",
+        "id": "deposit_tag",
+        "label": "Deposit product tag",
+        "default": "deposit",
+        "info": "Products with this tag show the deposit badge."
+      },
+      {
+        "type": "text",
+        "id": "deposit_badge",
+        "label": "Deposit badge text",
+        "default": "+ $5 deposit"
+      }
     ]
   },
   {
     "name": "Social media",
     "settings": [
-      { "type": "text", "id": "social_facebook", "label": "Facebook URL" },
-      { "type": "text", "id": "social_instagram", "label": "Instagram URL" }
+      {
+        "type": "text",
+        "id": "social_facebook",
+        "label": "Facebook URL"
+      },
+      {
+        "type": "text",
+        "id": "social_instagram",
+        "label": "Instagram URL"
+      }
     ]
   }
 ]
