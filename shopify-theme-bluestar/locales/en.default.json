@@ -5,7 +5,8 @@
     "page": "Page {{ page }}",
     "pagination": "Pagination",
     "404_title": "Page not found",
-    "404_text": "The page you were looking for doesn't exist."
+    "404_text": "The page you were looking for doesn't exist.",
+    "home": "Home"
   },
   "header": {
     "main_nav": "Main navigation",

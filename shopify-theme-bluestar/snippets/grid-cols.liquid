@@ -1,0 +1,10 @@
+{%- comment -%}
+  Column counts as CSS variables for .cols-grid. Params: desktop, mobile (numbers from section settings).
+  Tablets use the desktop count capped at 2.
+{%- endcomment -%}
+{%- liquid
+  assign d = desktop | default: 3
+  assign m = mobile | default: 1
+  assign t = d | at_most: 2
+-%}
+ style="--cols: {{ d }}; --cols-tablet: {{ t }}; --cols-mobile: {{ m }}"

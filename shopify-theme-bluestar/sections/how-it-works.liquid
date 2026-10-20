@@ -1,7 +1,7 @@
 <section class="section" id="{{ section.settings.anchor }}">
   <div class="container">
     {% render 'section-head', s: section.settings %}
-    <div class="steps-grid">
+    <div class="steps-grid cols-grid"{% render 'grid-cols', desktop: section.settings.columns_desktop, mobile: section.settings.columns_mobile %}>
       {%- for block in section.blocks -%}
         <div class="step-card" {{ block.shopify_attributes }}>
           <div class="step-num">{{ forloop.index }}</div>
@@ -17,17 +17,94 @@
 {
   "name": "How it works",
   "settings": [
-    { "type": "text", "id": "anchor", "label": "Anchor ID", "default": "how" },
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "How it works" },
-    { "type": "text", "id": "heading", "label": "Heading", "default": "Water delivery in three easy steps" },
-    { "type": "textarea", "id": "text", "label": "Text" }
+    {
+      "type": "text",
+      "id": "anchor",
+      "label": "Anchor ID",
+      "default": "how"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "How it works"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Water delivery in three easy steps"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "header",
+      "content": "Columns"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "label": "Columns on desktop",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "label": "Columns on mobile",
+      "default": "1",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ]
+    }
   ],
   "blocks": [
-    { "type": "step", "name": "Step", "settings": [
-      { "type": "text", "id": "title", "label": "Title", "default": "Choose your water" },
-      { "type": "textarea", "id": "text", "label": "Text", "default": "Pick your bottles and add a cooler if you need one." }
-    ] }
+    {
+      "type": "step",
+      "name": "Step",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Choose your water"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text",
+          "default": "Pick your bottles and add a cooler if you need one."
+        }
+      ]
+    }
   ],
-  "presets": [ { "name": "How it works", "blocks": [ { "type": "step" }, { "type": "step" }, { "type": "step" } ] } ]
+  "presets": [
+    {
+      "name": "How it works",
+      "blocks": [
+        {
+          "type": "step"
+        },
+        {
+          "type": "step"
+        },
+        {
+          "type": "step"
+        }
+      ]
+    }
+  ]
 }
 {% endschema %}

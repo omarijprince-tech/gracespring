@@ -22,10 +22,11 @@
           "refurbished-water-dispenser-5-bottles-free"
         ],
         "limit": 12,
-        "columns": "2",
         "white_bg": true,
         "button_label": "",
-        "button_link": ""
+        "button_link": "",
+        "columns_desktop": 2,
+        "columns_mobile": "1"
       }
     }
   },

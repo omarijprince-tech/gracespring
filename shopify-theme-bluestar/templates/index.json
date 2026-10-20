@@ -111,10 +111,11 @@
           "new-alkaid-spring-water"
         ],
         "limit": 12,
-        "columns": "3",
         "white_bg": true,
         "button_label": "Call Us",
-        "button_link": "tel:9737420435"
+        "button_link": "tel:9737420435",
+        "columns_desktop": 3,
+        "columns_mobile": "1"
       }
     },
     "bundles": {
@@ -132,10 +133,11 @@
           "small-white-water-cooler-3-bottles-free"
         ],
         "limit": 12,
-        "columns": "3",
         "white_bg": false,
         "button_label": "Call Us",
-        "button_link": "tel:9737420435"
+        "button_link": "tel:9737420435",
+        "columns_desktop": 3,
+        "columns_mobile": "1"
       }
     },
     "how": {
@@ -248,10 +250,11 @@
           "digital-pump-style-water-dispenser"
         ],
         "limit": 12,
-        "columns": "2",
         "white_bg": true,
         "button_label": "Call Us",
-        "button_link": "tel:9737420435"
+        "button_link": "tel:9737420435",
+        "columns_desktop": 2,
+        "columns_mobile": "1"
       }
     },
     "delivery": {

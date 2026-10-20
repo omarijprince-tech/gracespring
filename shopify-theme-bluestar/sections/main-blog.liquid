@@ -2,7 +2,7 @@
 <section class="section" style="padding-top:36px">
   <div class="container">
     {%- paginate blog.articles by 9 -%}
-      <div class="articles-grid">
+      <div class="articles-grid cols-grid"{% render 'grid-cols', desktop: section.settings.columns_desktop, mobile: section.settings.columns_mobile %}>
         {%- for article in blog.articles -%}
           <a class="article-card" href="{{ article.url }}">
             {%- if article.image -%}{{ article.image | image_url: width: 600 | image_tag: loading: 'lazy' }}{%- endif -%}
@@ -18,4 +18,39 @@
     {%- endpaginate -%}
   </div>
 </section>
-{% schema %}{ "name": "Blog" }{% endschema %}
+{% schema %}
+{
+  "name": "Blog",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Columns"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "label": "Columns on desktop",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "label": "Columns on mobile",
+      "default": "1",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

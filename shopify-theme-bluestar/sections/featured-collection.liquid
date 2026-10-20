@@ -3,7 +3,7 @@
 <section class="section" id="{{ section.settings.anchor }}"{% if section.settings.white_bg %} style="background:#fff"{% endif %}>
   <div class="container">
     {% render 'section-head', s: section.settings %}
-    <div class="products-grid{% if section.settings.columns == '3' %} grid-3{% endif %}">
+    <div class="products-grid cols-grid"{% render 'grid-cols', desktop: section.settings.columns_desktop, mobile: section.settings.columns_mobile %}>
       {%- if picked != blank and picked.count > 0 -%}
         {%- for product in picked limit: section.settings.limit -%}
           {% render 'product-card', product: product %}
@@ -77,22 +77,6 @@
       "default": 8
     },
     {
-      "type": "select",
-      "id": "columns",
-      "label": "Columns",
-      "default": "2",
-      "options": [
-        {
-          "value": "2",
-          "label": "2 (Grace Spring style)"
-        },
-        {
-          "value": "3",
-          "label": "3"
-        }
-      ]
-    },
-    {
       "type": "checkbox",
       "id": "white_bg",
       "label": "White background",
@@ -107,6 +91,35 @@
       "type": "url",
       "id": "button_link",
       "label": "Button link"
+    },
+    {
+      "type": "header",
+      "content": "Columns"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "label": "Columns on desktop",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 2
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "label": "Columns on mobile",
+      "default": "1",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ]
     }
   ],
   "presets": [

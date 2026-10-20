@@ -177,5 +177,95 @@
         "label": "Instagram URL"
       }
     ]
+  },
+  {
+    "name": "SEO & business info",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Used for Google rich results (structured data) and link previews. Page titles and meta descriptions are edited per product/page in Shopify admin (Search engine listing)."
+      },
+      {
+        "type": "image_picker",
+        "id": "share_image",
+        "label": "Default share image",
+        "info": "Shown when a page without its own image is shared (1200 × 630 px recommended)."
+      },
+      {
+        "type": "select",
+        "id": "business_type",
+        "label": "Business type",
+        "default": "LocalBusiness",
+        "options": [
+          {
+            "value": "LocalBusiness",
+            "label": "Local business"
+          },
+          {
+            "value": "Store",
+            "label": "Store"
+          },
+          {
+            "value": "Organization",
+            "label": "Organization (no address)"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "business_email",
+        "label": "Email",
+        "default": "bluealkaiddistributor@gmail.com"
+      },
+      {
+        "type": "text",
+        "id": "business_street",
+        "label": "Street address",
+        "default": "527 E 39th St"
+      },
+      {
+        "type": "text",
+        "id": "business_city",
+        "label": "City",
+        "default": "Paterson"
+      },
+      {
+        "type": "text",
+        "id": "business_region",
+        "label": "State",
+        "default": "NJ"
+      },
+      {
+        "type": "text",
+        "id": "business_zip",
+        "label": "ZIP code",
+        "default": "07504"
+      },
+      {
+        "type": "textarea",
+        "id": "business_hours",
+        "label": "Opening hours (one per line)",
+        "default": "Mo-Fr 08:00-18:00\nSa 08:00-16:00",
+        "info": "Format: Mo-Fr 08:00-18:00"
+      },
+      {
+        "type": "text",
+        "id": "business_areas",
+        "label": "Areas served (comma separated)",
+        "default": "New Jersey, New York"
+      },
+      {
+        "type": "text",
+        "id": "business_price_range",
+        "label": "Price range",
+        "default": "$"
+      },
+      {
+        "type": "text",
+        "id": "founding_year",
+        "label": "Founded",
+        "default": "2010"
+      }
+    ]
   }
 ]

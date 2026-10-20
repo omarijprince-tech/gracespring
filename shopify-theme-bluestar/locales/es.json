@@ -5,7 +5,8 @@
     "page": "Página {{ page }}",
     "pagination": "Paginación",
     "404_title": "Página no encontrada",
-    "404_text": "La página que buscas no existe."
+    "404_text": "La página que buscas no existe.",
+    "home": "Inicio"
   },
   "header": {
     "main_nav": "Navegación principal",

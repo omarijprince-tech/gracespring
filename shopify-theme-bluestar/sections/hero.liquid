@@ -22,7 +22,8 @@
     </div>
     <div class="hero-visual photo">
       {%- if section.settings.image != blank -%}
-        {{ section.settings.image | image_url: width: 1120 | image_tag: widths: '400, 560, 800, 1120', sizes: '(max-width: 920px) 92vw, 560px', loading: 'eager', fetchpriority: 'high' }}
+        {%- assign hero_alt = section.settings.image_alt | default: section.settings.image.alt | default: section.settings.heading -%}
+        {{ section.settings.image | image_url: width: 1120 | image_tag: widths: '400, 560, 800, 1120', sizes: '(max-width: 920px) 92vw, 560px', loading: 'eager', fetchpriority: 'high', alt: hero_alt }}
       {%- else -%}
         <img src="{{ 'hero-bottle.png' | asset_url }}" alt="{{ shop.name }}" width="522" height="982" style="max-width:300px;box-shadow:none;margin:0 auto" loading="eager">
       {%- endif -%}
@@ -34,20 +35,93 @@
 {
   "name": "Hero",
   "settings": [
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "5-gallon water delivery · NJ & NYC" },
-    { "type": "text", "id": "heading", "label": "Heading", "default": "Pure, clean water," },
-    { "type": "text", "id": "heading_accent", "label": "Heading (accent color)", "default": "delivered to your door." },
-    { "type": "textarea", "id": "text", "label": "Text", "default": "Blue Star brings 5-gallon bottles of purified, spring, and alkaline water to homes and offices across New Jersey and the five boroughs. Order online — we confirm your route and remind you every month." },
-    { "type": "text", "id": "button_label", "label": "Primary button", "default": "Start Your Order" },
-    { "type": "url", "id": "button_link", "label": "Primary button link" },
-    { "type": "text", "id": "button2_label", "label": "Secondary button", "default": "Check Your Area" },
-    { "type": "url", "id": "button2_link", "label": "Secondary button link" },
-    { "type": "image_picker", "id": "image", "label": "Image" },
-    { "type": "text", "id": "anchor", "label": "Anchor ID", "default": "top" }
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "5-gallon water delivery · NJ & NYC"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Pure, clean water,"
+    },
+    {
+      "type": "text",
+      "id": "heading_accent",
+      "label": "Heading (accent color)",
+      "default": "delivered to your door."
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Text",
+      "default": "Blue Star brings 5-gallon bottles of purified, spring, and alkaline water to homes and offices across New Jersey and the five boroughs. Order online — we confirm your route and remind you every month."
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Primary button",
+      "default": "Start Your Order"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Primary button link"
+    },
+    {
+      "type": "text",
+      "id": "button2_label",
+      "label": "Secondary button",
+      "default": "Check Your Area"
+    },
+    {
+      "type": "url",
+      "id": "button2_link",
+      "label": "Secondary button link"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "image_alt",
+      "label": "Image description (alt text)",
+      "info": "Helps Google Images and screen readers. Empty uses the image's alt text from Files."
+    },
+    {
+      "type": "text",
+      "id": "anchor",
+      "label": "Anchor ID",
+      "default": "top"
+    }
   ],
   "blocks": [
-    { "type": "chip", "name": "Chip", "settings": [ { "type": "text", "id": "text", "label": "Text", "default": "🚚 Next-day local delivery" } ] }
+    {
+      "type": "chip",
+      "name": "Chip",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "🚚 Next-day local delivery"
+        }
+      ]
+    }
   ],
-  "presets": [ { "name": "Hero", "blocks": [ { "type": "chip" } ] } ]
+  "presets": [
+    {
+      "name": "Hero",
+      "blocks": [
+        {
+          "type": "chip"
+        }
+      ]
+    }
+  ]
 }
 {% endschema %}

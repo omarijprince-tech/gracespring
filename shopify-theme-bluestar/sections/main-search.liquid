@@ -10,7 +10,7 @@
   <div class="container">
     {%- if search.performed -%}
       {%- paginate search.results by 12 -%}
-        <div class="products-grid grid-3">
+        <div class="products-grid cols-grid"{% render 'grid-cols', desktop: section.settings.columns_desktop, mobile: section.settings.columns_mobile %}>
           {%- for item in search.results -%}
             {%- if item.object_type == 'product' -%}
               {% render 'product-card', product: item %}
@@ -29,4 +29,39 @@
     {%- endif -%}
   </div>
 </section>
-{% schema %}{ "name": "Search" }{% endschema %}
+{% schema %}
+{
+  "name": "Search",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Columns"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "label": "Columns on desktop",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "label": "Columns on mobile",
+      "default": "1",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
