@@ -20,7 +20,7 @@
         "type": "image_picker",
         "id": "logo_footer",
         "label": "Footer logo (optional)",
-        "info": "Light version for the dark footer. Falls back to the main logo."
+        "info": "Light version for the dark footer. Without one, the footer shows the brand name as text."
       },
       {
         "type": "range",
@@ -30,7 +30,7 @@
         "max": 120,
         "step": 4,
         "unit": "px",
-        "default": 56
+        "default": 60
       },
       {
         "type": "checkbox",

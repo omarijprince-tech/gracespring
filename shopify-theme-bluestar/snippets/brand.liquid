@@ -4,7 +4,11 @@
 {%- endcomment -%}
 {%- liquid
   assign logo = settings.logo
-  if on_dark and settings.logo_footer != blank
+  if on_dark
+    comment
+      The main logo may be dark-on-light, so the dark footer only shows a logo
+      when a light footer version is set; otherwise it falls back to the text wordmark.
+    endcomment
     assign logo = settings.logo_footer
   endif
   assign show_text = true

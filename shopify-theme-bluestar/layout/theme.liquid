@@ -53,6 +53,8 @@
         --font-body: "Inter", "Segoe UI", system-ui, sans-serif;
         --logo-h: {{ settings.logo_height }}px;
       }
+      /* Store logo keeps its own proportions (overrides the square .brand img rule). */
+      .brand img.brand-logo, .footer-brand img.brand-logo { width: auto; height: auto; max-height: var(--logo-h, 56px); max-width: min(340px, 62vw); object-fit: contain; }
     {%- endstyle -%}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}

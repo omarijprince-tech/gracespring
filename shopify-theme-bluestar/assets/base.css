@@ -534,7 +534,6 @@ a.rating-pill:hover { background: var(--sky-100); }
    ============================================================ */
 .cart-btn { text-decoration: none; }
 .cart-btn svg { width: 18px; height: 18px; }
-.brand img.brand-logo, .footer-brand img.brand-logo { width: auto; height: auto; max-height: var(--logo-h, 56px); max-width: min(240px, 55vw); object-fit: contain; }
 .header-actions .lang-toggle { text-decoration: none; }
 .localization-form { display: inline; }
 .icon-btn { display: inline-flex; align-items: center; justify-content: center; }
