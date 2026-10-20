@@ -87,13 +87,13 @@
         "type": "color",
         "id": "color_blue",
         "label": "Primary (buttons, links)",
-        "default": "#2d7dd2"
+        "default": "#1f76bf"
       },
       {
         "type": "color",
         "id": "color_blue_600",
         "label": "Primary hover",
-        "default": "#2468b3"
+        "default": "#1b6aab"
       },
       {
         "type": "color",

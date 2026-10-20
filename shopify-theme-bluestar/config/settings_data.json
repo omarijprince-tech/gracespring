@@ -1,10 +1,25 @@
 {
   "current": {
     "logo": "shopify://shop_images/newlogo_cb2effd4-735a-47bc-b23d-0217007edb3d.png",
-    "favicon": "shopify://shop_images/logo-drop.png",
     "logo_height": 60,
+    "favicon": "shopify://shop_images/logo-drop.png",
     "phone": "973-742-0435",
-    "social_instagram": "https://www.instagram.com/bluestarpurewater/"
+    "social_instagram": "https://www.instagram.com/bluestarpurewater/",
+    "content_for_index": [],
+    "blocks": {
+      "5543792312086422108": {
+        "type": "shopify://apps/marketing-support-on-whatsapp/blocks/widget/d56220c8-e303-4e59-a70a-59dd55affd80",
+        "disabled": true,
+        "settings": {}
+      },
+      "5028733920296764920": {
+        "type": "shopify://apps/poptin-exit-popup-email-pop-up/blocks/poptin/182272aa-99b0-4fe3-a6ce-2aa49aed1d90",
+        "disabled": true,
+        "settings": {}
+      }
+    },
+    "color_blue": "#1f76bf",
+    "color_blue_600": "#1b6aab"
   },
   "presets": {
     "Default": {}

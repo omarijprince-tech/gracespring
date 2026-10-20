@@ -6,8 +6,8 @@
 |---|---|---|---|
 | `--navy-900` | color_navy_900 | #0f2747 | footer, darkest surfaces |
 | `--navy` | color_navy | #1b3f73 | headings, dark sections (delivery band), cart button |
-| `--blue` | color_blue | #2d7dd2 (brand #2280cc) | primary buttons, links, accents |
-| `--blue-600` | color_blue_600 | #2468b3 | hover |
+| `--blue` | color_blue | #1f76bf | primary buttons, links, accents (4.8:1 on white) |
+| `--blue-600` | color_blue_600 | #1b6aab | hover |
 | `--sky` / `--sky-100` | color_sky / color_sky_100 | #8cc4ee / #d6eaf8 | focus ring, text on dark |
 | `--pale` | color_pale | #eaf4fc | soft surfaces, chips, media backgrounds |
 | `--bg` | color_bg | #f6fafd | page background |
@@ -43,6 +43,6 @@ Header: logo, menu, search (predictive), language toggle, account, cart. Footer:
 
 ## Known findings (audit, Oct 2026)
 
-- Primary blue `#2d7dd2` (and brand `#2280cc`) on white is 4.2:1 — below 4.5:1 for normal text/buttons.
-  `#1f76bf` (4.8:1) or `#1d72b8` (5.1:1) keeps the same hue and passes. Change only with the owner's OK.
-- "New Jersey's #1" banner: "I need New Bottles" dials the phone; label or link should match.
+- Fixed: primary blue is now `#1f76bf` (4.8:1 on white; was `#2d7dd2`, 4.2:1) with hover `#1b6aab`.
+  `#2280cc` stays only as a decorative wave color — don't use it for text or buttons.
+- Fixed: "I need New Bottles" now links to `/pages/get-bottles#new-bottles`.

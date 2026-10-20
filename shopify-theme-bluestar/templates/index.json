@@ -386,7 +386,7 @@
         "button_label": "Refill my Water",
         "button_link": "shopify://pages/get-bottles",
         "button2_label": "I need New Bottles",
-        "button2_link": "tel:9737420435",
+        "button2_link": "/pages/get-bottles#new-bottles",
         "image": "shopify://shop_images/heart_0ea11101-5b90-4a6d-afdd-8646445b2c8d.png",
         "anchor": "about",
         "heading_tag": "h2",

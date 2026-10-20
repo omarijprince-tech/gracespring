@@ -25,7 +25,7 @@ The theme lives in `shopify-theme-bluestar/` and is the Grace Spring design adap
   section/block/theme setting with a sensible default. Grids get `columns_desktop` + `columns_mobile`
   (via `snippets/grid-cols.liquid`). No hard-coded copy in Liquid; UI strings go to `locales/*.json` (EN + ES).
 - **Prices come from products**, never typed into copy (the bundle is $288 / was $388; old site copy said $99/$100).
-- **Brand blues**: primary `#2280cc`, dark navy `#102252`/`#1b3f73` family, pale `#eaf4fc`; gold `#f5a623` only for
+- **Brand blues**: primary `#1f76bf` (accessible; `#2280cc` only decorative), dark navy `#102252`/`#1b3f73` family, pale `#eaf4fc`; gold `#f5a623` only for
   badges/offers. Fonts: Poppins (headings) + Inter (body). Rounded cards (14px), pill buttons, soft shadows.
 - **One H1 per page.** Extra banners use `heading_tag: h2`.
 - **Accessibility**: text contrast ≥ 4.5:1 (3:1 for ≥24px bold headings), visible focus, labels on icon buttons,
