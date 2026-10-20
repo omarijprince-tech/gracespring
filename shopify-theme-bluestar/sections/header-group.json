@@ -8,7 +8,8 @@
         "highlight": "MEGA SALE:",
         "text": "Water cooler + 5 purified bottles FREE + 1 bottle stand FREE · Se Habla Español · 973-742-0435",
         "link": "shopify://products/refurbished-water-dispenser-5-bottles-free"
-      }
+      },
+      "disabled": true
     },
     "header": {
       "type": "header",

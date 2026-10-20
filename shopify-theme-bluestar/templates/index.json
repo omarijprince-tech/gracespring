@@ -4,37 +4,49 @@
       "type": "hero",
       "settings": {
         "eyebrow": "Mega sale · while supplies last",
-        "heading": "Water Cooler + 5 Purified Bottles",
-        "heading_accent": "FREE + 1 bottle stand.",
-        "text": "Get a hot & cold water cooler with 5 purified 5-gallon bottles and a bottle stand included — delivered right to you in New Jersey & New York. Questions? Call us 973-742-0435.",
+        "heading": "Water Cooler",
+        "heading_accent": "+ 5 Purified Bottles & 1 bottle stand FREE.",
+        "text": "Delivered to NJ & NY",
         "product": "refurbished-water-dispenser-5-bottles-free",
         "show_price": true,
         "badge": "MEGA SALE",
         "button_label": "Claim the Offer",
         "button_link": "",
-        "button2_label": "Call Us",
+        "button2_label": "More Products",
         "button2_link": "tel:9737420435",
         "heading_tag": "h1",
-        "anchor": "top"
+        "anchor": "top",
+        "background_style": "waves",
+        "wave_top": "#f2f9ff",
+        "wave_bottom": "#cfe8fb",
+        "wave_1": "#9fd0f5",
+        "wave_2": "#4aa3e6",
+        "wave_3": "#2280cc",
+        "wave_height": 35,
+        "waves_animate": true,
+        "image_alt": ""
       },
       "blocks": {
         "chip_1": {
           "type": "chip",
           "settings": {
             "text": "🎁 5 bottles + stand FREE"
-          }
+          },
+          "disabled": true
         },
         "chip_2": {
           "type": "chip",
           "settings": {
             "text": "🚚 Delivered to NJ & NY"
-          }
+          },
+          "disabled": true
         },
         "chip_3": {
           "type": "chip",
           "settings": {
             "text": "🗣️ Se Habla Español"
-          }
+          },
+          "disabled": true
         }
       },
       "block_order": [
@@ -96,7 +108,8 @@
         "offer_1",
         "offer_2",
         "offer_3"
-      ]
+      ],
+      "disabled": true
     },
     "shop": {
       "type": "featured-collection",
@@ -271,7 +284,8 @@
         "zip_prefixes": "070-089,100-104,110-116",
         "zip_note": "Not sure about your area? Call 973-742-0435 — Se Habla Español.",
         "list_heading": "What to expect",
-        "points": "Delivery to New Jersey\nDelivery to New York\nRefills and brand-new 5-gallon bottles\nWater coolers, bottle stands & dispensers\nM–F 8am – 6pm · Sat 8am – 4pm"
+        "points": "Delivery to New Jersey\nDelivery to New York\nRefills and brand-new 5-gallon bottles\nWater coolers, bottle stands & dispensers\nM–F 8am – 6pm · Sat 8am – 4pm",
+        "columns_desktop": "2"
       }
     },
     "newsletter": {
@@ -375,7 +389,11 @@
         "button2_link": "tel:9737420435",
         "image": "shopify://shop_images/heart_0ea11101-5b90-4a6d-afdd-8646445b2c8d.png",
         "anchor": "about",
-        "heading_tag": "h2"
+        "heading_tag": "h2",
+        "product": "",
+        "show_price": true,
+        "badge": "MEGA SALE",
+        "image_alt": ""
       },
       "blocks": {
         "chip_1": {
