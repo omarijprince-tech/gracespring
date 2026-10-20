@@ -1,0 +1,48 @@
+# Blue Star design system (theme: shopify-theme-bluestar)
+
+## Tokens (theme settings → CSS variables in layout/theme.liquid)
+
+| Token | Setting | Default | Use |
+|---|---|---|---|
+| `--navy-900` | color_navy_900 | #0f2747 | footer, darkest surfaces |
+| `--navy` | color_navy | #1b3f73 | headings, dark sections (delivery band), cart button |
+| `--blue` | color_blue | #2d7dd2 (brand #2280cc) | primary buttons, links, accents |
+| `--blue-600` | color_blue_600 | #2468b3 | hover |
+| `--sky` / `--sky-100` | color_sky / color_sky_100 | #8cc4ee / #d6eaf8 | focus ring, text on dark |
+| `--pale` | color_pale | #eaf4fc | soft surfaces, chips, media backgrounds |
+| `--bg` | color_bg | #f6fafd | page background |
+| `--ink` / `--muted` | color_ink / color_muted | #13233a / #5a6b80 | body text / secondary text |
+| `--line` | color_line | #d9e6f2 | borders |
+| `--free` | color_free | #f5a623 | gold badges (MEGA SALE), cart count |
+
+Radius 14px (cards) / 9px (inputs) / 999px (buttons, chips). Shadows: `--shadow`, `--shadow-sm`.
+Type: Poppins 600/700 headings, Inter 400–700 body, 16px base, 1.6 line-height.
+Hero titles clamp(2rem, 4.4vw, 3.1rem); section titles clamp(1.6rem, 3vw, 2.2rem).
+
+## Components (classes in assets/base.css)
+
+`.btn .btn-primary/.btn-outline/.btn-light`, `.chip`, `.eyebrow`, `.section-head`, `.offer-card`,
+`.product-card` (`snippets/product-card.liquid`), `.step-card`, `.delivery-card`, `.panel`, `.qty-stepper`,
+`.price-row .price-now/.price-was/.price-tag`, cart drawer (`snippets/cart-drawer*.liquid`).
+Grids: add `cols-grid` + `{% render 'grid-cols', desktop:, mobile: %}`.
+
+## Sections inventory
+
+hero (product promo, live price, badge, backgrounds: gradient / blue waves / image, H1/H2), offers,
+featured-collection (hand-picked products, columns), water-cards, how-it-works, delivery (ZIP checker),
+newsletter, faq (+ FAQ JSON-LD), custom-liquid (Elfsight reviews), rich-text, main-* page sections.
+Header: logo, menu, search (predictive), language toggle, account, cart. Footer: menu columns.
+
+## Content rules
+
+- Facts must come from the store or the owner: hours M–F 8–6, Sat 8–4; phone 973-742-0435;
+  email bluealkaiddistributor@gmail.com; 527 E 39th St, Paterson, NJ 07504; licensed by NJ DOH; since 2010.
+- Product names: Re-Fill (customer's own bottles) vs New Bottle; ALKAID is the alkaline brand.
+- No invented prices, guarantees or delivery times. Ask the owner when unsure.
+- Keep CTAs short and action-first: "Claim the Offer", "Order Water", "Call Us".
+
+## Known findings (audit, Oct 2026)
+
+- Primary blue `#2d7dd2` (and brand `#2280cc`) on white is 4.2:1 — below 4.5:1 for normal text/buttons.
+  `#1f76bf` (4.8:1) or `#1d72b8` (5.1:1) keeps the same hue and passes. Change only with the owner's OK.
+- "New Jersey's #1" banner: "I need New Bottles" dials the phone; label or link should match.
