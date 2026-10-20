@@ -49,3 +49,14 @@ O con Shopify CLI: `shopify theme push --unpublished --store blue-star-pure-wate
 - `sections/`: `hero`, `offers`, `featured-collection`, `how-it-works`, `delivery`, `faq`, `rich-text`
   y las secciones `main-*` de cada página.
 - `templates/index.json`: página de inicio con el mismo orden y los mismos textos que Grace Spring, adaptados a Blue Star.
+
+## Pendiente para el final: SEO en los datos de la tienda
+
+Cambian lo que se ve en la tienda publicada; se aplican al final, con la lista revisada antes.
+
+1. Texto alternativo en todas las fotos de productos (hoy ninguna lo tiene).
+2. Título SEO (~60 caracteres) y descripción (~155) únicos para cada producto; faltan en los 3 estantes y
+   varios títulos; Re-Fill y New Bottle comparten descripción; la mayoría pasa de 160 caracteres.
+3. Corregir la oferta del cooler: el título SEO dice "$189 new" y la descripción "refurbished $99".
+4. Descripción SEO para About, Contact, Order Water y Privacy.
+5. Fuera del tema: Google Business Profile, sitemap en Search Console, páginas por zona y blog.
