@@ -1,9 +1,12 @@
 <section class="section"{% if section.settings.white_bg %} style="background:#fff"{% endif %}>
   <div class="container">
-    {% render 'section-head', s: section.settings %}
+    {% render 'section-head', s: section.settings, tag: section.settings.heading_tag %}
     {%- if section.settings.body != blank -%}<div class="rte page-content" style="padding:0">{{ section.settings.body }}</div>{%- endif -%}
-    {%- if section.settings.button_label != blank -%}
-      <p style="text-align:center;margin-top:24px"><a class="btn btn-primary" href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a></p>
+    {%- if section.settings.button_label != blank or section.settings.button2_label != blank -%}
+      <p class="hero-ctas" style="justify-content:center;margin-top:24px">
+        {%- if section.settings.button_label != blank -%}<a class="btn btn-primary" href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a>{%- endif -%}
+        {%- if section.settings.button2_label != blank -%}<a class="btn btn-outline" href="{{ section.settings.button2_link }}">{{ section.settings.button2_label }}</a>{%- endif -%}
+      </p>
     {%- endif -%}
   </div>
 </section>
@@ -12,14 +15,74 @@
 {
   "name": "Rich text",
   "settings": [
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
-    { "type": "text", "id": "heading", "label": "Heading", "default": "Talk about your brand" },
-    { "type": "textarea", "id": "text", "label": "Subheading" },
-    { "type": "richtext", "id": "body", "label": "Body" },
-    { "type": "text", "id": "button_label", "label": "Button" },
-    { "type": "url", "id": "button_link", "label": "Button link" },
-    { "type": "checkbox", "id": "white_bg", "label": "White background", "default": false }
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Talk about your brand"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Heading level",
+      "default": "h2",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1 – page title (use once per page)"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        }
+      ]
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Subheading"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Body"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "text",
+      "id": "button2_label",
+      "label": "Second button"
+    },
+    {
+      "type": "url",
+      "id": "button2_link",
+      "label": "Second button link"
+    },
+    {
+      "type": "checkbox",
+      "id": "white_bg",
+      "label": "White background",
+      "default": false
+    }
   ],
-  "presets": [ { "name": "Rich text" } ]
+  "presets": [
+    {
+      "name": "Rich text"
+    }
+  ]
 }
 {% endschema %}

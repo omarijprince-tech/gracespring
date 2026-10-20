@@ -22,6 +22,12 @@
   <aside class="panel contact-aside">
     <h2>{{ section.settings.aside_heading }}</h2>
     <div class="rte contact-links">{{ section.settings.aside }}</div>
+    {%- if section.settings.aside_button_label != blank or section.settings.aside_button2_label != blank -%}
+      <div class="hero-ctas contact-actions">
+        {%- if section.settings.aside_button_label != blank -%}<a class="btn btn-primary" href="{{ section.settings.aside_button_link }}">{{ section.settings.aside_button_label }}</a>{%- endif -%}
+        {%- if section.settings.aside_button2_label != blank -%}<a class="btn btn-outline" href="{{ section.settings.aside_button2_link }}">{{ section.settings.aside_button2_label }}</a>{%- endif -%}
+      </div>
+    {%- endif -%}
   </aside>
 </div>
 {% schema %}
@@ -42,8 +48,8 @@
     {
       "type": "text",
       "id": "button_label",
-      "label": "Button (when the form is hidden)",
-      "default": "Call Us"
+      "label": "Button under the intro (when the form is hidden)",
+      "default": ""
     },
     {
       "type": "url",
@@ -61,6 +67,28 @@
       "id": "aside",
       "label": "Sidebar",
       "default": "<p>Phone: <a href=\"tel:9737420435\">973-742-0435</a></p><p>527 E 39th St, Paterson, NJ 07504</p><p>Se Habla Español</p>"
+    },
+    {
+      "type": "text",
+      "id": "aside_button_label",
+      "label": "Sidebar button",
+      "default": "Call Us"
+    },
+    {
+      "type": "url",
+      "id": "aside_button_link",
+      "label": "Sidebar button link"
+    },
+    {
+      "type": "text",
+      "id": "aside_button2_label",
+      "label": "Sidebar second button",
+      "default": "Email Us"
+    },
+    {
+      "type": "url",
+      "id": "aside_button2_link",
+      "label": "Sidebar second button link"
     }
   ]
 }

@@ -3,7 +3,19 @@
 <section class="section" id="{{ section.settings.anchor }}"{% if section.settings.white_bg %} style="background:#fff"{% endif %}>
   <div class="container">
     {% render 'section-head', s: section.settings %}
-    <div class="products-grid cols-grid"{% render 'grid-cols', desktop: section.settings.columns_desktop, mobile: section.settings.columns_mobile %}>
+    {%- liquid
+      if picked != blank and picked.count > 0
+        assign shown = picked.count
+      elsif collection != blank and collection.products_count > 0
+        assign shown = collection.products_count
+      else
+        assign shown = collections.all.products_count
+      endif
+      assign shown = shown | at_most: section.settings.limit | at_least: 1
+      assign cols_d = section.settings.columns_desktop | at_most: shown
+      assign cols_m = section.settings.columns_mobile | plus: 0 | at_most: shown
+    -%}
+    <div class="products-grid cols-grid"{% render 'grid-cols', desktop: cols_d, mobile: cols_m %}>
       {%- if picked != blank and picked.count > 0 -%}
         {%- for product in picked limit: section.settings.limit -%}
           {% render 'product-card', product: product %}

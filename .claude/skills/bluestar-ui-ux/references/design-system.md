@@ -28,9 +28,10 @@ Grids: add `cols-grid` + `{% render 'grid-cols', desktop:, mobile: %}`.
 
 ## Sections inventory
 
-hero (product promo, live price, badge, backgrounds: gradient / blue waves / image, H1/H2), offers,
+hero (product promo, live price, badge, backgrounds: gradient / blue waves / image, H1/H2), trust-stats, offers,
 featured-collection (hand-picked products, columns), water-cards, how-it-works, delivery (ZIP checker),
-newsletter, faq (+ FAQ JSON-LD), custom-liquid (Elfsight reviews), rich-text, main-* page sections.
+newsletter, faq (+ FAQ JSON-LD), custom-liquid (Elfsight reviews), rich-text (H1/H2, two buttons), main-* page sections
+(main-404: search + two buttons; main-contact: buttons inside the contact card).
 Header: logo, menu, search (predictive), language toggle, account, cart. Footer: menu columns.
 
 ## Content rules
@@ -46,3 +47,7 @@ Header: logo, menu, search (predictive), language toggle, account, cart. Footer:
 - Fixed: primary blue is now `#1f76bf` (4.8:1 on white; was `#2d7dd2`, 4.2:1) with hover `#1b6aab`.
   `#2280cc` stays only as a decorative wave color — don't use it for text or buttons.
 - Fixed: "I need New Bottles" now links to `/pages/get-bottles#new-bottles`.
+- Fixed (pages audit): account pages had no auth styles; mobile search button overflowed; footer wordmark font
+  wasn't loaded when the header used a logo; single products sat off-center (grids cap columns at item count);
+  About and Privacy had no H1. About now has hero + trust stats + CTAs, 404 has search + links.
+- Owner declined an address/map block on Contact — don't re-propose it.

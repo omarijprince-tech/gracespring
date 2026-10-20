@@ -148,11 +148,15 @@ def check_templates(theme):
             if not sec.get("disabled"):
                 if sec["type"] == "hero" and settings.get("heading_tag", "h1") == "h1":
                     h1.append(sid)
+                if sec["type"] == "rich-text" and settings.get("heading_tag") == "h1":
+                    h1.append(sid)
                 if sec["type"] in ("main-product", "main-collection", "main-page", "main-blog", "main-article",
                                    "main-search", "main-cart", "main-404", "main-contact", "main-list-collections"):
                     h1.append(sid)
         if name.startswith("templates") and len(h1) > 1:
             report("ERROR", name, f"{len(h1)} H1 headings ({', '.join(h1)}); set heading_tag to h2 on all but one")
+        if name.startswith("templates") and not h1:
+            report("WARN", name, "no H1 heading; give one section heading_tag h1 (hero, rich-text) or show the page title")
 
 
 # ---------- Liquid ----------

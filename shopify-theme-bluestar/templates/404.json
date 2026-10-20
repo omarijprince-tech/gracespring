@@ -1,4 +1,19 @@
 {
-  "sections": { "main": { "type": "main-404", "settings": {} } },
-  "order": ["main"]
+  "sections": {
+    "main": {
+      "type": "main-404",
+      "settings": {
+        "heading": "",
+        "text": "",
+        "show_search": true,
+        "button_label": "Order Water",
+        "button_link": "shopify://pages/get-bottles",
+        "button2_label": "Contact Us",
+        "button2_link": "shopify://pages/contact"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
 }
