@@ -1,12 +1,12 @@
 # Product photos (Blue Star 5-gallon jugs)
 
-Grace Spring-style jug renders used on the Blue Star Shopify products.
+Square jug photos taken from gracespringwater.com, used on the Blue Star Shopify products.
 
 | File | Products |
 | --- | --- |
-| `jug-bluestar-purified.png` | Purified Water - Re-Fill (`blue-star-purified-water`), Purified Water - New Bottle (`new-blue-star-purified-water`) |
-| `jug-alkaid-alkaline.png` | Alkaline Water - Re-Fill (`alkaid-alkaline-water`), Alkaline Water - New Bottle (`new-alkaid-alkaline-water`) |
-| `jug-grace-spring.png` | Spring Water - Re-Fill (`alkaid-spring-water`), Spring Water - New Bottle (`new-alkaid-spring-water`) |
+| `bluestar-purified-water-5-gallon-jug.jpg` | Purified Water - Re-Fill (`blue-star-purified-water`), Purified Water - New Bottle (`new-blue-star-purified-water`) |
+| `alkaid-alkaline-water-5-gallon-jug.jpg` | Alkaline Water - Re-Fill (`alkaid-alkaline-water`), Alkaline Water - New Bottle (`new-alkaid-alkaline-water`) |
+| `grace-spring-water-5-gallon-jug.jpg` | Spring Water - Re-Fill (`alkaid-spring-water`), Spring Water - New Bottle (`new-alkaid-spring-water`) |
 
 ## Backup of what the products had before (2026-10-20)
 
