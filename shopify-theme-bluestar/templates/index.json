@@ -13,7 +13,7 @@
         "button_label": "Claim the Offer",
         "button_link": "",
         "button2_label": "More Products",
-        "button2_link": "tel:9737420435",
+        "button2_link": "shopify://pages/get-bottles",
         "heading_tag": "h1",
         "anchor": "top",
         "background_style": "waves",
