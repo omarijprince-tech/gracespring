@@ -1,0 +1,78 @@
+{%- assign s = section.settings -%}
+{%- assign slides = section.blocks | where: 'type', 'image' -%}
+{%- assign has_media = false -%}
+{%- if s.image != blank or slides.size > 0 -%}{%- assign has_media = true -%}{%- endif -%}
+<section class="section split-section bg-{{ s.background }}{% unless has_media %} no-media{% endunless %}"{% if s.anchor != blank %} id="{{ s.anchor }}"{% endif %}>
+  <div class="container split{% if s.image_position == 'right' %} media-right{% endif %}">
+    {%- if has_media -%}
+      <div class="split-media ratio-{{ s.ratio }}" {% if slides.size > 1 %}data-fader data-interval="{{ s.interval | times: 1000 }}"{% endif %}>
+        {%- if slides.size > 0 -%}
+          {%- for block in slides -%}
+            <div class="split-slide{% if forloop.first %} active{% endif %}" {{ block.shopify_attributes }}>
+              {%- if block.settings.image != blank -%}
+                {%- if block.settings.mobile_image != blank -%}
+                  <picture>
+                    <source media="(max-width: 749px)" srcset="{{ block.settings.mobile_image | image_url: width: 900 }}">
+                    {{ block.settings.image | image_url: width: 1400 | image_tag: widths: '600, 900, 1200, 1400', sizes: '(max-width: 920px) 92vw, 50vw', loading: 'lazy' }}
+                  </picture>
+                {%- else -%}
+                  {{ block.settings.image | image_url: width: 1400 | image_tag: widths: '600, 900, 1200, 1400', sizes: '(max-width: 920px) 92vw, 50vw', loading: 'lazy' }}
+                {%- endif -%}
+              {%- else -%}
+                <div class="placeholder-bg"></div>
+              {%- endif -%}
+            </div>
+          {%- endfor -%}
+        {%- else -%}
+          <div class="split-slide active">{{ s.image | image_url: width: 1400 | image_tag: widths: '600, 900, 1200, 1400', sizes: '(max-width: 920px) 92vw, 50vw', loading: 'lazy' }}</div>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+    <div class="split-copy">
+      {%- if s.eyebrow != blank -%}<span class="eyebrow">{{ s.eyebrow }}</span>{%- endif -%}
+      {%- if s.heading != blank -%}<h2 class="split-heading size-{{ s.heading_size }}">{{ s.heading }}</h2>{%- endif -%}
+      {%- if s.text != blank -%}<div class="rte split-text">{{ s.text }}</div>{%- endif -%}
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'point' -%}
+          <div class="icon-text" {{ block.shopify_attributes }}>
+            <span class="icon-text-icon">{% render 'icon', name: block.settings.icon %}</span><div>{{ block.settings.text }}</div>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+      {% render 'button-pair', s: s, light: false %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Image with text",
+  "settings": [
+    { "type": "image_picker", "id": "image", "label": "Image", "info": "Or add Image blocks for a crossfading slideshow." },
+    { "type": "select", "id": "image_position", "label": "Image position", "default": "left", "options": [ { "value": "left", "label": "Left" }, { "value": "right", "label": "Right" } ] },
+    { "type": "select", "id": "ratio", "label": "Image shape", "default": "landscape", "options": [ { "value": "adapt", "label": "Original" }, { "value": "square", "label": "Square" }, { "value": "landscape", "label": "Landscape" }, { "value": "portrait", "label": "Portrait" } ] },
+    { "type": "range", "id": "interval", "label": "Slideshow speed", "min": 3, "max": 12, "step": 1, "unit": "s", "default": 5 },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Image with text" },
+    { "type": "select", "id": "heading_size", "label": "Heading size", "default": "large", "options": [ { "value": "medium", "label": "Medium" }, { "value": "large", "label": "Large" } ] },
+    { "type": "richtext", "id": "text", "label": "Text" },
+    { "type": "text", "id": "primary_label", "label": "Primary button" },
+    { "type": "url", "id": "primary_link", "label": "Primary button link" },
+    { "type": "text", "id": "secondary_label", "label": "Secondary button" },
+    { "type": "url", "id": "secondary_link", "label": "Secondary button link" },
+    { "type": "select", "id": "background", "label": "Background", "default": "hero", "options": [ { "value": "none", "label": "Page" }, { "value": "white", "label": "White" }, { "value": "pale", "label": "Pale blue" }, { "value": "hero", "label": "Soft gradient (Grace hero)" }, { "value": "navy", "label": "Dark blue" } ] },
+    { "type": "text", "id": "anchor", "label": "Anchor ID" }
+  ],
+  "blocks": [
+    { "type": "image", "name": "Image (slideshow)", "settings": [
+      { "type": "image_picker", "id": "image", "label": "Image" },
+      { "type": "image_picker", "id": "mobile_image", "label": "Mobile image (optional)" }
+    ] },
+    { "type": "point", "name": "Icon point", "settings": [
+      { "type": "select", "id": "icon", "label": "Icon", "default": "check", "options": [ { "value": "check", "label": "Check" }, { "value": "truck", "label": "Truck" }, { "value": "droplet", "label": "Water drop" }, { "value": "gift", "label": "Gift" }, { "value": "star", "label": "Star" }, { "value": "phone", "label": "Phone" }, { "value": "clock", "label": "Clock" }, { "value": "pin", "label": "Map pin" } ] },
+      { "type": "inline_richtext", "id": "text", "label": "Text", "default": "A reason to choose us" }
+    ] }
+  ],
+  "presets": [ { "name": "Image with text" } ]
+}
+{% endschema %}

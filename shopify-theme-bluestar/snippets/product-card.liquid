@@ -5,7 +5,7 @@
     assign size = product.type
   endif
 -%}
-<article class="product-card" data-product="{{ product.handle }}">
+<article class="product-card{% if compact %} compact{% endif %}" data-product="{{ product.handle }}">
   <div class="product-media">
     <a href="{{ product.url }}" tabindex="-1" aria-hidden="true">
       {%- if product.featured_image -%}
@@ -22,8 +22,9 @@
     {%- endif -%}
   </div>
   <div class="product-body">
+    {%- if show_type and product.type != blank -%}<span class="card-type">{{ product.type }}</span>{%- endif -%}
     <h3><a href="{{ product.url }}">{{ product.title }}</a></h3>
-    {%- if product.description != blank -%}
+    {%- if product.description != blank and compact != true -%}
       <p class="product-desc">{{ product.description | strip_html | truncatewords: 22 }}</p>
     {%- endif -%}
     <div class="price-row">
@@ -35,12 +36,14 @@
       {%- if product.has_only_default_variant and product.available -%}
         {%- form 'product', product, data-ajax-add: '' -%}
           <input type="hidden" name="id" value="{{ variant.id }}">
+          {%- unless compact -%}
           <div class="qty-stepper" data-qty>
             <button type="button" data-step="-1" aria-label="{{ 'products.decrease' | t }}">−</button>
             <output>1</output>
             <button type="button" data-step="1" aria-label="{{ 'products.increase' | t }}">+</button>
             <input type="hidden" name="quantity" value="1">
           </div>
+          {%- endunless -%}
           <button class="btn btn-primary" type="submit" style="flex:1">{{ 'products.add_to_order' | t }}</button>
         {%- endform -%}
       {%- elsif product.available -%}

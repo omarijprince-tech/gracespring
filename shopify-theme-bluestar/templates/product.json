@@ -1,4 +1,180 @@
 {
-  "sections": { "main": { "type": "main-product", "settings": {} } },
-  "order": ["main"]
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "settings": {
+        "layout": "left"
+      },
+      "blocks": {
+        "title_1": {
+          "type": "title",
+          "settings": {}
+        },
+        "icon_text_2": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "gift",
+            "text": "Get 5 <strong>PURIFIED</strong> bottles <strong>FREE</strong> when you buy a <strong>Water Cooler for $100</strong> — see our <strong>sales page</strong> for details.",
+            "highlight": true
+          }
+        },
+        "price_3": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_4": {
+          "type": "variant_picker",
+          "settings": {}
+        },
+        "buy_buttons_5": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity": true,
+            "show_dynamic_checkout": true
+          }
+        },
+        "icon_text_6": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "truck",
+            "text": "Delivery to New Jersey",
+            "highlight": false
+          }
+        },
+        "icon_text_7": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "building",
+            "text": "Delivery to New York",
+            "highlight": false
+          }
+        },
+        "icon_text_8": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "star",
+            "text": "Se Habla Español",
+            "highlight": false
+          }
+        },
+        "share_9": {
+          "type": "share",
+          "settings": {}
+        },
+        "description_10": {
+          "type": "description",
+          "settings": {
+            "heading": "Description"
+          }
+        }
+      },
+      "block_order": [
+        "title_1",
+        "icon_text_2",
+        "price_3",
+        "variant_picker_4",
+        "buy_buttons_5",
+        "icon_text_6",
+        "icon_text_7",
+        "icon_text_8",
+        "share_9",
+        "description_10"
+      ]
+    },
+    "bundles": {
+      "type": "product-list",
+      "settings": {
+        "eyebrow": "Coolers + free bottles",
+        "heading": "Bundle up & save",
+        "text": "",
+        "product_list": [
+          "gray-water-cooler-5-bottles-fre-bottledown",
+          "small-black-water-coller-3-bottles-free",
+          "small-white-water-cooler-3-bottles-free",
+          "water-cooler-5-bottles-fre-bottledown",
+          "white-water-cooler-5-bottles-fre-bottledown"
+        ],
+        "limit": 12,
+        "layout": "carousel",
+        "columns": "3",
+        "background": "white",
+        "button_label": "Call Us",
+        "button_link": "tel:9737420435",
+        "button_style": "outline",
+        "anchor": "",
+        "head_align": "center"
+      }
+    },
+    "offer": {
+      "type": "featured-product",
+      "settings": {
+        "product": "refurbished-water-dispenser-5-bottles-free",
+        "eyebrow": "Mega sale",
+        "heading": "While supplies last",
+        "text": "<p>Questions? Call us <a href=\"tel:9737420435\">973-742-0435</a></p>",
+        "background": "none",
+        "layout": "left"
+      },
+      "blocks": {
+        "title_1": {
+          "type": "title",
+          "settings": {}
+        },
+        "icon_text_2": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "truck",
+            "text": "Delivered right to you",
+            "highlight": false
+          }
+        },
+        "price_3": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_4": {
+          "type": "variant_picker",
+          "settings": {}
+        },
+        "buy_buttons_5": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity": true,
+            "show_dynamic_checkout": true
+          }
+        },
+        "share_6": {
+          "type": "share",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title_1",
+        "icon_text_2",
+        "price_3",
+        "variant_picker_4",
+        "buy_buttons_5",
+        "share_6"
+      ]
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "eyebrow": "",
+        "heading": "Water for water drinkers",
+        "text": "",
+        "limit": 4,
+        "columns": "4",
+        "button_label": "Call Us",
+        "button_link": "tel:9737420435",
+        "background": "white"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "bundles",
+    "offer",
+    "recommendations"
+  ]
 }

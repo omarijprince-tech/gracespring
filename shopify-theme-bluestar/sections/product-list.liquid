@@ -1,0 +1,65 @@
+{%- liquid
+  assign source = section.settings.product_list
+  if source == blank or source.count == 0
+    if section.settings.collection != blank
+      assign source = section.settings.collection.products
+    else
+      assign source = collections.all.products
+    endif
+  endif
+  assign compact = false
+  if section.settings.columns == '4'
+    assign compact = true
+  endif
+-%}
+<section class="section bg-{{ section.settings.background }}"{% if section.settings.anchor != blank %} id="{{ section.settings.anchor }}"{% endif %}>
+  <div class="container">
+    <div class="list-head">
+      {% render 'section-head', s: section.settings, align: section.settings.head_align %}
+      {%- if section.settings.layout == 'carousel' -%}
+        <div class="rail-arrows">
+          <button type="button" class="icon-btn rail-btn" data-rail-prev aria-label="{{ 'general.previous' | t }}">{% render 'icon', name: 'chevron-left' %}</button>
+          <button type="button" class="icon-btn rail-btn" data-rail-next aria-label="{{ 'general.next' | t }}">{% render 'icon', name: 'chevron-right' %}</button>
+        </div>
+      {%- endif -%}
+    </div>
+    <div class="{% if section.settings.layout == 'carousel' %}product-rail cols-{{ section.settings.columns }}{% else %}products-grid grid-{{ section.settings.columns }}{% endif %}" data-rail>
+      {%- for product in source limit: section.settings.limit -%}
+        {% render 'product-card', product: product, compact: compact, show_type: section.settings.show_type %}
+      {%- else -%}
+        <p class="empty-state" style="grid-column:1/-1">{{ 'collections.empty' | t }}</p>
+      {%- endfor -%}
+    </div>
+    {%- if section.settings.button_label != blank -%}
+      <p class="section-cta"><a class="btn {% if section.settings.button_style == 'outline' %}btn-outline{% else %}btn-primary{% endif %}" href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a></p>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Product list",
+  "class": "section-product-list",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Choose your water" },
+    { "type": "richtext", "id": "text", "label": "Description" },
+    { "type": "select", "id": "head_align", "label": "Heading alignment", "default": "center", "options": [ { "value": "center", "label": "Center" }, { "value": "left", "label": "Left" } ] },
+    { "type": "header", "content": "Products" },
+    { "type": "product_list", "id": "product_list", "label": "Products", "limit": 24 },
+    { "type": "collection", "id": "collection", "label": "Or a collection", "info": "Used when no products are picked above." },
+    { "type": "range", "id": "limit", "label": "Maximum products", "min": 2, "max": 24, "step": 1, "default": 12 },
+    { "type": "header", "content": "Layout" },
+    { "type": "select", "id": "layout", "label": "Layout", "default": "carousel", "options": [ { "value": "carousel", "label": "Carousel (swipe)" }, { "value": "grid", "label": "Grid" } ] },
+    { "type": "select", "id": "columns", "label": "Products per row", "default": "3", "options": [ { "value": "2", "label": "2" }, { "value": "3", "label": "3" }, { "value": "4", "label": "4 (compact cards)" } ] },
+    { "type": "checkbox", "id": "show_type", "label": "Show product type above the title", "default": false },
+    { "type": "select", "id": "background", "label": "Background", "default": "none", "options": [ { "value": "none", "label": "Page" }, { "value": "white", "label": "White" }, { "value": "pale", "label": "Pale blue" } ] },
+    { "type": "header", "content": "Button" },
+    { "type": "text", "id": "button_label", "label": "Button label" },
+    { "type": "url", "id": "button_link", "label": "Button link" },
+    { "type": "select", "id": "button_style", "label": "Button style", "default": "primary", "options": [ { "value": "primary", "label": "Solid" }, { "value": "outline", "label": "Outline" } ] },
+    { "type": "text", "id": "anchor", "label": "Anchor ID", "info": "Lets menu links like /#shop scroll here." }
+  ],
+  "presets": [ { "name": "Product list" } ]
+}
+{% endschema %}

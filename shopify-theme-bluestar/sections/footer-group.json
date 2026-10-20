@@ -4,13 +4,54 @@
   "sections": {
     "footer": {
       "type": "footer",
-      "blocks": {
-        "shop": { "type": "menu", "settings": { "heading": "Shop", "menu": "main-menu" } },
-        "company": { "type": "menu", "settings": { "heading": "Company", "menu": "footer" } }
+      "settings": {
+        "bottom_text": "Licensed water delivery company · Serving NJ & NY since 2010.",
+        "show_language": true,
+        "show_payment": true
       },
-      "block_order": ["shop", "company"],
-      "settings": {}
+      "blocks": {
+        "brand_1": {
+          "type": "brand",
+          "settings": {
+            "logo": "shopify://shop_images/footerlogo_3fc6e416-f1b3-40ef-9538-d6b230012e33.png",
+            "logo_width": 170,
+            "text": "<p>Purified, alkaline and spring water delivered to homes and offices across New Jersey and New York.</p>",
+            "show_contact": true,
+            "show_social": true
+          }
+        },
+        "menu_2": {
+          "type": "menu",
+          "settings": {
+            "heading": "Quick Links",
+            "menu": "footer"
+          }
+        },
+        "menu_3": {
+          "type": "menu",
+          "settings": {
+            "heading": "Helpful Links",
+            "menu": "helpful-links"
+          }
+        },
+        "newsletter_4": {
+          "type": "newsletter",
+          "settings": {
+            "heading": "Don't miss out on sales!",
+            "text": "<p>Subscribe with your email today!</p>",
+            "button_label": "Subscribe"
+          }
+        }
+      },
+      "block_order": [
+        "brand_1",
+        "menu_2",
+        "menu_3",
+        "newsletter_4"
+      ]
     }
   },
-  "order": ["footer"]
+  "order": [
+    "footer"
+  ]
 }

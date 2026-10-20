@@ -1,0 +1,58 @@
+<section class="section section-tight bg-{{ section.settings.background }}">
+  <div class="container">
+    {% render 'section-head', s: section.settings %}
+    <div class="banner-grid cols-{{ section.blocks.size | at_most: 3 }}">
+      {%- for block in section.blocks -%}
+        {%- assign b = block.settings -%}
+        <article class="image-banner h-{{ b.height }} align-{{ b.align }}" style="--overlay: {{ b.overlay | divided_by: 100.0 }}" {{ block.shopify_attributes }}>
+          {%- if b.image != blank -%}
+            {{ b.image | image_url: width: 1400 | image_tag: widths: '500, 800, 1100, 1400', sizes: '(max-width: 920px) 92vw, 50vw', loading: 'lazy', class: 'image-banner-img' }}
+          {%- else -%}
+            <div class="image-banner-img placeholder-bg"></div>
+          {%- endif -%}
+          <div class="image-banner-content">
+            {%- if b.badge != blank -%}<span class="chip">{{ b.badge }}</span>{%- endif -%}
+            {%- if b.heading != blank -%}<h3>{{ b.heading }}</h3>{%- endif -%}
+            {%- if b.text != blank -%}<div class="image-banner-text">{{ b.text }}</div>{%- endif -%}
+            {%- if b.button_label != blank -%}
+              <a class="btn {% if b.button_style == 'light' %}btn-light{% else %}btn-primary{% endif %}" href="{{ b.button_link | default: '#' }}">{{ b.button_label }}</a>
+            {%- endif -%}
+          </div>
+          {%- if b.button_link != blank and b.button_label == blank -%}<a class="stretched-link" href="{{ b.button_link }}" aria-label="{{ b.heading | escape }}"></a>{%- endif -%}
+        </article>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Image banners",
+  "max_blocks": 3,
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "richtext", "id": "text", "label": "Text" },
+    { "type": "select", "id": "background", "label": "Background", "default": "none", "options": [ { "value": "none", "label": "Page" }, { "value": "white", "label": "White" }, { "value": "pale", "label": "Pale blue" } ] }
+  ],
+  "blocks": [
+    {
+      "type": "banner",
+      "name": "Banner",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "range", "id": "overlay", "label": "Dark overlay", "min": 0, "max": 90, "step": 5, "unit": "%", "default": 35 },
+        { "type": "select", "id": "height", "label": "Height", "default": "medium", "options": [ { "value": "small", "label": "Small" }, { "value": "medium", "label": "Medium" }, { "value": "large", "label": "Large" } ] },
+        { "type": "select", "id": "align", "label": "Text position", "default": "bottom-left", "options": [ { "value": "bottom-left", "label": "Bottom left" }, { "value": "center", "label": "Center" }, { "value": "top-left", "label": "Top left" } ] },
+        { "type": "text", "id": "badge", "label": "Badge", "default": "Delivery Service" },
+        { "type": "text", "id": "heading", "label": "Heading", "default": "Image banner" },
+        { "type": "richtext", "id": "text", "label": "Text" },
+        { "type": "text", "id": "button_label", "label": "Button label", "default": "Shop now" },
+        { "type": "url", "id": "button_link", "label": "Button link" },
+        { "type": "select", "id": "button_style", "label": "Button style", "default": "primary", "options": [ { "value": "primary", "label": "Blue" }, { "value": "light", "label": "White" } ] }
+      ]
+    }
+  ],
+  "presets": [ { "name": "Image banners", "blocks": [ { "type": "banner" }, { "type": "banner" } ] } ]
+}
+{% endschema %}

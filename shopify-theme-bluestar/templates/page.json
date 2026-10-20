@@ -1,4 +1,152 @@
 {
-  "sections": { "main": { "type": "main-page", "settings": {} } },
-  "order": ["main"]
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true
+      }
+    },
+    "refill": {
+      "type": "product-list",
+      "settings": {
+        "eyebrow": "Refill",
+        "heading": "Re-fill your bottles",
+        "text": "<p>Delivered to you</p>",
+        "product_list": [
+          "blue-star-purified-water",
+          "alkaid-alkaline-water",
+          "alkaid-spring-water"
+        ],
+        "limit": 12,
+        "layout": "grid",
+        "columns": "3",
+        "background": "none",
+        "button_label": "Call Us",
+        "button_link": "tel:9737420435",
+        "button_style": "outline",
+        "anchor": "",
+        "head_align": "center"
+      }
+    },
+    "new": {
+      "type": "product-list",
+      "settings": {
+        "eyebrow": "New bottles",
+        "heading": "Brand new bottles",
+        "text": "<p>Delivered to you</p>",
+        "product_list": [
+          "new-alkaid-alkaline-water",
+          "new-blue-star-purified-water",
+          "new-alkaid-spring-water"
+        ],
+        "limit": 12,
+        "layout": "grid",
+        "columns": "3",
+        "background": "white",
+        "button_label": "Call Us",
+        "button_link": "tel:9737420435",
+        "button_style": "outline",
+        "anchor": "",
+        "head_align": "center"
+      }
+    },
+    "alkaid12": {
+      "type": "featured-product",
+      "settings": {
+        "product": "new-alkaid-alkaline-water-1-lt-bottles",
+        "eyebrow": "Retail case",
+        "heading": "Alkaid Alkaline by bluestar",
+        "text": "<p>Bottled alkaline water, 12 × 1L.</p>",
+        "background": "none",
+        "layout": "left"
+      },
+      "blocks": {
+        "title_1": {
+          "type": "title",
+          "settings": {}
+        },
+        "price_2": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_3": {
+          "type": "variant_picker",
+          "settings": {}
+        },
+        "buy_buttons_4": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity": true,
+            "show_dynamic_checkout": false
+          }
+        }
+      },
+      "block_order": [
+        "title_1",
+        "price_2",
+        "variant_picker_3",
+        "buy_buttons_4"
+      ]
+    },
+    "bundle": {
+      "type": "featured-product",
+      "settings": {
+        "product": "refurbished-water-dispenser-5-bottles-free",
+        "eyebrow": "",
+        "heading": "Bundle up & save",
+        "text": "<p>Questions? Call us <a href=\"tel:9737420435\">973-742-0435</a></p>",
+        "background": "white",
+        "layout": "left"
+      },
+      "blocks": {
+        "title_1": {
+          "type": "title",
+          "settings": {}
+        },
+        "icon_text_2": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "truck",
+            "text": "Delivered right to you",
+            "highlight": false
+          }
+        },
+        "price_3": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_4": {
+          "type": "variant_picker",
+          "settings": {}
+        },
+        "buy_buttons_5": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity": true,
+            "show_dynamic_checkout": true
+          }
+        },
+        "share_6": {
+          "type": "share",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title_1",
+        "icon_text_2",
+        "price_3",
+        "variant_picker_4",
+        "buy_buttons_5",
+        "share_6"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "refill",
+    "new",
+    "alkaid12",
+    "bundle"
+  ]
 }

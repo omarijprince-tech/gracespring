@@ -1,0 +1,103 @@
+{%- comment -%}
+  Product details driven by the section's blocks so the order and content are editable
+  in the theme editor. Params: product, section, heading_tag ('h1' on the product page).
+{%- endcomment -%}
+{%- assign variant = product.selected_or_first_available_variant -%}
+{%- assign form_id = 'product-form-' | append: section.id -%}
+<div class="product-info">
+  {%- for block in section.blocks -%}
+    {%- case block.type -%}
+      {%- when 'title' -%}
+        <{{ heading_tag | default: 'h2' }} class="product-title" {{ block.shopify_attributes }}>{{ product.title }}</{{ heading_tag | default: 'h2' }}>
+
+      {%- when 'vendor' -%}
+        <span class="eyebrow" {{ block.shopify_attributes }}>{{ product.vendor }}</span>
+
+      {%- when 'price' -%}
+        <div class="price-row" {{ block.shopify_attributes }}>
+          <span class="price-now" data-price>{{ variant.price | money }}</span>
+          <span class="price-was" data-compare{% unless variant.compare_at_price > variant.price %} hidden{% endunless %}>{{ variant.compare_at_price | money }}</span>
+          {%- if variant.compare_at_price > variant.price -%}<span class="price-tag" data-save>{{ 'products.sale' | t }}</span>{%- endif -%}
+          {%- if product.tags contains settings.deposit_tag -%}<span class="price-tag" style="background:var(--pale);color:var(--navy)">{{ settings.deposit_badge }}</span>{%- endif -%}
+        </div>
+
+      {%- when 'icon_text' -%}
+        <div class="icon-text{% if block.settings.highlight %} highlight{% endif %}" {{ block.shopify_attributes }}>
+          {%- if block.settings.icon != 'none' -%}<span class="icon-text-icon">{% render 'icon', name: block.settings.icon %}</span>{%- endif -%}
+          <div>{{ block.settings.text }}</div>
+        </div>
+
+      {%- when 'text' -%}
+        <div class="rte product-text" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+
+      {%- when 'variant_picker' -%}
+        {%- unless product.has_only_default_variant -%}
+          <div class="variant-picker" {{ block.shopify_attributes }}>
+            {%- for option in product.options_with_values -%}
+              <fieldset class="opt-group">
+                <legend>{{ option.name }}</legend>
+                <div class="opt-row">
+                  {%- for value in option.values -%}
+                    <input type="radio" id="opt-{{ section.id }}-{{ forloop.parentloop.index }}-{{ forloop.index }}"
+                           name="option{{ forloop.parentloop.index }}-{{ section.id }}" value="{{ value | escape }}" data-option
+                           {% if option.selected_value == value %}checked{% endif %}>
+                    <label for="opt-{{ section.id }}-{{ forloop.parentloop.index }}-{{ forloop.index }}">{{ value }}</label>
+                  {%- endfor -%}
+                </div>
+              </fieldset>
+            {%- endfor -%}
+          </div>
+        {%- endunless -%}
+
+      {%- when 'buy_buttons' -%}
+        <div {{ block.shopify_attributes }}>
+          {%- form 'product', product, id: form_id, data-ajax-add: '' -%}
+            <input type="hidden" name="id" value="{{ variant.id }}" data-variant-id>
+            <div class="product-actions">
+              {%- if block.settings.show_quantity -%}
+                <div class="qty-stepper" data-qty>
+                  <button type="button" data-step="-1" aria-label="{{ 'products.decrease' | t }}">−</button>
+                  <output>1</output>
+                  <button type="button" data-step="1" aria-label="{{ 'products.increase' | t }}">+</button>
+                  <input type="hidden" name="quantity" value="1">
+                </div>
+              {%- endif -%}
+              <button class="btn btn-primary" type="submit" style="flex:1" data-add-btn
+                      data-label-add="{{ 'products.add_to_order' | t }}" data-label-sold="{{ 'products.sold_out' | t }}"
+                      {% unless variant.available %}disabled{% endunless %}>
+                {%- if variant.available -%}{{ 'products.add_to_order' | t }}{%- else -%}{{ 'products.sold_out' | t }}{%- endif -%}
+              </button>
+            </div>
+            {%- if block.settings.show_dynamic_checkout -%}
+              <div class="dynamic-checkout">{{ form | payment_button }}</div>
+            {%- endif -%}
+          {%- endform -%}
+        </div>
+
+      {%- when 'description' -%}
+        {%- if product.description != blank -%}
+          <div class="product-desc-block" {{ block.shopify_attributes }}>
+            {%- if block.settings.heading != blank -%}<h3>{{ block.settings.heading }}</h3>{%- endif -%}
+            <div class="rte">{{ product.description }}</div>
+          </div>
+        {%- endif -%}
+
+      {%- when 'collapsible' -%}
+        <details class="product-collapsible" {{ block.shopify_attributes }}>
+          <summary>{{ block.settings.heading }}</summary>
+          <div class="rte">{{ block.settings.content }}{{ block.settings.page.content }}</div>
+        </details>
+
+      {%- when 'share' -%}
+        <div class="share-row" {{ block.shopify_attributes }}>
+          <span>{{ 'products.share' | t }}</span>
+          <a href="https://www.facebook.com/sharer/sharer.php?u={{ request.origin | append: product.url | url_encode }}" target="_blank" rel="noopener" class="icon-btn" aria-label="Facebook">{% render 'icon', name: 'facebook' %}</a>
+          <button type="button" class="icon-btn" data-copy-link="{{ request.origin | append: product.url }}" data-copied="{{ 'products.link_copied' | t | escape }}" aria-label="{{ 'products.copy_link' | t }}">{% render 'icon', name: 'share' %}</button>
+        </div>
+
+      {%- when '@app' -%}
+        {% render block %}
+    {%- endcase -%}
+  {%- endfor -%}
+  <script type="application/json" data-variants>{{ product.variants | json }}</script>
+</div>

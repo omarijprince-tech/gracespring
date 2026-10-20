@@ -1,0 +1,19 @@
+<div class="section{% if section.settings.compact %} section-tight{% endif %}">
+  <div class="{% if section.settings.full_width %}custom-liquid-full{% else %}container{% endif %}">
+    {% render 'section-head', s: section.settings %}
+    {{ section.settings.custom_liquid }}
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Custom Liquid / widget",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "liquid", "id": "custom_liquid", "label": "Code", "info": "Paste embed codes (reviews widgets, maps, etc.)." },
+    { "type": "checkbox", "id": "full_width", "label": "Full width", "default": false },
+    { "type": "checkbox", "id": "compact", "label": "Less spacing", "default": true }
+  ],
+  "presets": [ { "name": "Custom Liquid / widget" } ]
+}
+{% endschema %}

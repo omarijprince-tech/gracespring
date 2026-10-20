@@ -1,0 +1,6 @@
+<div class="section section-tight"><div class="container">
+  {%- for block in section.blocks -%}{% render block %}{%- endfor -%}
+</div></div>
+{% schema %}
+{ "name": "Apps", "blocks": [ { "type": "@app" } ], "presets": [ { "name": "Apps" } ] }
+{% endschema %}

@@ -1,203 +1,325 @@
 {
   "sections": {
+    "featured_offer": {
+      "type": "featured-product",
+      "settings": {
+        "product": "refurbished-water-dispenser-5-bottles-free",
+        "eyebrow": "Mega sale",
+        "heading": "While supplies last",
+        "text": "<p>Questions? Call us <a href=\"tel:9737420435\">973-742-0435</a></p>",
+        "background": "white",
+        "layout": "left"
+      },
+      "blocks": {
+        "title_1": {
+          "type": "title",
+          "settings": {}
+        },
+        "icon_text_2": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "truck",
+            "text": "Delivered right to you",
+            "highlight": false
+          }
+        },
+        "icon_text_3": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "gift",
+            "text": "Get 5 <strong>purified</strong> bottles <strong>FREE</strong> + 1 bottle stand with your water cooler",
+            "highlight": true
+          }
+        },
+        "price_4": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_5": {
+          "type": "variant_picker",
+          "settings": {}
+        },
+        "buy_buttons_6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity": true,
+            "show_dynamic_checkout": true
+          }
+        },
+        "share_7": {
+          "type": "share",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title_1",
+        "icon_text_2",
+        "icon_text_3",
+        "price_4",
+        "variant_picker_5",
+        "buy_buttons_6",
+        "share_7"
+      ]
+    },
+    "water": {
+      "type": "product-list",
+      "settings": {
+        "eyebrow": "Order water",
+        "heading": "Choose your water — for delivery",
+        "text": "<p>Questions? Call <a href=\"tel:9737420435\">973-742-0435</a></p>",
+        "product_list": [
+          "blue-star-purified-water",
+          "alkaid-alkaline-water",
+          "alkaid-spring-water",
+          "new-blue-star-purified-water",
+          "new-alkaid-alkaline-water",
+          "new-alkaid-spring-water"
+        ],
+        "limit": 12,
+        "layout": "carousel",
+        "columns": "3",
+        "background": "white",
+        "button_label": "Call Us",
+        "button_link": "tel:9737420435",
+        "button_style": "outline",
+        "anchor": "shop",
+        "head_align": "center"
+      }
+    },
+    "banners": {
+      "type": "image-banners",
+      "settings": {
+        "background": "none"
+      },
+      "blocks": {
+        "banner_1": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/alk3_e1bdd525-341f-4968-931c-e19853774c7a.jpg",
+            "overlay": 25,
+            "height": "medium",
+            "align": "bottom-left",
+            "badge": "Delivery Service",
+            "heading": "Alkaid Alkaline by bluestar",
+            "text": "<p>Bottled Alkaline Water</p>",
+            "button_label": "Order Water",
+            "button_link": "shopify://products/new-alkaid-alkaline-water-1-lt-bottles",
+            "button_style": "light"
+          }
+        },
+        "banner_2": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/deliv2.jpg",
+            "overlay": 40,
+            "height": "medium",
+            "align": "bottom-left",
+            "badge": "Water Delivery Service",
+            "heading": "Delivery to New York & New Jersey",
+            "text": "<p>Questions? Call us 973-742-0435</p>",
+            "button_label": "Call Us",
+            "button_link": "tel:9737420435",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "banner_1",
+        "banner_2"
+      ]
+    },
     "hero": {
-      "type": "hero",
+      "type": "image-with-text",
+      "settings": {
+        "image_position": "right",
+        "ratio": "adapt",
+        "interval": 5,
+        "eyebrow": "Water delivery · New Jersey & New York",
+        "heading": "New Jersey's #1 Water Delivery Service.",
+        "heading_size": "large",
+        "text": "<p>Stay hydrated with ease! Our New Jersey water delivery service brings the crisp taste of purity straight to your doorstep, ensuring you never run dry. Experience convenience and freshness like never before – quench your thirst hassle-free with us today!</p>",
+        "primary_label": "Refill my Water",
+        "primary_link": "shopify://pages/get-bottles",
+        "secondary_label": "I need New Bottles",
+        "secondary_link": "tel:9737420435",
+        "background": "hero",
+        "anchor": "about"
+      },
       "blocks": {
-        "c1": {
-          "type": "chip",
+        "point_1": {
+          "type": "point",
           "settings": {
-            "text": "🚚 Next-day local delivery"
+            "icon": "truck",
+            "text": "Delivery across <strong>New Jersey & New York</strong>"
           }
         },
-        "c2": {
-          "type": "chip",
+        "point_2": {
+          "type": "point",
           "settings": {
-            "text": "💧 Purified · Spring · Alkaline"
+            "icon": "droplet",
+            "text": "Purified · Alkaline · Spring water"
           }
         },
-        "c3": {
-          "type": "chip",
+        "point_3": {
+          "type": "point",
           "settings": {
-            "text": "🎁 Cooler? 5 bottles + stand free"
+            "icon": "star",
+            "text": "Se Habla Español"
+          }
+        },
+        "image_4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/heart_0ea11101-5b90-4a6d-afdd-8646445b2c8d.png",
+            "mobile_image": "shopify://shop_images/newmobile.jpg"
+          }
+        },
+        "image_5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bcooler.jpg"
+          },
+          "disabled": true
+        }
+      },
+      "block_order": [
+        "point_1",
+        "point_2",
+        "point_3",
+        "image_4",
+        "image_5"
+      ]
+    },
+    "bundles": {
+      "type": "product-list",
+      "settings": {
+        "eyebrow": "Bundle up & save",
+        "heading": "Looking for bundle deals?",
+        "text": "<p>Look no further — water coolers with free bottles.</p>",
+        "product_list": [
+          "gray-water-cooler-5-bottles-fre-bottledown",
+          "water-cooler-5-bottles-fre-bottledown",
+          "white-water-cooler-5-bottles-fre-bottledown",
+          "small-black-water-coller-3-bottles-free",
+          "small-white-water-cooler-3-bottles-free"
+        ],
+        "limit": 12,
+        "layout": "carousel",
+        "columns": "3",
+        "background": "none",
+        "button_label": "Call Us",
+        "button_link": "tel:9737420435",
+        "button_style": "outline",
+        "anchor": "bundles",
+        "head_align": "center"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "image": "shopify://shop_images/smiling-arabian-courier-holding-bottle-with-water-2023-11-27-05-30-36-utc.jpg",
+        "image_position": "left",
+        "eyebrow": "Newsletter",
+        "heading": "Don't miss out on sales!",
+        "text": "<p>Subscribe with your email today!</p>",
+        "button_label": "Subscribe"
+      }
+    },
+    "accessories": {
+      "type": "product-list",
+      "settings": {
+        "eyebrow": "Stands & dispensers",
+        "heading": "Accessories",
+        "text": "",
+        "product_list": [
+          "water-bottle-stand-8-levels-5-gallons",
+          "water-bottle-stand-5-levels-5-gallons",
+          "water-bottle-stand-4-levels-5-gallons",
+          "digital-pump-style-water-dispenser"
+        ],
+        "limit": 12,
+        "layout": "grid",
+        "columns": "4",
+        "background": "white",
+        "button_label": "Call Us",
+        "button_link": "tel:9737420435",
+        "button_style": "outline",
+        "anchor": "accessories",
+        "head_align": "center"
+      }
+    },
+    "water_types": {
+      "type": "content-slideshow",
+      "settings": {
+        "eyebrow": "Our water",
+        "heading": "Spring, alkaline or purified?",
+        "text": "",
+        "image_position": "left",
+        "autoplay": true,
+        "interval": 8,
+        "background": "none"
+      },
+      "blocks": {
+        "slide_1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/doorstep1.jpg",
+            "badge": "Questions? Call Us! 973-742-0435",
+            "heading": "Spring Water",
+            "text": "<p>Water sourced from natural springs in Pennsylvania is imbued with essential minerals such as <strong>calcium</strong>, <strong>iron</strong>, <strong>magnesium</strong>, and <strong>sulfate</strong>. This mineral-rich composition is a result of the water's filtration process, wherein it naturally <strong>absorbs soluble minerals</strong> from the surrounding rocks. Thus, the water undergoes a natural enrichment process as it journeys through the earth's layers, <strong>acquiring valuable nutrients</strong> along the way.</p><p>Not only does natural spring water offer a refreshing taste, but it also provides <strong>additional health benefits</strong> due to its mineral content, making it a popular choice for hydration among those seeking a <strong>naturally pure</strong> and nourishing source of water.</p><p>Here at <strong>BlueStar</strong>, we take pride in <strong>delivering</strong> this pristine natural spring water <strong>directly to your doorstep</strong>, ensuring you can enjoy its benefits <strong>conveniently</strong> and reliably.</p>",
+            "button_label": "Shop Spring Water",
+            "button_link": "shopify://products/new-alkaid-spring-water"
+          }
+        },
+        "slide_2": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/ALKA.jpg",
+            "badge": "Questions? Call Us! 973-742-0435",
+            "heading": "Alkaline Water",
+            "text": "<p>Alkaline water, often sourced from springs or processed through <strong>ionization</strong>, boasts a <strong>higher pH level</strong> compared to regular tap water, typically ranging between 8 and 9 on the pH scale. This elevated pH is attributed to <strong>its increased concentration</strong> of alkaline minerals such as <strong>calcium</strong>, <strong>magnesium</strong>, and <strong>potassium</strong>.</p><p>Alkaline water offers potential health benefits, including <strong>improved hydration and neutralization</strong> of acidic substances in the body.</p><p>We are committed to <strong>delivering premium alkaline water</strong> directly to your <strong>doorstep</strong>, ensuring you can enjoy its refreshing qualities and potential health perks with ease and <strong>convenience</strong>.</p>",
+            "button_label": "Shop Alkaline Water",
+            "button_link": "shopify://products/new-alkaid-alkaline-water"
+          }
+        },
+        "slide_3": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/BSW1_d10c331a-18a5-48e2-94c1-ae9c7eb41eaa.jpg",
+            "badge": "Questions? Call Us! 973-742-0435",
+            "heading": "Purified Water",
+            "text": "<p>In New Jersey, our company takes pride in offering the finest purified water available. Through state-of-the-art purification processes, we ensure that our water is free from contaminants and impurities, resulting in a crisp, clean taste that surpasses expectations. Our purified water undergoes rigorous testing to meet the highest standards of quality and safety, providing peace of mind to our customers.</p><p>Whether you're at home, in the office, at school, or running a business, we are dedicated to delivering this premium purified water directly to your doorstep. With convenience as our priority, you can trust us to provide reliable and timely delivery services, ensuring that you always have access to the best water New Jersey has to offer.</p>",
+            "button_label": "Shop Purified Water",
+            "button_link": "shopify://products/new-blue-star-purified-water"
           }
         }
       },
       "block_order": [
-        "c1",
-        "c2",
-        "c3"
-      ],
-      "settings": {}
+        "slide_1",
+        "slide_2",
+        "slide_3"
+      ]
     },
-    "offers": {
-      "type": "offers",
-      "blocks": {
-        "o1": {
-          "type": "offer",
-          "settings": {
-            "featured": true,
-            "badge": "New customer special",
-            "title": "Buy 1 Cooler, Get 5 Bottles FREE",
-            "price": "+ a bottle stand, free",
-            "price_note": "with any cooler purchase",
-            "points": "Buy any Avalon water cooler — $180.00\nGet 5 free 5-gallon bottles of Blue Star water\nPlus a 5-bottle storage stand, free\nAdd monthly refill service anytime — optional",
-            "button_label": "Claim the Offer",
-            "button_link": "#shop"
-          }
-        },
-        "o2": {
-          "type": "offer",
-          "settings": {
-            "featured": false,
-            "badge": "No auto-charge",
-            "title": "Monthly Refill Service",
-            "price": "We remind you",
-            "price_note": "the day before delivery",
-            "points": "Reminder by text, email, or phone call\nReply with how many jugs — that's it\nWe swap your empties for full bottles\nPause or stop anytime — no commitment",
-            "button_label": "Start Refill Service",
-            "button_link": "#shop"
-          }
-        },
-        "o3": {
-          "type": "offer",
-          "settings": {
-            "featured": false,
-            "badge": "",
-            "title": "One-Time Order",
-            "price": "No commitment",
-            "price_note": "order exactly what you need",
-            "points": "Great for events or a one-off stock-up\nSame next-day local delivery · $5.00 shipping\nNo account required",
-            "button_label": "Shop Now",
-            "button_link": "#shop"
-          }
-        }
-      },
-      "block_order": [
-        "o1",
-        "o2",
-        "o3"
-      ],
-      "settings": {}
-    },
-    "shop": {
-      "type": "featured-collection",
-      "settings": {}
-    },
-    "how": {
-      "type": "how-it-works",
-      "blocks": {
-        "s1": {
-          "type": "step",
-          "settings": {
-            "title": "Choose your water",
-            "text": "Pick your bottles and add a cooler if you need one. Complete your first order online."
-          }
-        },
-        "s2": {
-          "type": "step",
-          "settings": {
-            "title": "We confirm your route",
-            "text": "A Blue Star team member calls to confirm your address, delivery route, and first delivery date."
-          }
-        },
-        "s3": {
-          "type": "step",
-          "settings": {
-            "title": "We deliver & remind you",
-            "text": "We drop full bottles and take your empties. Each month we remind you the day before — just reply with your count."
-          }
-        }
-      },
-      "block_order": [
-        "s1",
-        "s2",
-        "s3"
-      ],
-      "settings": {}
-    },
-    "delivery": {
-      "type": "delivery",
-      "settings": {}
-    },
-    "faq": {
-      "type": "faq",
-      "blocks": {
-        "q1": {
-          "type": "question",
-          "settings": {
-            "question": "What's the bottle deposit?",
-            "answer": "<p>Your first order includes a one-time $5.00 deposit per 5-gallon bottle. It's non-recurring as long as we swap your empties for full bottles, and it's refundable when you return your empties for good.</p>"
-          }
-        },
-        "q2": {
-          "type": "question",
-          "settings": {
-            "question": "How does monthly delivery work?",
-            "answer": "<p>There are no auto-charges. Each month, the day before your route runs, we remind you by text, email, or phone call. Just reply with how many jugs you'd like and we'll bring them.</p>"
-          }
-        },
-        "q3": {
-          "type": "question",
-          "settings": {
-            "question": "How much is delivery?",
-            "answer": "<p>Shipping is a flat $5.00 per delivery anywhere in our service area, no matter how many bottles you order.</p>"
-          }
-        },
-        "q4": {
-          "type": "question",
-          "settings": {
-            "question": "What's the difference between your waters?",
-            "answer": "<p>Purified is Blue Star multi-stage water, clean and neutral. Natural is Grace Spring 100% natural spring water from a protected source. Alkaline is ALKAID 9.5 pH water with electrolytes. We also carry ALKAID alkaline in retail cases.</p>"
-          }
-        },
-        "q5": {
-          "type": "question",
-          "settings": {
-            "question": "Can I add a water cooler?",
-            "answer": "<p>Buy any Avalon cooler ($180.00) and we add 5 free 5-gallon bottles and a bottle stand. Hot & cold, top or bottom loader, black or white.</p>"
-          }
-        },
-        "q6": {
-          "type": "question",
-          "settings": {
-            "question": "Do you deliver to my area?",
-            "answer": "<p>We cover northern New Jersey — Bergen, Hudson, Passaic, Essex, Union, and Morris counties — plus all five NYC boroughs. Check your ZIP in the Delivery section above.</p>"
-          }
-        },
-        "q7": {
-          "type": "question",
-          "settings": {
-            "question": "What if my order arrives damaged or goes missing?",
-            "answer": "<p>If your water arrives damaged, keep it — we'll send a replacement at no charge. If a delivery is stolen after drop-off, we'll issue a refund. Every delivery is photo-documented by our driver.</p>"
-          }
-        },
-        "q8": {
-          "type": "question",
-          "settings": {
-            "question": "Is Blue Star the same company as Grace Spring and ALKAID?",
-            "answer": "<p>Yes — Blue Star, Grace Spring, and ALKAID are all from the same family water company in Paterson, NJ, serving New Jersey and New York since 2010.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "q1",
-        "q2",
-        "q3",
-        "q4",
-        "q5",
-        "q6",
-        "q7",
-        "q8"
-      ],
-      "settings": {}
+    "reviews": {
+      "type": "custom-liquid",
+      "settings": {
+        "eyebrow": "Reviews",
+        "heading": "What our customers say",
+        "full_width": false,
+        "compact": true,
+        "custom_liquid": "<script src=\"https://static.elfsight.com/platform/platform.js\" data-use-service-core></script>\n<div class=\"elfsight-app-e33227e2-9a76-4c08-a358-f9979413027a\" data-elfsight-app-lazy></div>"
+      }
     }
   },
   "order": [
+    "featured_offer",
+    "water",
+    "banners",
     "hero",
-    "offers",
-    "shop",
-    "how",
-    "delivery",
-    "faq"
+    "bundles",
+    "newsletter",
+    "accessories",
+    "water_types",
+    "reviews"
   ]
 }

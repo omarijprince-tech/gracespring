@@ -1,3 +1,5 @@
-<div class="page-head container"><h1>{{ page.title }}</h1></div>
-<div class="container"><div class="rte page-content">{{ page.content }}</div></div>
-{% schema %}{ "name": "Page" }{% endschema %}
+{%- if section.settings.show_title -%}<div class="page-head container"><h1>{{ page.title }}</h1></div>{%- endif -%}
+{%- if page.content != blank -%}<div class="container"><div class="rte page-content">{{ page.content }}</div></div>{%- endif -%}
+{% schema %}
+{ "name": "Page content", "settings": [ { "type": "checkbox", "id": "show_title", "label": "Show page title", "default": true } ] }
+{% endschema %}

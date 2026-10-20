@@ -1,0 +1,36 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_title": true
+      }
+    },
+    "new": {
+      "type": "product-list",
+      "settings": {
+        "eyebrow": "",
+        "heading": "",
+        "text": "",
+        "product_list": [
+          "new-alkaid-alkaline-water",
+          "new-blue-star-purified-water",
+          "new-alkaid-spring-water"
+        ],
+        "limit": 12,
+        "layout": "grid",
+        "columns": "3",
+        "background": "none",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "outline",
+        "anchor": "",
+        "head_align": "center"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "new"
+  ]
+}

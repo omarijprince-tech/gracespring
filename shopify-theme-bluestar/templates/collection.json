@@ -1,4 +1,18 @@
 {
-  "sections": { "main": { "type": "main-collection", "settings": {} } },
-  "order": ["main"]
+  "sections": {
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_description": true,
+        "per_page": 12,
+        "columns": "3",
+        "compact": false,
+        "enable_filtering": true,
+        "enable_sorting": true
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
 }

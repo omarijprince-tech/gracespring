@@ -1,0 +1,49 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true
+      }
+    },
+    "intro": {
+      "type": "image-with-text",
+      "settings": {
+        "image_position": "left",
+        "ratio": "landscape",
+        "interval": 5,
+        "eyebrow": "Who is Blue Star?",
+        "heading": "We Are Bluestar",
+        "heading_size": "large",
+        "text": "<p>In a world where hydration is key to wellness, our commitment to delivering top-quality water products has been our main priority since our establishment opened in 2010. We are a Licensed Water Delivery Company by the New Jersey Department of Health Consumer and Environmental Health Service.</p><p>We take pride in Purifying, Bottling, and Distributing alkaline water, spring water, and purified water throughout New Jersey and New York, ensuring that every drop contributes to your health and vitality.</p>",
+        "primary_label": "Shop Water",
+        "primary_link": "shopify://pages/get-bottles",
+        "secondary_label": "",
+        "secondary_link": "",
+        "background": "hero",
+        "anchor": ""
+      },
+      "blocks": {},
+      "block_order": []
+    },
+    "benefits": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "eyebrow": "We are Blue Star Pure Water",
+        "heading": "Discover the Health Benefits of Our Water Offerings",
+        "text": "",
+        "white_bg": true,
+        "body": "<p>In a world where hydration is key to wellness, our commitment to delivering top-quality water products has been unwavering since our establishment in 2010.</p><p>We take pride in Purifying, Bottling, and Distributing water throughout New Jersey and New York, ensuring that every drop contributes to your health and vitality.</p><p>At Blue Star Pure Water, we're more than just the best water delivery service in NJ. We're your partner in health and wellness, committed to providing high-quality products that elevate your everyday hydration experience. Whether you're sipping on Purified water, Alkaline water, or Spring water, you can trust that each drop contributes to your overall well-being.</p><p><strong>Purified Water:</strong> Our purification process guarantees the removal of impurities and contaminants, leaving you with clean, refreshing water that supports hydration, aids digestion, and promotes detoxification. With every sip of our purified water, you can trust that you're giving your body the hydration it deserves.</p><p><strong>Alkaline Water:</strong> Experience the potential benefits of alkaline water, which boasts a higher pH level than regular tap water. Proponents believe that alkaline water helps neutralize acidity in the body, supporting a healthy pH balance and potentially reducing the risk of acid-related health issues like acid reflux. Additionally, alkaline water may offer antioxidant properties and enhanced hydration, thanks to its smaller molecular clusters.</p><p><strong>Spring Water:</strong> Sourced from natural springs, our spring water is a treasure trove of essential minerals, including calcium, magnesium, and potassium. These minerals play crucial roles in maintaining bone health, supporting muscle function, and balancing electrolytes. With our spring water, you're not just hydrating – you're nourishing your body with nature's finest elements.</p>",
+        "button_label": "",
+        "button_link": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "intro",
+    "benefits"
+  ]
+}

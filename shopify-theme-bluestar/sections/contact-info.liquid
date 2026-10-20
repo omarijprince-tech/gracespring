@@ -1,0 +1,42 @@
+<section class="section bg-{{ section.settings.background }}">
+  <div class="container">
+    {% render 'section-head', s: section.settings %}
+    <div class="info-grid">
+      {%- for block in section.blocks -%}
+        <div class="step-card info-card" {{ block.shopify_attributes }}>
+          <div class="step-num">{% render 'icon', name: block.settings.icon %}</div>
+          {%- if block.settings.heading != blank -%}<h3>{{ block.settings.heading }}</h3>{%- endif -%}
+          <div class="rte">{{ block.settings.text }}</div>
+          {%- if block.settings.link != blank -%}<a class="info-link" href="{{ block.settings.link }}">{{ block.settings.link_label | default: block.settings.link }}</a>{%- endif -%}
+        </div>
+      {%- endfor -%}
+    </div>
+    {%- if section.settings.button_label != blank -%}
+      <p class="section-cta"><a class="btn btn-primary" href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a></p>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Contact info cards",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Contact" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Get in contact with us!" },
+    { "type": "richtext", "id": "text", "label": "Description" },
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "Call Us" },
+    { "type": "url", "id": "button_link", "label": "Button link" },
+    { "type": "select", "id": "background", "label": "Background", "default": "none", "options": [ { "value": "none", "label": "Page" }, { "value": "white", "label": "White" }, { "value": "pale", "label": "Pale blue" } ] }
+  ],
+  "blocks": [
+    { "type": "info", "name": "Info card", "settings": [
+      { "type": "select", "id": "icon", "label": "Icon", "default": "phone", "options": [ { "value": "phone", "label": "Phone" }, { "value": "mail", "label": "Email" }, { "value": "clock", "label": "Clock" }, { "value": "pin", "label": "Map pin" }, { "value": "truck", "label": "Truck" }, { "value": "star", "label": "Star" } ] },
+      { "type": "text", "id": "heading", "label": "Heading", "default": "Give us a call" },
+      { "type": "richtext", "id": "text", "label": "Text", "default": "<p>973-742-0435</p>" },
+      { "type": "url", "id": "link", "label": "Link" },
+      { "type": "text", "id": "link_label", "label": "Link label" }
+    ] }
+  ],
+  "presets": [ { "name": "Contact info cards", "blocks": [ { "type": "info" }, { "type": "info" }, { "type": "info" } ] } ]
+}
+{% endschema %}

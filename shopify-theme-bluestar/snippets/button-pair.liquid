@@ -1,0 +1,7 @@
+{%- comment -%} Primary + secondary buttons from settings s. Param: light (on dark/photo bg) {%- endcomment -%}
+{%- if s.primary_label != blank or s.secondary_label != blank -%}
+  <div class="hero-ctas">
+    {%- if s.primary_label != blank -%}<a class="btn btn-primary" href="{{ s.primary_link | default: '#' }}">{{ s.primary_label }}</a>{%- endif -%}
+    {%- if s.secondary_label != blank -%}<a class="btn {% if light %}btn-ghost{% else %}btn-outline{% endif %}" href="{{ s.secondary_link | default: '#' }}">{{ s.secondary_label }}</a>{%- endif -%}
+  </div>
+{%- endif -%}

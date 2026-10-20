@@ -83,12 +83,18 @@
           cart: {{ routes.cart_url | json }},
           cartAdd: {{ routes.cart_add_url | json }},
           cartChange: {{ routes.cart_change_url | json }},
+          search: {{ routes.search_url | json }},
+          predictiveSearch: {{ routes.predictive_search_url | json }},
           root: {{ routes.root_url | json }}
         },
         moneyFormat: {{ shop.money_format | json }},
         strings: {
           added: {{ 'cart.added' | t | json }},
-          error: {{ 'cart.error' | t | json }}
+          error: {{ 'cart.error' | t | json }},
+          products: {{ 'search.products' | t | json }},
+          pages: {{ 'search.pages' | t | json }},
+          noResults: {{ 'search.no_suggestions' | t | json }},
+          viewAll: {{ 'search.view_all' | t | json }}
         }
       };
     </script>
