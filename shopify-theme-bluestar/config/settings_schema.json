@@ -160,6 +160,39 @@
         "id": "deposit_badge",
         "label": "Deposit badge text",
         "default": "+ $5 deposit"
+      },
+      {
+        "type": "header",
+        "content": "Product images"
+      },
+      {
+        "type": "select",
+        "id": "product_image_style",
+        "label": "Image style",
+        "options": [
+          { "value": "photo", "label": "Studio photo (fills the frame)" },
+          { "value": "cutout", "label": "Cutout on blue gradient" }
+        ],
+        "default": "photo",
+        "info": "Use studio photo for pictures with their own background; cutout for transparent PNGs."
+      },
+      {
+        "type": "color",
+        "id": "product_image_bg",
+        "label": "Photo frame background",
+        "default": "#f3f3f2",
+        "info": "Match the background of your product photos."
+      },
+      {
+        "type": "select",
+        "id": "product_image_ratio",
+        "label": "Product card image shape",
+        "options": [
+          { "value": "1 / 1", "label": "Square" },
+          { "value": "4 / 3", "label": "Landscape (4:3)" },
+          { "value": "4 / 5", "label": "Portrait (4:5)" }
+        ],
+        "default": "1 / 1"
       }
     ]
   },

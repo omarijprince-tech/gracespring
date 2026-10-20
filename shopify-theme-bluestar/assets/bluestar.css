@@ -149,3 +149,13 @@
 .not-found-search input[type="search"] { padding-left: 44px; }
 .contact-actions { margin: 18px 0 0; }
 .contact-actions .btn { padding: 11px 20px; }
+
+/* Product images: studio photos (own background) fill the frame instead of floating on the gradient */
+.pimg-photo .product-media { background: var(--pimg-bg); padding: 0; align-items: center; aspect-ratio: var(--pimg-ratio); min-height: 0; }
+.pimg-photo .product-media img { width: 100%; height: 100%; max-height: none; object-fit: contain; filter: none; }
+.pimg-photo .product-gallery-main { background: var(--pimg-bg); padding: 0; aspect-ratio: 1 / 1; min-height: 0; overflow: hidden; }
+.pimg-photo .product-gallery-main img { width: 100%; height: 100%; max-height: none; object-fit: contain; filter: none; }
+.pimg-photo .product-thumbs button { background: var(--pimg-bg); }
+.pimg-photo .cart-item-thumb { background: var(--pimg-bg); }
+.pimg-photo .cart-item-thumb { overflow: hidden; }
+.pimg-photo .cart-item-thumb img { width: 100%; height: 100%; max-height: none; object-fit: contain; filter: none; }

@@ -42,6 +42,8 @@
         --sky: {{ settings.color_sky }};
         --sky-100: {{ settings.color_sky_100 }};
         --pale: {{ settings.color_pale }};
+        --pimg-bg: {{ settings.product_image_bg }};
+        --pimg-ratio: {{ settings.product_image_ratio }};
         --bg: {{ settings.color_bg }};
         --ink: {{ settings.color_ink }};
         --muted: {{ settings.color_muted }};
@@ -71,7 +73,7 @@
     {{ content_for_header }}
   </head>
 
-  <body class="template-{{ template.name }}">
+  <body class="template-{{ template.name }} pimg-{{ settings.product_image_style | default: 'photo' }}">
     <a class="skip-link" href="#main">{{ 'general.skip_to_content' | t }}</a>
 
     {% sections 'header-group' %}
