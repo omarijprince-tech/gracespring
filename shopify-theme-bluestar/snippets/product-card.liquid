@@ -23,7 +23,7 @@
   </div>
   <div class="product-body">
     <h3><a href="{{ product.url }}">{{ product.title }}</a></h3>
-    {%- if product.description != blank -%}
+    {%- if settings.card_show_description and product.description != blank -%}
       <p class="product-desc">{{ product.description | strip_html | truncatewords: 22 }}</p>
     {%- endif -%}
     <div class="price-row">

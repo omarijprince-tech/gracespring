@@ -1,4 +1,4 @@
-<div class="container contact-layout">
+<div class="container contact-layout{% if section.settings.layout == 'stacked' %} is-stacked{% endif %}{% if section.settings.aside_position == 'top' %} aside-first{% endif %}">
   <div class="panel">
     <h1 class="contact-title">{{ page.title }}</h1>
     {%- if section.settings.intro != blank -%}<div class="contact-lede rte">{{ section.settings.intro }}</div>{%- endif -%}
@@ -34,6 +34,26 @@
 {
   "name": "Contact form",
   "settings": [
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Layout",
+      "options": [
+        { "value": "stacked", "label": "One box above the other" },
+        { "value": "side", "label": "Side by side" }
+      ],
+      "default": "stacked"
+    },
+    {
+      "type": "select",
+      "id": "aside_position",
+      "label": "Contact info box position",
+      "options": [
+        { "value": "bottom", "label": "Below / right of the form" },
+        { "value": "top", "label": "Above / left of the form" }
+      ],
+      "default": "bottom"
+    },
     {
       "type": "richtext",
       "id": "intro",

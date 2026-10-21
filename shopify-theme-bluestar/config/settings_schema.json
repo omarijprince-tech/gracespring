@@ -162,6 +162,12 @@
         "default": "+ $5 deposit"
       },
       {
+        "type": "checkbox",
+        "id": "card_show_description",
+        "label": "Show description on product cards",
+        "default": true
+      },
+      {
         "type": "header",
         "content": "Product images"
       },

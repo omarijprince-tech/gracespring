@@ -1,14 +1,23 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "main-contact",
       "settings": {
         "intro": "<p>We are the #1 water delivery service in New Jersey, our dedicated customer service team is here to ensure your experience is seamless and satisfying. Whether you have questions about our products, delivery schedules, or billing inquiries, we're ready to provide prompt and personalized assistance. Your satisfaction is our priority, and we're committed to addressing any and every concern you may have with care and expertise. Feel free to reach out – we're always here to help!</p>",
-        "show_form": false,
+        "show_form": true,
         "button_label": "",
         "button_link": "",
         "aside_heading": "Get in contact with us!",
-        "aside": "<p><strong>Send us an email</strong><br><a href=\"mailto:bluealkaiddistributor@gmail.com\">bluealkaiddistributor@gmail.com</a></p><p><strong>Give us a call</strong><br><a href=\"tel:9737420435\">973-742-0435</a></p><p><strong>Hours of Operation</strong><br>M-F 8am - 6pm EST<br>Saturday 8am - 4pm</p><p>Se Habla Español</p>",
+        "aside": "<p><strong>Send us an email</strong><br/><a href=\"mailto:bluealkaiddistributor@gmail.com\">bluealkaiddistributor@gmail.com</a></p><p><strong>Give us a call</strong><br/><a href=\"tel:9737420435\">973-742-0435</a></p><p><strong>Hours of Operation</strong><br/>M-F 8am - 6pm EST<br/>Saturday 8am - 4pm</p><p>Se Habla Español</p>",
         "aside_button_label": "Call Us",
         "aside_button_link": "tel:9737420435",
         "aside_button2_label": "Email Us",
@@ -17,6 +26,7 @@
     },
     "offer": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "anchor": "offer",
         "eyebrow": "Get 5 free bottles!",
@@ -25,6 +35,7 @@
         "product_list": [
           "refurbished-water-dispenser-5-bottles-free"
         ],
+        "collection": "",
         "limit": 12,
         "white_bg": true,
         "button_label": "",
