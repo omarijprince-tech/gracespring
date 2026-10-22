@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
@@ -7,30 +16,30 @@
         "heading": "We Are",
         "heading_accent": "Bluestar.",
         "text": "Since 2010 we purify, bottle and deliver purified, alkaline and spring water to homes and offices across New Jersey and New York — a Licensed Water Delivery Company by the New Jersey Department of Health.",
-        "image": "shopify://shop_images/doorstep1.jpg",
-        "image_alt": "Blue Star water delivered to a customer's doorstep",
         "button_label": "Order Water",
         "button_link": "shopify://pages/get-bottles",
         "button2_label": "Contact Us",
         "button2_link": "shopify://pages/contact",
+        "product": "",
+        "show_price": false,
+        "badge": "MEGA SALE",
+        "image": "shopify://shop_images/deliv2.jpg",
+        "image_alt": "Blue Star water delivered to a customer's doorstep",
         "background_style": "gradient",
+        "wave_top": "#f2f9ff",
+        "wave_bottom": "#cfe8fb",
+        "wave_1": "#9fd0f5",
+        "wave_2": "#4aa3e6",
+        "wave_3": "#2280cc",
+        "wave_height": 35,
+        "waves_animate": true,
+        "background_overlay": 30,
         "heading_tag": "h1",
-        "anchor": "about",
-        "show_price": false
-      },
-      "blocks": {},
-      "block_order": []
+        "anchor": "about"
+      }
     },
     "stats": {
       "type": "trust-stats",
-      "settings": {
-        "eyebrow": "",
-        "heading": "",
-        "text": "",
-        "white_bg": true,
-        "columns_desktop": 4,
-        "columns_mobile": "2"
-      },
       "blocks": {
         "stat_1": {
           "type": "stat",
@@ -66,34 +75,45 @@
         "stat_2",
         "stat_3",
         "stat_4"
-      ]
+      ],
+      "settings": {
+        "eyebrow": "",
+        "heading": "",
+        "text": "",
+        "white_bg": true,
+        "columns_desktop": 4,
+        "columns_mobile": "2"
+      }
     },
     "intro": {
       "type": "rich-text",
       "settings": {
         "eyebrow": "Our story",
         "heading": "Pure water, delivered since 2010",
+        "heading_tag": "h2",
         "text": "",
         "body": "<p>In a world where hydration is key to wellness, our commitment to delivering top-quality water products has been our main priority since our establishment opened in 2010. We are a Licensed Water Delivery Company by the New Jersey Department of Health Consumer and Environmental Health Service.</p><p>We take pride in Purifying, Bottling, and Distributing alkaline water, spring water, and purified water throughout New Jersey and New York, ensuring that every drop contributes to your health and vitality.</p>",
         "button_label": "",
         "button_link": "",
-        "white_bg": false,
-        "heading_tag": "h2"
+        "button2_label": "",
+        "button2_link": "",
+        "white_bg": false
       }
     },
     "benefits": {
       "type": "rich-text",
+      "disabled": true,
       "settings": {
         "eyebrow": "We are Blue Star Pure Water",
         "heading": "Discover the Health Benefits of Our Water Offerings",
+        "heading_tag": "h2",
         "text": "",
         "body": "<p>At Blue Star Pure Water, we're more than just the best water delivery service in NJ. We're your partner in health and wellness, committed to providing high-quality products that elevate your everyday hydration experience. Whether you're sipping on Purified water, Alkaline water, or Spring water, you can trust that each drop contributes to your overall well-being.</p><p><strong>Purified Water:</strong> Our purification process guarantees the removal of impurities and contaminants, leaving you with clean, refreshing water that supports hydration, aids digestion, and promotes detoxification. With every sip of our purified water, you can trust that you're giving your body the hydration it deserves.</p><p><strong>Alkaline Water:</strong> Experience the potential benefits of alkaline water, which boasts a higher pH level than regular tap water. Proponents believe that alkaline water helps neutralize acidity in the body, supporting a healthy pH balance and potentially reducing the risk of acid-related health issues like acid reflux. Additionally, alkaline water may offer antioxidant properties and enhanced hydration, thanks to its smaller molecular clusters.</p><p><strong>Spring Water:</strong> Sourced from natural springs, our spring water is a treasure trove of essential minerals, including calcium, magnesium, and potassium. These minerals play crucial roles in maintaining bone health, supporting muscle function, and balancing electrolytes. With our spring water, you're not just hydrating – you're nourishing your body with nature's finest elements.</p>",
         "button_label": "Order Water",
         "button_link": "shopify://pages/get-bottles",
-        "white_bg": true,
-        "heading_tag": "h2",
         "button2_label": "Call Us",
-        "button2_link": "tel:9737420435"
+        "button2_link": "tel:9737420435",
+        "white_bg": true
       }
     }
   },

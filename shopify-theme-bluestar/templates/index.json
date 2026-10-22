@@ -1,22 +1,58 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
       "type": "hero",
+      "blocks": {
+        "chip_1": {
+          "type": "chip",
+          "disabled": true,
+          "settings": {
+            "text": "🎁 5 bottles + stand FREE"
+          }
+        },
+        "chip_2": {
+          "type": "chip",
+          "disabled": true,
+          "settings": {
+            "text": "🚚 Delivered to NJ & NY"
+          }
+        },
+        "chip_3": {
+          "type": "chip",
+          "disabled": true,
+          "settings": {
+            "text": "🗣️ Se Habla Español"
+          }
+        }
+      },
+      "block_order": [
+        "chip_1",
+        "chip_2",
+        "chip_3"
+      ],
       "settings": {
         "eyebrow": "Mega sale · while supplies last",
         "heading": "Water Cooler",
         "heading_accent": "+ 5 Purified Bottles & 1 bottle stand FREE.",
         "text": "Delivered to NJ & NY",
-        "product": "refurbished-water-dispenser-5-bottles-free",
-        "show_price": true,
-        "badge": "MEGA SALE",
         "button_label": "Claim the Offer",
         "button_link": "shopify://products/refurbished-water-dispenser-5-bottles-free",
         "button2_label": "More Products",
         "button2_link": "shopify://collections/all",
-        "heading_tag": "h1",
-        "anchor": "top",
-        "background_style": "waves",
+        "product": "refurbished-water-dispenser-5-bottles-free",
+        "show_price": true,
+        "badge": "MEGA SALE",
+        "image_alt": "",
+        "background_style": "gradient",
         "wave_top": "#f2f9ff",
         "wave_bottom": "#cfe8fb",
         "wave_1": "#9fd0f5",
@@ -24,45 +60,13 @@
         "wave_3": "#2280cc",
         "wave_height": 35,
         "waves_animate": true,
-        "image_alt": ""
-      },
-      "blocks": {
-        "chip_1": {
-          "type": "chip",
-          "settings": {
-            "text": "🎁 5 bottles + stand FREE"
-          },
-          "disabled": true
-        },
-        "chip_2": {
-          "type": "chip",
-          "settings": {
-            "text": "🚚 Delivered to NJ & NY"
-          },
-          "disabled": true
-        },
-        "chip_3": {
-          "type": "chip",
-          "settings": {
-            "text": "🗣️ Se Habla Español"
-          },
-          "disabled": true
-        }
-      },
-      "block_order": [
-        "chip_1",
-        "chip_2",
-        "chip_3"
-      ]
+        "background_overlay": 30,
+        "heading_tag": "h1",
+        "anchor": "top"
+      }
     },
     "offers": {
       "type": "offers",
-      "settings": {
-        "anchor": "offers",
-        "eyebrow": "Ways to get your water",
-        "heading": "Pick what fits your home or office",
-        "text": "Questions? Call us 973-742-0435 — we're happy to help."
-      },
       "blocks": {
         "offer_1": {
           "type": "offer",
@@ -109,14 +113,22 @@
         "offer_2",
         "offer_3"
       ],
-      "disabled": true
+      "disabled": true,
+      "settings": {
+        "anchor": "offers",
+        "eyebrow": "Ways to get your water",
+        "heading": "Pick what fits your home or office",
+        "text": "Questions? Call us 973-742-0435 — we're happy to help.",
+        "columns_desktop": 3,
+        "columns_mobile": "1"
+      }
     },
     "shop": {
       "type": "featured-collection",
       "settings": {
         "anchor": "shop",
-        "eyebrow": "Order water",
-        "heading": "Choose your water — for delivery",
+        "eyebrow": "",
+        "heading": "Order water  —  for delivery",
         "text": "Questions? Call 973-742-0435",
         "product_list": [
           "blue-star-purified-water",
@@ -126,19 +138,77 @@
           "new-alkaid-alkaline-water",
           "new-alkaid-spring-water"
         ],
+        "collection": "",
         "limit": 12,
         "white_bg": true,
-        "button_label": "Call Us",
+        "button_label": "",
         "button_link": "tel:9737420435",
         "columns_desktop": 3,
         "columns_mobile": "1"
+      }
+    },
+    "nj": {
+      "type": "hero",
+      "blocks": {
+        "chip_1": {
+          "type": "chip",
+          "disabled": true,
+          "settings": {
+            "text": "🚚 Delivery to NJ & NY"
+          }
+        },
+        "chip_2": {
+          "type": "chip",
+          "disabled": true,
+          "settings": {
+            "text": "💧 Purified · Alkaline · Spring"
+          }
+        },
+        "chip_3": {
+          "type": "chip",
+          "disabled": true,
+          "settings": {
+            "text": "🗣️ Se Habla Español"
+          }
+        }
+      },
+      "block_order": [
+        "chip_1",
+        "chip_2",
+        "chip_3"
+      ],
+      "settings": {
+        "eyebrow": "Water delivery · New Jersey & New York",
+        "heading": "New Jersey's #1",
+        "heading_accent": "Water Delivery Service.",
+        "text": "Stay hydrated with ease! Our New Jersey water delivery service brings the crisp taste of purity straight to your doorstep, ensuring you never run dry. Experience convenience and freshness like never before – quench your thirst hassle-free with us today!",
+        "button_label": "",
+        "button_link": "shopify://pages/get-bottles",
+        "button2_label": "",
+        "button2_link": "/pages/get-bottles#new-bottles",
+        "product": "",
+        "show_price": true,
+        "badge": "MEGA SALE",
+        "image": "shopify://shop_images/heart_0ea11101-5b90-4a6d-afdd-8646445b2c8d.png",
+        "image_alt": "",
+        "background_style": "gradient",
+        "wave_top": "#f2f9ff",
+        "wave_bottom": "#cfe8fb",
+        "wave_1": "#9fd0f5",
+        "wave_2": "#4aa3e6",
+        "wave_3": "#2280cc",
+        "wave_height": 35,
+        "waves_animate": true,
+        "background_overlay": 30,
+        "heading_tag": "h2",
+        "anchor": "about"
       }
     },
     "bundles": {
       "type": "featured-collection",
       "settings": {
         "anchor": "bundles",
-        "eyebrow": "Bundle up & save",
+        "eyebrow": "",
         "heading": "Looking for bundle deals?",
         "text": "Look no further — water coolers with free bottles.",
         "product_list": [
@@ -148,60 +218,39 @@
           "small-black-water-coller-3-bottles-free",
           "small-white-water-cooler-3-bottles-free"
         ],
+        "collection": "",
         "limit": 12,
         "white_bg": false,
-        "button_label": "Call Us",
+        "button_label": "",
         "button_link": "tel:9737420435",
         "columns_desktop": 3,
         "columns_mobile": "1"
       }
     },
-    "how": {
-      "type": "how-it-works",
+    "accessories": {
+      "type": "featured-collection",
       "settings": {
-        "anchor": "how",
-        "eyebrow": "How it works",
-        "heading": "Water delivery in three easy steps",
-        "text": ""
-      },
-      "blocks": {
-        "step_1": {
-          "type": "step",
-          "settings": {
-            "title": "Choose your water",
-            "text": "Order purified, alkaline or spring water online — refills or brand-new bottles — or call 973-742-0435."
-          }
-        },
-        "step_2": {
-          "type": "step",
-          "settings": {
-            "title": "We deliver to you",
-            "text": "Our team delivers right to your door across New Jersey and New York."
-          }
-        },
-        "step_3": {
-          "type": "step",
-          "settings": {
-            "title": "Refill anytime",
-            "text": "Swap your empties for full bottles whenever you need more water."
-          }
-        }
-      },
-      "block_order": [
-        "step_1",
-        "step_2",
-        "step_3"
-      ]
+        "anchor": "accessories",
+        "eyebrow": "",
+        "heading": "Accessories",
+        "text": "Stands and Dispensers",
+        "product_list": [
+          "water-bottle-stand-8-levels-5-gallons",
+          "water-bottle-stand-5-levels-5-gallons",
+          "water-bottle-stand-4-levels-5-gallons",
+          "digital-pump-style-water-dispenser"
+        ],
+        "collection": "",
+        "limit": 12,
+        "white_bg": true,
+        "button_label": "",
+        "button_link": "tel:9737420435",
+        "columns_desktop": 4,
+        "columns_mobile": "1"
+      }
     },
     "water": {
       "type": "water-cards",
-      "settings": {
-        "anchor": "water",
-        "eyebrow": "Our water",
-        "heading": "Spring, alkaline or purified?",
-        "text": "Questions? Call Us! 973-742-0435",
-        "white_bg": true
-      },
       "blocks": {
         "card_1": {
           "type": "card",
@@ -250,31 +299,60 @@
         "card_1",
         "card_2",
         "card_3"
-      ]
-    },
-    "accessories": {
-      "type": "featured-collection",
+      ],
+      "disabled": true,
       "settings": {
-        "anchor": "accessories",
-        "eyebrow": "Stands & dispensers",
-        "heading": "Accessories",
-        "text": "",
-        "product_list": [
-          "water-bottle-stand-8-levels-5-gallons",
-          "water-bottle-stand-5-levels-5-gallons",
-          "water-bottle-stand-4-levels-5-gallons",
-          "digital-pump-style-water-dispenser"
-        ],
-        "limit": 12,
+        "anchor": "water",
+        "eyebrow": "Our water",
+        "heading": "Spring, alkaline or purified?",
+        "text": "Questions? Call Us! 973-742-0435",
         "white_bg": true,
-        "button_label": "Call Us",
-        "button_link": "tel:9737420435",
-        "columns_desktop": 2,
+        "columns_desktop": 3,
+        "columns_mobile": "1"
+      }
+    },
+    "how": {
+      "type": "how-it-works",
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "title": "Choose your water",
+            "text": "Order purified, alkaline or spring water online — refills or brand-new bottles — or call 973-742-0435."
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "title": "We deliver to you",
+            "text": "Our team delivers right to your door across New Jersey and New York."
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "title": "Refill anytime",
+            "text": "Swap your empties for full bottles whenever you need more water."
+          }
+        }
+      },
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3"
+      ],
+      "settings": {
+        "anchor": "how",
+        "eyebrow": "How it works",
+        "heading": "Water delivery in three easy steps",
+        "text": "",
+        "columns_desktop": 3,
         "columns_mobile": "1"
       }
     },
     "delivery": {
       "type": "delivery",
+      "disabled": true,
       "settings": {
         "anchor": "delivery",
         "eyebrow": "Delivery",
@@ -285,13 +363,14 @@
         "zip_note": "Not sure about your area? Call 973-742-0435 — Se Habla Español.",
         "list_heading": "What to expect",
         "points": "Delivery to New Jersey\nDelivery to New York\nRefills and brand-new 5-gallon bottles\nWater coolers, bottle stands & dispensers\nM–F 8am – 6pm · Sat 8am – 4pm",
-        "columns_desktop": "2"
+        "columns_desktop": "2",
+        "columns_mobile": "1"
       }
     },
     "newsletter": {
       "type": "newsletter",
       "settings": {
-        "eyebrow": "Newsletter",
+        "eyebrow": "",
         "heading": "Don't miss out on sales!",
         "text": "Subscribe with your email today!",
         "button_label": "Subscribe"
@@ -299,13 +378,6 @@
     },
     "faq": {
       "type": "faq",
-      "settings": {
-        "anchor": "faq",
-        "eyebrow": "FAQ",
-        "heading": "Questions, answered",
-        "text": "",
-        "contact": "<p>Still have questions? Call us at <strong>973-742-0435</strong> or <a href=\"/pages/contact\">send us a message</a> — Se Habla Español.</p>"
-      },
       "blocks": {
         "question_1": {
           "type": "question",
@@ -318,7 +390,7 @@
           "type": "question",
           "settings": {
             "question": "What kinds of water do you offer?",
-            "answer": "<p><strong>Purified</strong> (Blue Star), <strong>Alkaline</strong> (ALKAID) and <strong>Spring</strong> water from natural springs in Pennsylvania — as refills for your bottles or in brand-new bottles. We also carry ALKAID alkaline in 12 × 1L packs.</p>"
+            "answer": "<p><strong>Purified</strong>, <strong>Alkaline</strong> and <strong>Spring</strong> water from natural springs in Pennsylvania — as refills for your bottles or in brand-new bottles. We also carry ALKAID alkaline in 12 × 1L packs.</p>"
           }
         },
         "question_3": {
@@ -365,61 +437,25 @@
         "question_5",
         "question_6",
         "question_7"
-      ]
+      ],
+      "settings": {
+        "anchor": "faq",
+        "eyebrow": "FAQ",
+        "heading": "Questions, answered",
+        "text": "",
+        "contact": "<p>Still have questions? Call us at <strong>973-742-0435</strong> or <a href=\"/pages/contact\">send us a message</a> — Se Habla Español.</p>",
+        "faq_schema": true
+      }
     },
     "reviews": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "eyebrow": "Reviews",
         "heading": "What our customers say",
         "text": "",
         "custom_liquid": "<script src=\"https://static.elfsight.com/platform/platform.js\" data-use-service-core></script>\n<div class=\"elfsight-app-e33227e2-9a76-4c08-a358-f9979413027a\" data-elfsight-app-lazy></div>"
       }
-    },
-    "nj": {
-      "type": "hero",
-      "settings": {
-        "eyebrow": "Water delivery · New Jersey & New York",
-        "heading": "New Jersey's #1",
-        "heading_accent": "Water Delivery Service.",
-        "text": "Stay hydrated with ease! Our New Jersey water delivery service brings the crisp taste of purity straight to your doorstep, ensuring you never run dry. Experience convenience and freshness like never before – quench your thirst hassle-free with us today!",
-        "button_label": "Refill my Water",
-        "button_link": "shopify://pages/get-bottles",
-        "button2_label": "I need New Bottles",
-        "button2_link": "/pages/get-bottles#new-bottles",
-        "image": "shopify://shop_images/heart_0ea11101-5b90-4a6d-afdd-8646445b2c8d.png",
-        "anchor": "about",
-        "heading_tag": "h2",
-        "product": "",
-        "show_price": true,
-        "badge": "MEGA SALE",
-        "image_alt": ""
-      },
-      "blocks": {
-        "chip_1": {
-          "type": "chip",
-          "settings": {
-            "text": "🚚 Delivery to NJ & NY"
-          }
-        },
-        "chip_2": {
-          "type": "chip",
-          "settings": {
-            "text": "💧 Purified · Alkaline · Spring"
-          }
-        },
-        "chip_3": {
-          "type": "chip",
-          "settings": {
-            "text": "🗣️ Se Habla Español"
-          }
-        }
-      },
-      "block_order": [
-        "chip_1",
-        "chip_2",
-        "chip_3"
-      ]
     }
   },
   "order": [
@@ -428,9 +464,9 @@
     "shop",
     "nj",
     "bundles",
-    "how",
-    "water",
     "accessories",
+    "water",
+    "how",
     "delivery",
     "newsletter",
     "faq",
