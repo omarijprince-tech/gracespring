@@ -6,6 +6,7 @@ Square jug photos taken from gracespringwater.com, used on the Blue Star Shopify
 | --- | --- |
 | `bluestar-purified-water-5-gallon-jug.jpg` | Purified Water - Re-Fill (`blue-star-purified-water`), Purified Water - New Bottle (`new-blue-star-purified-water`) |
 | `alkaid-alkaline-water-5-gallon-jug.jpg` | Alkaline Water - Re-Fill (`alkaid-alkaline-water`), Alkaline Water - New Bottle (`new-alkaid-alkaline-water`) |
+| `alkaid-alkaline-water-1l-12-pack.jpg` | 1L Alkaid Alkaline Water by bluestar 12 pack (`new-alkaid-alkaline-water-1-lt-bottles`); old media `MediaImage/37673640722745` 1L-bottle.jpg and `MediaImage/37673642754361` help2_aa8038da-8c32-4376-a685-548c2e269f0f.jpg detached (still in Files) |
 | `grace-spring-water-5-gallon-jug.jpg` | Spring Water - Re-Fill (`alkaid-spring-water`), Spring Water - New Bottle (`new-alkaid-spring-water`) |
 
 ## Backup of what the products had before (2026-10-20)
