@@ -29,7 +29,7 @@ REFILL_HOW = """<p>Si ya tienes una botella vacía, te la cambiamos. Recogemos t
 <p>Si no tienes una botella de 5 galones, agrega a tu carrito las botellas <strong>nuevas</strong>.</p>"""
 
 PURIFIED_INTRO = """<p>Esta agua es <strong>perfecta</strong> para quienes simplemente quieren <strong>tomar más agua</strong>. Es como un nuevo comienzo para tu cuerpo: te mantiene hidratado y te ayuda a <strong>sentirte mejor</strong>. Somos el mejor servicio de agua a domicilio de Nueva Jersey, y puedes confiar en que cada gota es pura.</p>
-<p>Si estás empezando y también necesitas un <strong>dispensador de agua</strong>, tenemos paquetes con dispensadores excelentes. Te invitamos a ver nuestra <strong>oferta de dispensador con 5 botellas de agua purificada gratis</strong>: la encuentras <strong><a href="https://bluestarpurewater.com/products/refurbished-water-dispenser-5-bottles-free">aquí</a></strong>.</p>"""
+<p>Si estás empezando y también necesitas un <strong>dispensador de agua</strong>, tenemos paquetes con dispensadores excelentes. Te invitamos a ver nuestra <strong>oferta de dispensador con 5 botellas de agua purificada y un estante gratis</strong>: la encuentras <strong><a href="https://bluestarpurewater.com/products/refurbished-water-dispenser-5-bottles-free">aquí</a></strong>.</p>"""
 
 ALKALINE_BODY = """<p>El agua alcalina es como la <strong>superheroína de la hidratación</strong>. Es agua con un <strong>pH más alto que el agua común</strong>, lo que la hace menos ácida y más… bueno, ¡alcalina! Hay quienes dicen que les ayuda con la digestión, la energía y hasta la salud de la piel.</p>
 <p>Es como darle a tu cuerpo un abrazo <strong>refrescante</strong> que equilibra el pH desde adentro. Si quieres darle un toque extra a tu hidratación, el agua alcalina puede ser tu nueva aliada.</p>
@@ -148,7 +148,7 @@ ES = {
         "meta_description": "Agua alcalina ALKAID pH 9.5 con electrolitos, paquete de 12 botellas de 1 L. Entrega a domicilio por Blue Star en casas y oficinas de NJ y NY.",
     },
     "9104509370681": {  # MEGA SALE
-        "body_html": """<p>¡Atención, Nueva Jersey! Disfruta la máxima comodidad en hidratación con nuestra oferta exclusiva. Llévate un dispensador de agua reacondicionado con 3 meses de garantía, y además recibe 5 garrafones de agua fresca gratis, entregados en tu puerta. Mantente hidratado sin complicaciones y ahorra con esta oferta increíble. ¡No te la pierdas, haz tu pedido hoy!</p>""",
+        "body_html": """<p>¡Atención, Nueva Jersey y Nueva York! Llévate un <strong>dispensador de agua fría y caliente</strong> y te regalamos <strong>5 botellas de agua purificada de 5 galones GRATIS</strong> más <strong>1 estante GRATIS</strong>, entregados en tu puerta. Mantente hidratado sin complicaciones y ahorra con esta oferta, hasta agotar existencias. Haz tu pedido o llámanos al <strong>973-742-0435</strong>.</p>""",
         "product_type": "agua",
         "meta_title": "MEGA OFERTA: Dispensador + 5 botellas + estante GRATIS | Blue Star",
         "meta_description": "Llévate un dispensador de agua fría y caliente con 5 botellas de agua purificada de 5 galones y un estante GRATIS. Entrega en NJ y NY. Hasta agotar existencias.",
