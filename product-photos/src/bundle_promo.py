@@ -15,7 +15,7 @@ c=Image.new('RGBA',(W,W),SKY+(255,))
 d=ImageDraw.Draw(c)
 # top gradient band with wave edge
 top=Image.new('RGBA',(W,W),(0,0,0,0)); td=ImageDraw.Draw(top)
-band=820
+band=700
 for y in range(band+120):
     t=y/(band+120); col=tuple(int(NAVY[i]*(1-t)+BLUE[i]*t) for i in range(3))
     td.line([(0,y),(W,y)],fill=col+(255,))
@@ -31,17 +31,17 @@ d=ImageDraw.Draw(c)
 def ctext(y,txt,f,fill):
     w=d.textlength(txt,font=f); d.text(((W-w)/2,y),txt,font=f,fill=fill); return f.getbbox(txt)[3]
 # brand line
-ctext(70,T['brand'],font('Inter-Bold.otf',44),(159,208,245))
+ctext(52,T['brand'],font('Inter-Bold.otf',44),(159,208,245))
 # pill
 pf=font('Inter-ExtraBold.otf',46); pw=d.textlength(T['pill'],font=pf)+90; px=(W-pw)/2
-d.rounded_rectangle((px,150,px+pw,232),radius=41,fill=GOLD); ctext(165,T['pill'],pf,NAVY)
+d.rounded_rectangle((px,122,px+pw,204),radius=41,fill=GOLD); ctext(137,T['pill'],pf,NAVY)
 # headline (auto-fit)
 def fit(txt,name,size,maxw):
     while d.textlength(txt,font=font(name,size))>maxw: size-=4
     return font(name,size)
-ctext(270,T['h1'],fit(T['h1'],'InterDisplay-Black.otf',150,1850),WHITE)
-ctext(450,T['h2'],fit(T['h2'],'InterDisplay-ExtraBold.otf',104,1850),(159,208,245))
-ctext(590,T['h3'],fit(T['h3'],'InterDisplay-ExtraBold.otf',104,1850),(159,208,245))
+ctext(232,T['h1'],fit(T['h1'],'InterDisplay-Black.otf',136,1850),WHITE)
+ctext(395,T['h2'],fit(T['h2'],'InterDisplay-ExtraBold.otf',92,1850),(159,208,245))
+ctext(518,T['h3'],fit(T['h3'],'InterDisplay-ExtraBold.otf',92,1850),(159,208,245))
 # products
 back=Image.open(SRC).convert('RGBA'); back=back.crop(back.getbbox())
 jug=Image.open(JUG).convert('RGBA'); jug=jug.crop(jug.getbbox())
@@ -52,13 +52,13 @@ def floor_shadow(cx,cy,w,h,op):
 def put(im,h,x,yb,op=110):
     w=int(im.width*h/im.height); j=im.resize((w,h),Image.LANCZOS)
     floor_shadow(x+w/2,yb-h*0.01,int(w*0.95),max(12,int(h*0.06)),op); c.alpha_composite(j,(int(x),int(yb-h))); return w
-floor=1835; bh=1000; bw=int(back.width*bh/back.height); bx=230
-put(back,bh,bx,floor,70)
-jh=330; jw=int(jug.width*jh/jug.height); g=-8; x0=bx+bw+30
-for i in range(2): put(jug,jh,x0+jw*0.5+i*(jw+g)+40,floor-140)
-for i in range(3): put(jug,jh,x0+i*(jw+g)-20,floor)
+floor=1860; bh=1060; bw=int(back.width*bh/back.height); bx=(W-bw)//2-60
+put(back,bh,bx,floor-110,70)
+jh=450; jw=int(jug.width*jh/jug.height); g=-14
+tot=5*jw+4*g; x0=(W-tot)//2
+for i in range(5): put(jug,jh,x0+i*(jw+g),floor)
 # FREE burst
-cx,cy,r=1720,1010,175
+cx,cy,r=1745,960,170
 burst=Image.new('RGBA',(W,W),(0,0,0,0)); bd=ImageDraw.Draw(burst)
 pts=[]
 for k in range(48):
