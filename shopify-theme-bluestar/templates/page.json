@@ -32,7 +32,8 @@
         "button_label": "",
         "button_link": "",
         "columns_desktop": 3,
-        "columns_mobile": "1"
+        "columns_mobile": "1",
+        "heading_tag": "h1"
       }
     },
     "new": {

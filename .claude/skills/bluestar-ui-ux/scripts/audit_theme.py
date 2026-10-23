@@ -150,7 +150,7 @@ def check_templates(theme):
             if not sec.get("disabled"):
                 if sec["type"] == "hero" and settings.get("heading_tag", "h1") == "h1":
                     h1.append(sid)
-                if sec["type"] == "rich-text" and settings.get("heading_tag") == "h1":
+                if sec["type"] in ("rich-text", "featured-collection") and settings.get("heading_tag") == "h1":
                     h1.append(sid)
                 if sec["type"] in ("main-product", "main-collection", "main-page", "main-blog", "main-article",
                                    "main-search", "main-cart", "main-404", "main-contact", "main-list-collections"):

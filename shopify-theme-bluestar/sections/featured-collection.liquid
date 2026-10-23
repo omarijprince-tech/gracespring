@@ -2,7 +2,7 @@
 {%- assign picked = section.settings.product_list -%}
 <section class="section" id="{{ section.settings.anchor }}"{% if section.settings.white_bg %} style="background:#fff"{% endif %}>
   <div class="container">
-    {% render 'section-head', s: section.settings %}
+    {% render 'section-head', s: section.settings, tag: section.settings.heading_tag %}
     {%- liquid
       if picked != blank and picked.count > 0
         assign shown = picked.count
@@ -59,6 +59,17 @@
       "id": "heading",
       "label": "Heading",
       "default": "Choose your water"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Heading level",
+      "default": "h2",
+      "options": [
+        { "value": "h1", "label": "H1 – page title (use once per page)" },
+        { "value": "h2", "label": "H2" }
+      ],
+      "info": "Use H1 when this is the first section of a page with no other title."
     },
     {
       "type": "textarea",
