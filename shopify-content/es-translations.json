@@ -131,7 +131,7 @@
     [
       "section.index.json.offers.offer_2.points:3e7qfmppgoyi2",
       "95733df4c922bae3c2eb89d000fce87e14cc2466d97efed0920df42419fbd038",
-      "Recarga de agua purificada\nRecarga de agua alcalina\nRecarga de agua de manantial\n¿Necesitas garrafones nuevos? También tenemos botellas nuevas"
+      "Refill de agua purificada\nRefill de agua alcalina\nRefill de agua de manantial\n¿Necesitas garrafones nuevos? También tenemos botellas nuevas"
     ],
     [
       "section.index.json.offers.offer_2.button_label:39mk9gnmt5bju",
@@ -326,7 +326,7 @@
     [
       "section.index.json.how.step_1.text:1tajcfas2alve",
       "4961859959543367430713103a9d8132f1f4ccfd154d148b38be2ea9ce09c21c",
-      "Pide agua purificada, alcalina o de manantial en línea — recargas o botellas nuevas — o llama al 973-742-0435."
+      "Pide agua purificada, alcalina o de manantial en línea — refills o botellas nuevas — o llama al 973-742-0435."
     ],
     [
       "section.index.json.how.step_2.title:2e8uuedr460g4",
@@ -341,7 +341,7 @@
     [
       "section.index.json.how.step_3.title:2mjv1b2p1x4h1",
       "6aad448fad6d51b21027f7d0e1a6a5ad4bb7b5b2f30f6487bd03d4a09da1349d",
-      "Recarga cuando quieras"
+      "Pide tu refill cuando quieras"
     ],
     [
       "section.index.json.how.step_3.text:3ds30wvdoas6w",
@@ -381,7 +381,7 @@
     [
       "section.index.json.delivery.points:32tolkxckzpg3",
       "bc7e4a9e18b053a0bcaf3a839e530a45b2f1411f619e116d9f5a055f01ed14a1",
-      "Entregas en Nueva Jersey\nEntregas en Nueva York\nRecargas y botellas nuevas de 5 galones\nDispensadores, estantes y bombas para botellas\nL–V 8am – 6pm · Sáb 8am – 4pm"
+      "Entregas en Nueva Jersey\nEntregas en Nueva York\nRefills y botellas nuevas de 5 galones\nDispensadores, estantes y bombas para botellas\nL–V 8am – 6pm · Sáb 8am – 4pm"
     ],
     [
       "section.index.json.newsletter.heading:1bca588es4bc9",
@@ -431,7 +431,7 @@
     [
       "section.index.json.faq.question_2.answer:zo4m7b06n8v6",
       "215b4f1f719616dce3cac592d9e70e6f578805c07358ba3b0b30642ffda978c6",
-      "<p>Agua <strong>purificada</strong>, <strong>alcalina</strong> y <strong>de manantial</strong> de manantiales naturales en Pensilvania — como recarga para tus botellas o en botellas nuevas. También tenemos agua alcalina ALKAID en paquetes de 12 × 1 L.</p>"
+      "<p>Agua <strong>purificada</strong>, <strong>alcalina</strong> y <strong>de manantial</strong> de manantiales naturales en Pensilvania — como refill para tus botellas o en botellas nuevas. También tenemos agua alcalina ALKAID en paquetes de 12 × 1 L.</p>"
     ],
     [
       "section.index.json.faq.question_3.question:1t026aq55wodt",
@@ -446,12 +446,12 @@
     [
       "section.index.json.faq.question_4.question:3lw2nqq80gvli",
       "652b2b5632ecbd7d9d4ea3421ab73929668d13c7c3771581508552401fd260ba",
-      "¿Recarga o botella nueva? ¿Cuál es la diferencia?"
+      "¿Refill o botella nueva? ¿Cuál es la diferencia?"
     ],
     [
       "section.index.json.faq.question_4.answer:18e28uakicgtg",
       "6b75c91b0fb9168419d75bd1c3c7cce209c823a35e2bead612d176f124b616eb",
-      "<p>Elige <strong>Recarga</strong> para rellenar las botellas que ya tienes, o <strong>Botella nueva</strong> si necesitas garrafones nuevos de 5 galones.</p>"
+      "<p>Elige <strong>Refill</strong> para rellenar las botellas que ya tienes, o <strong>Botella nueva</strong> si necesitas garrafones nuevos de 5 galones.</p>"
     ],
     [
       "section.index.json.faq.question_5.question:ekp195rws2k7",
@@ -498,7 +498,7 @@
     [
       "section.page.json.refill.eyebrow:5m2gbjqd3ot0",
       "b354b1f10c7780244c1ede47ff3204bad0f2b87f023c02af11148d347847938d",
-      "Recarga"
+      "Refill"
     ],
     [
       "section.page.json.refill.heading:5m2bbgtn23al",
@@ -856,9 +856,9 @@
     ]
   ],
   "product_titles": {
-    "gid://shopify/Product/6688699089076": "Agua purificada - Recarga",
-    "gid://shopify/Product/6688699547828": "Agua de manantial - Recarga",
-    "gid://shopify/Product/6688700432564": "Agua alcalina - Recarga",
+    "gid://shopify/Product/6688699089076": "Agua purificada - Refill",
+    "gid://shopify/Product/6688699547828": "Agua de manantial - Refill",
+    "gid://shopify/Product/6688700432564": "Agua alcalina - Refill",
     "gid://shopify/Product/6753494040756": "Agua purificada - Botella nueva",
     "gid://shopify/Product/6753521369268": "Agua alcalina - Botella nueva",
     "gid://shopify/Product/6753522614452": "Agua de manantial - Botella nueva",
