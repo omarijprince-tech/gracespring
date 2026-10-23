@@ -18,21 +18,16 @@ m=np.array(mask)>0
 for y in range(m.shape[0]):
     xs=np.nonzero(m[y])[0]
     if len(xs)>1: m[y,xs[0]:xs[-1]+1]=True
-# cap: rows above the first blue neck pixel get a clean rounded rectangle
+# cap: traced from this photo (grace-spring-water-5-gallon-jug.jpg, 1800px):
+# rounded cap 792..972 x 156..292 (r=14) plus the tamper strip hanging on the left
 rgb=np.array(im).astype(int)
-blue=(rgb[:,:,2]-rgb[:,:,0])>60
 ys,xs=np.nonzero(m)
-top=ys.min(); cx=int(np.median(xs[ys<top+40]))
-neck=next(y for y in range(top,m.shape[0]) if blue[y,cx-30:cx+30].any())
-L=[];R=[]
-for y in range(top+10,neck-2):
-    xs_=np.nonzero(m[y])[0]
-    if len(xs_): L.append(xs_[0]); R.append(xs_[-1])
-l=int(np.percentile(L,20)); r=int(np.percentile(R,20))
-m[top:neck]=False
-capmask=Image.new('L',(m.shape[1],m.shape[0]),0)
-ImageDraw.Draw(capmask).rounded_rectangle((l,top,r,neck+4),radius=14,fill=255)
-m|=np.array(capmask)>0
+S4=4; cap=Image.new('L',(m.shape[1]*S4,m.shape[0]*S4),0); cd=ImageDraw.Draw(cap)
+cd.rounded_rectangle((792*S4,156*S4,972*S4,300*S4),radius=14*S4,fill=255)
+cd.rounded_rectangle((786*S4,240*S4,815*S4,318*S4),radius=3*S4,fill=255)
+cap=cap.resize((m.shape[1],m.shape[0]),Image.LANCZOS)
+capa=np.array(cap)
+m[:286]=False            # everything above the neck comes from the traced cap
 # base: drop neutral-grey (shadow) pixels in the bottom band
 H=m.shape[0]; ys_=ys.max()
 band=slice(ys_-140,ys_+1)
@@ -43,5 +38,6 @@ for y in range(ys_-140,ys_+1):
     if len(xs2)>1: m[y,xs2[0]:xs2[-1]+1]=True
 mask=Image.fromarray((m*255).astype('uint8'))
 mask=mask.filter(ImageFilter.MinFilter(3)).filter(ImageFilter.GaussianBlur(1.0))
+mask=Image.fromarray(np.maximum(np.array(mask),capa))
 out=im.convert('RGBA'); out.putalpha(mask)
 out=out.crop(mask.getbbox()); out.save(dst); print(out.size)
