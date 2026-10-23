@@ -169,6 +169,41 @@
       },
       {
         "type": "header",
+        "content": "Refill / New bottle labels"
+      },
+      {
+        "type": "checkbox",
+        "id": "type_badges",
+        "label": "Show Refill / New bottle label on product cards",
+        "default": true,
+        "info": "Label text is in Online Store › Themes › Edit default theme content (Products › Badge refill / Badge new bottle)."
+      },
+      {
+        "type": "text",
+        "id": "refill_tag",
+        "label": "Product tag for Refill",
+        "default": "refill"
+      },
+      {
+        "type": "color",
+        "id": "refill_badge_color",
+        "label": "Refill label color",
+        "default": "#1f76bf"
+      },
+      {
+        "type": "text",
+        "id": "new_bottle_tag",
+        "label": "Product tag for New bottle",
+        "default": "new-bottle"
+      },
+      {
+        "type": "color",
+        "id": "new_bottle_badge_color",
+        "label": "New bottle label color",
+        "default": "#102252"
+      },
+      {
+        "type": "header",
         "content": "Product images"
       },
       {

@@ -26,7 +26,9 @@
     "sale": "Oferta",
     "decrease": "Disminuir cantidad",
     "increase": "Aumentar cantidad",
-    "save": "Ahorra {{ amount }}"
+    "save": "Ahorra {{ amount }}",
+    "badge_refill": "Refill",
+    "badge_new_bottle": "Botella nueva"
   },
   "collections": {
     "empty": "Aún no hay productos.",

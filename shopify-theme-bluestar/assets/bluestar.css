@@ -165,3 +165,13 @@
 .contact-layout.aside-first .contact-aside { order: -1; }
 .contact-layout.aside-first:not(.is-stacked) { grid-template-columns: 0.85fr 1.15fr; }
 @media (max-width: 920px) { .contact-layout.aside-first:not(.is-stacked) { grid-template-columns: 1fr; } }
+
+/* Refill / New bottle label on product cards (driven by product tags) */
+.type-badge {
+  position: absolute; top: 12px; left: 12px; z-index: 1;
+  border-radius: 999px; padding: 5px 12px; color: #fff;
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase;
+  box-shadow: var(--shadow-sm);
+}
+.type-badge--refill { background: var(--badge-refill, #1f76bf); }
+.type-badge--new { background: var(--badge-new, #102252); }

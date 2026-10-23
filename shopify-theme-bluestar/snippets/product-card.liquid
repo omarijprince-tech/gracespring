@@ -7,6 +7,21 @@
 -%}
 <article class="product-card" data-product="{{ product.handle }}">
   <div class="product-media">
+    {%- liquid
+      assign type_badge = ''
+      if settings.type_badges
+        if settings.refill_tag != blank and product.tags contains settings.refill_tag
+          assign type_badge = 'refill'
+        elsif settings.new_bottle_tag != blank and product.tags contains settings.new_bottle_tag
+          assign type_badge = 'new'
+        endif
+      endif
+    -%}
+    {%- if type_badge == 'refill' -%}
+      <span class="type-badge type-badge--refill">{{ 'products.badge_refill' | t }}</span>
+    {%- elsif type_badge == 'new' -%}
+      <span class="type-badge type-badge--new">{{ 'products.badge_new_bottle' | t }}</span>
+    {%- endif -%}
     <a href="{{ product.url }}" tabindex="-1" aria-hidden="true">
       {%- if product.featured_image -%}
         {{ product.featured_image | image_url: width: 600 | image_tag: widths: '300, 450, 600', sizes: '(max-width: 920px) 90vw, 420px', loading: 'lazy', alt: product.featured_image.alt | default: product.title }}

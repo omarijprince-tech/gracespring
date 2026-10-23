@@ -26,7 +26,9 @@
     "sale": "Sale",
     "decrease": "Decrease quantity",
     "increase": "Increase quantity",
-    "save": "Save {{ amount }}"
+    "save": "Save {{ amount }}",
+    "badge_refill": "Refill",
+    "badge_new_bottle": "New bottle"
   },
   "collections": {
     "empty": "No products yet — add products in Shopify admin and they'll appear here.",
