@@ -92,7 +92,6 @@ ES = {
     },
     "6753494040756": {  # Purified Water - New Bottle
         "body_html": PURIFIED_INTRO + "\n" + REFILL_HOW + "\n" + WHY_WATER,
-        "product_type": "agua",
         "meta_title": "Agua purificada 5 galones, botella nueva | Blue Star NJ y NY",
         "meta_description": "Botella nueva de 5 galones libre de BPA con agua purificada Blue Star. Clientes nuevos: entregamos a casas y oficinas en Nueva Jersey y Nueva York.",
     },
@@ -149,7 +148,6 @@ ES = {
     },
     "9104509370681": {  # MEGA SALE
         "body_html": """<p>¡Atención, Nueva Jersey y Nueva York! Llévate un <strong>dispensador de agua fría y caliente</strong> y te regalamos <strong>5 botellas de agua purificada de 5 galones GRATIS</strong> más <strong>1 estante GRATIS</strong>, entregados en tu puerta. Mantente hidratado sin complicaciones y ahorra con esta oferta, hasta agotar existencias. Haz tu pedido o llámanos al <strong>973-742-0435</strong>.</p>""",
-        "product_type": "agua",
         "meta_title": "MEGA OFERTA: Dispensador + 5 botellas + estante GRATIS | Blue Star",
         "meta_description": "Llévate un dispensador de agua fría y caliente con 5 botellas de agua purificada de 5 galones y un estante GRATIS. Entrega en NJ y NY. Hasta agotar existencias.",
     },
