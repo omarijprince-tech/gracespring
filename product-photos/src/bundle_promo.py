@@ -1,3 +1,4 @@
+# Usage (from the repo root): python3 product-photos/src/bundle_promo.py en 288 388  (lang, price, compare-at price)
 from PIL import Image, ImageFilter, ImageDraw, ImageFont
 import math, sys
 SRC='product-photos/src/cooler-stand.webp'
@@ -7,10 +8,11 @@ def font(n,s): return ImageFont.truetype(F+n,s)
 W=2048
 NAVY=(16,34,82); BLUE=(31,118,191); SKY=(234,244,252); GOLD=(245,166,35); WHITE=(255,255,255)
 lang=sys.argv[1] if len(sys.argv)>1 else 'en'
+PRICE,WAS=sys.argv[2],sys.argv[3]
 T={'en':dict(pill='MEGA SALE · WHILE SUPPLIES LAST',h1='Water Cooler',h2='+ 5 Purified Bottles FREE',h3='+ 1 Bottle Stand FREE',
-            free1='FREE',free2='5 BOTTLES',free3='+ STAND',foot='Delivered to NJ & NY  ·  Se Habla Español  ·  973-742-0435',brand='BLUE STAR PURE WATER'),
+            free1='FREE',free2='5 BOTTLES',free3='+ STAND',foot='Delivered to NJ & NY  ·  Se Habla Español  ·  973-742-0435',brand='BLUE STAR PURE WATER',only='ONLY',save='SAVE'),
    'es':dict(pill='MEGA OFERTA · HASTA AGOTAR EXISTENCIAS',h1='Dispensador de agua',h2='+ 5 botellas purificadas GRATIS',h3='+ 1 estante GRATIS',
-            free1='GRATIS',free2='5 BOTELLAS',free3='+ ESTANTE',foot='Entregas en NJ y NY  ·  Hablamos español  ·  973-742-0435',brand='BLUE STAR PURE WATER')}[lang]
+            free1='GRATIS',free2='5 BOTELLAS',free3='+ ESTANTE',foot='Entregas en NJ y NY  ·  Hablamos español  ·  973-742-0435',brand='BLUE STAR PURE WATER',only='SOLO',save='AHORRA')}[lang]
 c=Image.new('RGBA',(W,W),SKY+(255,))
 d=ImageDraw.Draw(c)
 # top gradient band with wave edge
@@ -57,6 +59,21 @@ put(back,bh,bx,floor-110,70)
 jh=450; jw=int(jug.width*jh/jug.height); g=-14
 tot=5*jw+4*g; x0=(W-tot)//2
 for i in range(5): put(jug,jh,x0+i*(jw+g),floor)
+
+# price block (left of the cooler)
+px0=80; py0=800
+d.text((px0,py0),T['only'],font=font('Inter-ExtraBold.otf',52),fill=BLUE)
+pf=font('InterDisplay-Black.otf',166)
+assert px0+d.textlength('$'+PRICE,font=pf) < (W-int(back.width*1060/back.height))//2-60-20, 'price overlaps cooler'
+d.text((px0-8,py0+50),'$'+PRICE,font=pf,fill=NAVY)
+wf=font('InterDisplay-Bold.otf',84); wt='$'+WAS
+d.text((px0,py0+262),wt,font=wf,fill=(110,122,140))
+ww=d.textlength(wt,font=wf); yb=py0+262+wf.getbbox(wt)[1]+(wf.getbbox(wt)[3]-wf.getbbox(wt)[1])//2
+d.line((px0-6,yb,px0+ww+6,yb),fill=(200,40,40),width=9)
+sv=T['save']+' $'+str(int(float(WAS))-int(float(PRICE)))
+sf=font('Inter-ExtraBold.otf',50); sw=d.textlength(sv,font=sf)
+d.rounded_rectangle((px0,py0+380,px0+sw+60,py0+460),radius=40,fill=(14,138,95))
+d.text((px0+30,py0+392),sv,font=sf,fill=WHITE)
 # FREE burst
 cx,cy,r=1745,960,170
 burst=Image.new('RGBA',(W,W),(0,0,0,0)); bd=ImageDraw.Draw(burst)
