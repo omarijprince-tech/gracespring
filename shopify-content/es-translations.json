@@ -1,191 +1,878 @@
 {
   "_about": "Spanish translations of the text written in the theme editor (registered with translationsRegister, locale es). Keys and digests come from translatableResources; a digest changes when the English text changes, so re-fetch before re-registering.",
   "OnlineStoreThemeJsonTemplate/404": [
-    ["section.404.json.main.button_label:3mw9i30jg1sl6", "cc67a67d0aa6c61f9051c541779073f9719f7d4f1680fdfd12519727dfc9b118", "Pedir agua"],
-    ["section.404.json.main.button2_label:3731aoc2oxn9k", "98b67063cf8e584d75e53b88472ee85473e01e0ea16f29ece9cc98f4a2710494", "Contáctanos"]
+    [
+      "section.404.json.main.button_label:3mw9i30jg1sl6",
+      "cc67a67d0aa6c61f9051c541779073f9719f7d4f1680fdfd12519727dfc9b118",
+      "Pedir agua"
+    ],
+    [
+      "section.404.json.main.button2_label:3731aoc2oxn9k",
+      "98b67063cf8e584d75e53b88472ee85473e01e0ea16f29ece9cc98f4a2710494",
+      "Contáctanos"
+    ]
   ],
   "OnlineStoreThemeJsonTemplate/index": [
-    ["section.index.json.hero.eyebrow:1xz6u7cdc61v5", "509cb82e50459c305fdf9340c47f7435fed44c783229c21eb5b5ede412b497ef", "Mega oferta · hasta agotar existencias"],
-    ["section.index.json.hero.heading:1xz6vxtlud4lk", "162e491cfe9f72a7461100d4f11b43518536be3f823510608f5cf1ca270619de", "Dispensador de agua"],
-    ["section.index.json.hero.heading_accent:pxdpee3ddo15", "30a38f7b03aa1e359a4baf5508e8d4d08837082d1630addd812a2725b07ef730", "+ 5 botellas de agua purificada y 1 estante GRATIS."],
-    ["section.index.json.hero.text:d9p12h9l2inx", "5094a1e5e8a9c29e836a2c54e5a0e57ce037a02971801021ca354e0e882671c3", "Entregamos en NJ y NY"],
-    ["section.index.json.hero.button_label:2svylk60dlymn", "4a15ab22d035fba4c294b62d3d40012d1112ddcad4d2b1141084bd60c5b9c114", "Aprovecha la oferta"],
-    ["section.index.json.hero.button2_label:2xuro8hruvz19", "d05723c09029aff91b1afe181397afb94f7d2480935d98449104793a7e3ae4aa", "Más productos"],
-    ["section.index.json.hero.badge:hfrw6vkn2o2t", "4a052820c356dd81662dbb1d9480ae446a7fac29e3f5dd6ed44ed77200a80d20", "MEGA OFERTA"],
-    ["section.index.json.hero.chip_1.text:icwzs390gcey", "2526e4d9d7c41f7e03bb7a2967bedaa31f68914f4c07dcdd2df1e756284e616e", "🎁 5 botellas + estante GRATIS"],
-    ["section.index.json.hero.chip_2.text:1okbbgddajk49", "98b4f671193eb0d182319fb1704480978fa4072761a01453c085816370c9af57", "🚚 Entregas en NJ y NY"],
-    ["section.index.json.hero.chip_3.text:1g3n7313z6v2w", "32b20e741bf336356794fca6ac3f4487d36ab6564c86c1a7d0b9336b65cd79bd", "🗣️ Hablamos español"],
-    ["section.index.json.offers.eyebrow:tuzeysxb933e", "563e8db2d2eed4d7b28b13346276de00b2b563f46b78f530ac670d3ea0231565", "Formas de recibir tu agua"],
-    ["section.index.json.offers.heading:tuzkyryc811v", "f75c2363ba0e2ec60b96713b8e2d55366c638176b85491ff934cac22727a1f3f", "Elige lo que mejor va con tu casa u oficina"],
-    ["section.index.json.offers.text:3j6bo0eha7l8m", "d92c0a0398c5e1a85feabdcac94612250ecaf6b7bf98fd166f529f880b66c783", "¿Preguntas? Llámanos al 973-742-0435 — con gusto te ayudamos."],
-    ["section.index.json.offers.offer_1.badge:yxcbfs8a1ec3", "509cb82e50459c305fdf9340c47f7435fed44c783229c21eb5b5ede412b497ef", "Mega oferta · hasta agotar existencias"],
-    ["section.index.json.offers.offer_1.title:yxcbg520htbq", "36fbb1655a6b46c297dea52a74fa8ebb8cbd5911ed7aa5da29d60de1b271ce65", "Dispensador + 5 botellas de agua purificada GRATIS"],
-    ["section.index.json.offers.offer_1.price:yxcbg2muhypn", "c4ef4dffb7e9ccb4cbc15d3b9883c0fb2eba485b350ab3d3c822a94975918661", "+ 1 estante, gratis"],
-    ["section.index.json.offers.offer_1.price_note:38ba6c5xt0yyc", "05da5919f97d7109852a5b02404616b143190dd669386c7e3f4759658284d4d6", "gratis con tu dispensador"],
-    ["section.index.json.offers.offer_1.points:vd69i5i24fmx", "1423c9e32bc986a40e092e76931a30cc61df7dc7dcc4be6a87137f2115d38889", "Dispensador de agua fría y caliente\n5 botellas de 5 galones de agua purificada GRATIS\n1 estante GRATIS\nTe lo llevamos a tu puerta"],
-    ["section.index.json.offers.offer_1.button_label:sjec99b76jax", "4a15ab22d035fba4c294b62d3d40012d1112ddcad4d2b1141084bd60c5b9c114", "Aprovecha la oferta"],
-    ["section.index.json.offers.offer_2.badge:2p4x28ssm1fxs", "366ed29e31e8ffb2e0161c905d03808637383c7d2225cd7acb36be8c591d2252", "Servicio de entrega"],
-    ["section.index.json.offers.offer_2.title:2p4x293dxny1h", "7d6b973b6235acd3d41c50f371690193002011f258421a76bbcd7b39efdc70ad", "Rellena tus botellas"],
-    ["section.index.json.offers.offer_2.price:2p4x290xifvbs", "ba468a3dfd9d16de402e235ff09516f5f3e9dab4fae9a7cfad291f01b3bef22d", "Purificada · Alcalina · Manantial"],
-    ["section.index.json.offers.offer_2.price_note:1n2mn7p8t0xbr", "f6351bbf6c47af303a3e8390893549cafb811b2c383047d1d509985084375261", "a domicilio"],
-    ["section.index.json.offers.offer_2.points:3e7qfmppgoyi2", "95733df4c922bae3c2eb89d000fce87e14cc2466d97efed0920df42419fbd038", "Recarga de agua purificada\nRecarga de agua alcalina\nRecarga de agua de manantial\n¿Necesitas garrafones nuevos? También tenemos botellas nuevas"],
-    ["section.index.json.offers.offer_2.button_label:39mk9gnmt5bju", "bfa53f0538ec17e0ee200fd1b5720c5ea1beaaf4d3b86132e64ee3cce0a719ed", "Rellenar mi agua"],
-    ["section.index.json.offers.offer_3.title:r88s8p2sk9v8", "4a44b64c3472fdf53e63f628d8f3d96a73cbe704ed62008c88dbb7dfb200d0f9", "Alkaid Alcalina de bluestar"],
-    ["section.index.json.offers.offer_3.price:r88s8mg0j6m1", "d303bd934b25833d6f17a1fd22ecd76d46a140dabcc546901bf9f8274bbc5e11", "12 botellas de 1 L"],
-    ["section.index.json.offers.offer_3.price_note:22jtoc4vs5kza", "9aef2768dae8e16e81de14969d33e5bdb02a0403d436cfd3ba1f002cfcad44bd", "agua alcalina embotellada"],
-    ["section.index.json.offers.offer_3.points:1lnppqfl0avxn", "0875d8278b6482f3875ba41e64804eff8c0532172e791cbfe8ca7d9128f2ea10", "Agua alcalina ALKAID\nIdeal para la casa, la oficina y para llevar\nEntregas en Nueva York y Nueva Jersey"],
-    ["section.index.json.offers.offer_3.button_label:37kvoyi0jtxvf", "cc67a67d0aa6c61f9051c541779073f9719f7d4f1680fdfd12519727dfc9b118", "Pedir agua"],
-    ["section.index.json.shop.heading:1nyzytfmmgrg", "336fda91ea5bd192472039509c9ae74f6e7943ce9c0f15b5c1a349c0c791836a", "Pide agua a domicilio"],
-    ["section.index.json.shop.text:13d0g6zv7gpm1", "f6aafdb5f7285b220a38c6fc6c67579c840d6908c8f30d3394f826e0b726693a", "¿Preguntas? Llama al 973-742-0435"],
-    ["section.index.json.nj.eyebrow:3hn5t5agn9ip1", "661972d4d578ed3d89655173469682bbfe61853fd305f5869403ca77645e8c4b", "Agua a domicilio · Nueva Jersey y Nueva York"],
-    ["section.index.json.nj.heading:3hn5qj9o3rel8", "20a02a13bb4785e4e86d5190cf659e2d91e691734b6f7971a1165bebd61ca007", "El servicio #1"],
-    ["section.index.json.nj.heading_accent:2dtrjsyscvon1", "46bc6b0af18c4d1b53ca75ddec3ecfa0c56f173aa11da079bf9da3cbf9e9a887", "de agua a domicilio en Nueva Jersey."],
-    ["section.index.json.nj.text:msbdazvok12h", "794087d7fb9286eac41a1b8dede1c3fca5f44c12ce538ecc39a96a399c1235e4", "¡Mantente hidratado sin complicaciones! Nuestro servicio de agua a domicilio en Nueva Jersey lleva el sabor fresco de la pureza directo a tu puerta, para que nunca te quedes sin agua. Disfruta de una comodidad y frescura como nunca antes — ¡calma tu sed sin preocupaciones con nosotros hoy!"],
-    ["section.index.json.nj.badge:1f7h1x5x5wf3l", "4a052820c356dd81662dbb1d9480ae446a7fac29e3f5dd6ed44ed77200a80d20", "MEGA OFERTA"],
-    ["section.index.json.nj.chip_1.text:1f33ugczvfqry", "71bb62ba3015f89a2680ef5bdb5cc5ce8fb91371fc00574db0834283e728a599", "🚚 Entregas en NJ y NY"],
-    ["section.index.json.nj.chip_2.text:2lai64n45iyh9", "6dc99661bad108c135273cfc658e977101901c34d8b3b3f87dfb9bfa9c7261fa", "💧 Purificada · Alcalina · Manantial"],
-    ["section.index.json.nj.chip_3.text:2ctu1rauu69fw", "32b20e741bf336356794fca6ac3f4487d36ab6564c86c1a7d0b9336b65cd79bd", "🗣️ Hablamos español"],
-    ["section.index.json.bundles.heading:2vtc1vicwucov", "c67f6f88cd3fb8aa15bd0071844b21585025f0830e5832c98a69199211008077", "¿Buscas paquetes con descuento?"],
-    ["section.index.json.bundles.text:3szmsdk0jknze", "681cd52608a5bcf80c7a4a35794de5f4c12fe8a0105ee85ce64cc0c327451d9a", "No busques más — dispensadores con botellas gratis."],
-    ["section.index.json.accessories.heading:2pf4ehfg4pgym", "b08648dbd62b71bd0027809076ca755dbfe4f120553ce6f60d910143082d70db", "Accesorios"],
-    ["section.index.json.accessories.text:2gi8b9uf190dn", "2cb921fc812658e95c3e5351eb116098d818036f11833af6501ee6c624176594", "Estantes y dispensadores"],
-    ["section.index.json.water.eyebrow:1hn5iql73nmhg", "c4a4ab8912a8310410d1cd3bddc97cbd2033440ce2c84912215deeb9d1604954", "Nuestra agua"],
-    ["section.index.json.water.heading:1hn5dmaelo0a5", "6b3806b57eee796740244b368c11c7648aa5cf624d384d9192097a46d95bace1", "¿Manantial, alcalina o purificada?"],
-    ["section.index.json.water.text:1xdenqp0vv0jc", "f02a55065f166950d9a61c69115f466a12193e04582e587d9606cbf11e5ac271", "¿Preguntas? ¡Llámanos! 973-742-0435"],
-    ["section.index.json.water.card_1.title:1s9zc5abe6sw4", "a0f3fd5c71b09ab031293c22dc8461f1f223275691dd9e705f4ed28508a5e3c0", "Agua de manantial"],
-    ["section.index.json.water.card_1.subtitle:3gp3km22c47mo", "b90399419f91b6bd14ff38296e008635f8ddfef7dcf52858d36a9628c8310460", "De manantiales naturales en Pensilvania"],
-    ["section.index.json.water.card_1.text:1l5p54xwahrw9", "0277183d3e85d359b24997cd9943af809f9ae22045d9ba76791491673190e420", "<p>Rica en minerales esenciales como <strong>calcio</strong>, <strong>hierro</strong>, <strong>magnesio</strong> y <strong>sulfato</strong>, que el agua absorbe de forma natural en su recorrido por las capas de la tierra. Un sabor refrescante con <strong>beneficios adicionales para la salud</strong> — entregada <strong>directo a tu puerta</strong>.</p>"],
-    ["section.index.json.water.card_1.button_label:3ntcxweso6fwr", "f11f241411194db0c84b019977b5f809ee4ae393f9e254f1c12733dd477bfd79", "Comprar agua de manantial"],
-    ["section.index.json.water.card_2.title:ug0gbvnvz3qf", "723240c00b885e0af0b984f69157722dd024bcd3ef2e074c2d437eed4c008765", "Agua alcalina"],
-    ["section.index.json.water.card_2.subtitle:2dwz0y0bjj203", "93f0c637b084353ba4c44057e7d1ab110353870a1a576a66c0e262cfb75d6b1d", "pH más alto que el agua de la llave"],
-    ["section.index.json.water.card_2.text:1smkklkhrota2", "57d8b45d2445810e1890e1d5748d1a12bb6a30a344424cd9cac9612badc4792b", "<p>Normalmente entre <strong>8 y 9 en la escala de pH</strong>, gracias a minerales alcalinos como <strong>calcio</strong>, <strong>magnesio</strong> y <strong>potasio</strong>. Entre sus posibles beneficios están una <strong>mejor hidratación</strong> y neutralizar sustancias ácidas en el cuerpo.</p>"],
-    ["section.index.json.water.card_2.button_label:knx3apaujmvc", "a3c48da12d1da76907838a2820fb45f332ca67ac8d331055e48bc5819f20eabe", "Comprar agua alcalina"],
-    ["section.index.json.water.card_3.title:m509f6py7zpi", "6f6b33d5c3bf1809c4d686175ba6d601fa07b24c463ea12442ad100acdac3ccf", "Agua purificada"],
-    ["section.index.json.water.card_3.subtitle:3eqd99atsr6w2", "8dac17a42b1f5dfc534397c75fcd8e25ef286aa63741f99ed1fd8f4c66d66441", "Sabor fresco y limpio"],
-    ["section.index.json.water.card_3.text:o5gndaohlkr", "94070192f6e1ecb5bee5017a84fc21e933fa26ee458f3a5c6cede9f12e1cc374", "<p>Nuestra purificación de última generación mantiene el agua libre de contaminantes e impurezas, y <strong>pruebas rigurosas</strong> cumplen los más altos estándares de calidad y seguridad — para la casa, la oficina, la escuela o el negocio.</p>"],
-    ["section.index.json.water.card_3.button_label:3icw0onmwe16x", "80364c5b1565e4f08d759e1797b4240493e053102e00d338ff8f5141d2aded35", "Comprar agua purificada"],
-    ["section.index.json.how.eyebrow:2ngq9338h6y4x", "9c870aa6e5e93270170d5a81277ad3e623afe8d4efd186d3e28f3d2b646d52e6", "Cómo funciona"],
-    ["section.index.json.how.heading:2ngq6u4gfs06g", "ec733b80f99dda8ebb69a1cb725659542f854639a57ddedad89444f582a2bd0f", "Agua a domicilio en tres pasos"],
-    ["section.index.json.how.step_1.title:1gevykz3lybaf", "7e7a39893229ef2096198c4c3dfb6131a346f30c61e748cd768b8cfc63fc061f", "Elige tu agua"],
-    ["section.index.json.how.step_1.text:1tajcfas2alve", "4961859959543367430713103a9d8132f1f4ccfd154d148b38be2ea9ce09c21c", "Pide agua purificada, alcalina o de manantial en línea — recargas o botellas nuevas — o llama al 973-742-0435."],
-    ["section.index.json.how.step_2.title:2e8uuedr460g4", "ac3f26fd095c703edf2d960e915e0db79724c5772790e55b1f26d77353536e53", "Te la llevamos"],
-    ["section.index.json.how.step_2.text:1ltnwyo6l3khl", "6997ee8bc25244d102224d92a3f4bf6e87be561ac4dbe5aa6b7bdb70653413f0", "Nuestro equipo la entrega en tu puerta en Nueva Jersey y Nueva York."],
-    ["section.index.json.how.step_3.title:2mjv1b2p1x4h1", "6aad448fad6d51b21027f7d0e1a6a5ad4bb7b5b2f30f6487bd03d4a09da1349d", "Recarga cuando quieras"],
-    ["section.index.json.how.step_3.text:3ds30wvdoas6w", "f8d85434de48bc450a3b360f3b8646e4cf2dd8da438666bc5ed6dcc26218296b", "Cambia tus botellas vacías por llenas cada vez que necesites más agua."],
-    ["section.index.json.delivery.eyebrow:dbfbm86lt8sd", "52bfe584a5fc450539e2aa651b990fa2415060492a243816ab2994292089c6fd", "Entregas"],
-    ["section.index.json.delivery.heading:dbfd8hj1g950", "d4bb7e11bcff50f7fa436bc4e5dd168a2dc780a1a0789329056f05abdc220747", "Entregas en Nueva York y Nueva Jersey"],
-    ["section.index.json.delivery.text:3dl9emq3ulm0h", "29d31d64d380162adf8974ec88ca3b8d6baff16a980362d78d16f1c59d4fc906", "¿Preguntas? Llámanos al 973-742-0435. Verifica tu código postal abajo."],
-    ["section.index.json.delivery.zip_heading:pw9yirbzoibc", "ddf5488f053b5c039d00f44f46510eeeda4fb80b323867e4ae73f43db4a11147", "Verifica tu zona de entrega"],
-    ["section.index.json.delivery.zip_note:j0qfp300qf0g", "d6c275b452c5b20bb77c1e77158a9fa8fc44ab9b31fd171ecb9a8ad89b0154d3", "¿No estás seguro de tu zona? Llama al 973-742-0435 — hablamos español."],
-    ["section.index.json.delivery.list_heading:aftmsb2x4e61", "7ef84dcd839c5fcfd660cf1d2745ded3006020dd13eec30a41824344b5f01422", "Qué esperar"],
-    ["section.index.json.delivery.points:32tolkxckzpg3", "bc7e4a9e18b053a0bcaf3a839e530a45b2f1411f619e116d9f5a055f01ed14a1", "Entregas en Nueva Jersey\nEntregas en Nueva York\nRecargas y botellas nuevas de 5 galones\nDispensadores, estantes y bombas para botellas\nL–V 8am – 6pm · Sáb 8am – 4pm"],
-    ["section.index.json.newsletter.heading:1bca588es4bc9", "89bffb38482534031f1f921db4e4e121c80c32bbe2444a1dc09cbb9f4dc1046d", "¡No te pierdas nuestras ofertas!"],
-    ["section.index.json.newsletter.text:fl7hdvvgyt4s", "cb2769e715d380b3ae79b6077e7409e599bff4dfcfc06ba4e1a09fba3c87a91c", "¡Suscríbete hoy con tu correo!"],
-    ["section.index.json.newsletter.button_label:1vtw4bpurdmtq", "cc0e38da9c41790bffef1b88af32d39ac285edce93da766810edc237cb2f1625", "Suscribirme"],
-    ["section.index.json.faq.eyebrow:1qok4ayf6xpef", "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b", "Preguntas frecuentes"],
-    ["section.index.json.faq.heading:1qojy6w1kbvfy", "7b7e3d30ea88791863f367a84698eee344e05d434fdd69ee0e2fba944563c3c3", "Tus preguntas, respondidas"],
-    ["section.index.json.faq.contact:1qok1lecsma12", "073a6bd8f7a29ec9fd253e2d095fd652a807e9b2bbca30703d993019ec5b01de", "<p>¿Aún tienes preguntas? Llámanos al <strong>973-742-0435</strong> o <a href=\"/pages/contact\">envíanos un mensaje</a> — hablamos español.</p>"],
-    ["section.index.json.faq.question_1.question:2zaycr28xm5mb", "5446d2c4758397927815b844957e05dc821127797fd0b9fc05926e4c2d28e24b", "¿Entregan en mi zona?"],
-    ["section.index.json.faq.question_1.answer:1phieg3x6viqp", "1292836f21e0dc79f8b555205b340695652c22c1debe4a3e0cfdb17f49a7e055", "<p>Entregamos agua en todo <strong>Nueva Jersey y Nueva York</strong>. Verifica tu código postal en la sección de entregas, o llámanos al <a href=\"tel:9737420435\">973-742-0435</a>.</p>"],
-    ["section.index.json.faq.question_2.question:newpa3uysz8w", "9a95ab27bab59f0d1c015738509d013c86ec7e5eaecdb8f390d22e83ed8a4c3c", "¿Qué tipos de agua ofrecen?"],
-    ["section.index.json.faq.question_2.answer:zo4m7b06n8v6", "215b4f1f719616dce3cac592d9e70e6f578805c07358ba3b0b30642ffda978c6", "<p>Agua <strong>purificada</strong>, <strong>alcalina</strong> y <strong>de manantial</strong> de manantiales naturales en Pensilvania — como recarga para tus botellas o en botellas nuevas. También tenemos agua alcalina ALKAID en paquetes de 12 × 1 L.</p>"],
-    ["section.index.json.faq.question_3.question:1t026aq55wodt", "63abb2eb374b6c61543f2d611b5bae1edd7f0c4c88d2ec2d23ddce86bcea6e76", "¿En qué consiste la oferta del dispensador?"],
-    ["section.index.json.faq.question_3.answer:z6yy7trt506b", "4328be3a4d6d47a1f61580bd5edf25647a235b7ec055ca7d57e8fc65edf4b31d", "<p>Nuestra MEGA OFERTA: compra un dispensador de agua y llévate <strong>5 botellas de agua purificada GRATIS + 1 estante GRATIS</strong> — hasta agotar existencias.</p>"],
-    ["section.index.json.faq.question_4.question:3lw2nqq80gvli", "652b2b5632ecbd7d9d4ea3421ab73929668d13c7c3771581508552401fd260ba", "¿Recarga o botella nueva? ¿Cuál es la diferencia?"],
-    ["section.index.json.faq.question_4.answer:18e28uakicgtg", "6b75c91b0fb9168419d75bd1c3c7cce209c823a35e2bead612d176f124b616eb", "<p>Elige <strong>Recarga</strong> para rellenar las botellas que ya tienes, o <strong>Botella nueva</strong> si necesitas garrafones nuevos de 5 galones.</p>"],
-    ["section.index.json.faq.question_5.question:ekp195rws2k7", "792fc31f3095a1dae15a1e9c3d5aaae75a7ab4ca6b1689628807ddd3ed3262f2", "¿Cuál es su horario?"],
-    ["section.index.json.faq.question_5.answer:2603x7bkvpp5x", "0d46069ea970322ad3a135688367f122469527eb13acc72845ce4613ffec5bee", "<p>Lunes a viernes de 8am a 6pm (hora del Este) · Sábado de 8am a 4pm.</p>"],
-    ["section.index.json.faq.question_6.question:1yu1et9k2rcz8", "0ba8905818c5a73278aa010fe5fb13b534836f39b94166a0d74a920b7d96bee7", "¿Blue Star es una empresa con licencia?"],
-    ["section.index.json.faq.question_6.answer:1g6q4yinvhfae", "241438fb4e5d16dfde6f8a9759a36cab1c33e47f26794d73a03f0f8409e02eb2", "<p>Sí. Desde 2010 purificamos, embotellamos y distribuimos agua en Nueva Jersey y Nueva York, y somos una empresa de entrega de agua con licencia del Departamento de Salud de Nueva Jersey (Consumer and Environmental Health Service).</p>"],
-    ["section.index.json.faq.question_7.question:34f6vtvu9v245", "d5688ceb4baca73448e4b56527736a8fa89c46982efe84e98f4396699be9b72a", "¿Hablan español?"],
-    ["section.index.json.faq.question_7.answer:1fpkgz1fhz6lj", "fe97106246a84c92f6697791680a1beb01ae61808ed391ea434b21cd253654c3", "<p>¡Sí! Hablamos español. Llámanos al <a href=\"tel:9737420435\">973-742-0435</a>.</p>"],
-    ["section.index.json.reviews.eyebrow:24uofzmco9z6w", "84cb7871b741c32eb14f0a65e5e7e4db53ffae1a952ea8e2f1c2c48b1d134a9b", "Reseñas"],
-    ["section.index.json.reviews.heading:24uoi48pr3t5d", "4fde379ff0cb361ee6505288a9e35125f38be05a0f5137755c8f427d4964e306", "Lo que dicen nuestros clientes"]
+    [
+      "section.index.json.hero.eyebrow:1xz6u7cdc61v5",
+      "509cb82e50459c305fdf9340c47f7435fed44c783229c21eb5b5ede412b497ef",
+      "Mega oferta · hasta agotar existencias"
+    ],
+    [
+      "section.index.json.hero.heading:1xz6vxtlud4lk",
+      "162e491cfe9f72a7461100d4f11b43518536be3f823510608f5cf1ca270619de",
+      "Dispensador de agua"
+    ],
+    [
+      "section.index.json.hero.heading_accent:pxdpee3ddo15",
+      "30a38f7b03aa1e359a4baf5508e8d4d08837082d1630addd812a2725b07ef730",
+      "+ 5 botellas de agua purificada y 1 estante GRATIS."
+    ],
+    [
+      "section.index.json.hero.text:d9p12h9l2inx",
+      "5094a1e5e8a9c29e836a2c54e5a0e57ce037a02971801021ca354e0e882671c3",
+      "Entregamos en NJ y NY"
+    ],
+    [
+      "section.index.json.hero.button_label:2svylk60dlymn",
+      "4a15ab22d035fba4c294b62d3d40012d1112ddcad4d2b1141084bd60c5b9c114",
+      "Aprovecha la oferta"
+    ],
+    [
+      "section.index.json.hero.button2_label:2xuro8hruvz19",
+      "d05723c09029aff91b1afe181397afb94f7d2480935d98449104793a7e3ae4aa",
+      "Más productos"
+    ],
+    [
+      "section.index.json.hero.badge:hfrw6vkn2o2t",
+      "4a052820c356dd81662dbb1d9480ae446a7fac29e3f5dd6ed44ed77200a80d20",
+      "MEGA OFERTA"
+    ],
+    [
+      "section.index.json.hero.chip_1.text:icwzs390gcey",
+      "2526e4d9d7c41f7e03bb7a2967bedaa31f68914f4c07dcdd2df1e756284e616e",
+      "🎁 5 botellas + estante GRATIS"
+    ],
+    [
+      "section.index.json.hero.chip_2.text:1okbbgddajk49",
+      "98b4f671193eb0d182319fb1704480978fa4072761a01453c085816370c9af57",
+      "🚚 Entregas en NJ y NY"
+    ],
+    [
+      "section.index.json.hero.chip_3.text:1g3n7313z6v2w",
+      "32b20e741bf336356794fca6ac3f4487d36ab6564c86c1a7d0b9336b65cd79bd",
+      "🗣️ Hablamos español"
+    ],
+    [
+      "section.index.json.offers.eyebrow:tuzeysxb933e",
+      "563e8db2d2eed4d7b28b13346276de00b2b563f46b78f530ac670d3ea0231565",
+      "Formas de recibir tu agua"
+    ],
+    [
+      "section.index.json.offers.heading:tuzkyryc811v",
+      "f75c2363ba0e2ec60b96713b8e2d55366c638176b85491ff934cac22727a1f3f",
+      "Elige lo que mejor va con tu casa u oficina"
+    ],
+    [
+      "section.index.json.offers.text:3j6bo0eha7l8m",
+      "d92c0a0398c5e1a85feabdcac94612250ecaf6b7bf98fd166f529f880b66c783",
+      "¿Preguntas? Llámanos al 973-742-0435 — con gusto te ayudamos."
+    ],
+    [
+      "section.index.json.offers.offer_1.badge:yxcbfs8a1ec3",
+      "509cb82e50459c305fdf9340c47f7435fed44c783229c21eb5b5ede412b497ef",
+      "Mega oferta · hasta agotar existencias"
+    ],
+    [
+      "section.index.json.offers.offer_1.title:yxcbg520htbq",
+      "36fbb1655a6b46c297dea52a74fa8ebb8cbd5911ed7aa5da29d60de1b271ce65",
+      "Dispensador + 5 botellas de agua purificada GRATIS"
+    ],
+    [
+      "section.index.json.offers.offer_1.price:yxcbg2muhypn",
+      "c4ef4dffb7e9ccb4cbc15d3b9883c0fb2eba485b350ab3d3c822a94975918661",
+      "+ 1 estante, gratis"
+    ],
+    [
+      "section.index.json.offers.offer_1.price_note:38ba6c5xt0yyc",
+      "05da5919f97d7109852a5b02404616b143190dd669386c7e3f4759658284d4d6",
+      "gratis con tu dispensador"
+    ],
+    [
+      "section.index.json.offers.offer_1.points:vd69i5i24fmx",
+      "1423c9e32bc986a40e092e76931a30cc61df7dc7dcc4be6a87137f2115d38889",
+      "Dispensador de agua fría y caliente\n5 botellas de 5 galones de agua purificada GRATIS\n1 estante GRATIS\nTe lo llevamos a tu puerta"
+    ],
+    [
+      "section.index.json.offers.offer_1.button_label:sjec99b76jax",
+      "4a15ab22d035fba4c294b62d3d40012d1112ddcad4d2b1141084bd60c5b9c114",
+      "Aprovecha la oferta"
+    ],
+    [
+      "section.index.json.offers.offer_2.badge:2p4x28ssm1fxs",
+      "366ed29e31e8ffb2e0161c905d03808637383c7d2225cd7acb36be8c591d2252",
+      "Servicio de entrega"
+    ],
+    [
+      "section.index.json.offers.offer_2.title:2p4x293dxny1h",
+      "7d6b973b6235acd3d41c50f371690193002011f258421a76bbcd7b39efdc70ad",
+      "Rellena tus botellas"
+    ],
+    [
+      "section.index.json.offers.offer_2.price:2p4x290xifvbs",
+      "ba468a3dfd9d16de402e235ff09516f5f3e9dab4fae9a7cfad291f01b3bef22d",
+      "Purificada · Alcalina · Manantial"
+    ],
+    [
+      "section.index.json.offers.offer_2.price_note:1n2mn7p8t0xbr",
+      "f6351bbf6c47af303a3e8390893549cafb811b2c383047d1d509985084375261",
+      "a domicilio"
+    ],
+    [
+      "section.index.json.offers.offer_2.points:3e7qfmppgoyi2",
+      "95733df4c922bae3c2eb89d000fce87e14cc2466d97efed0920df42419fbd038",
+      "Recarga de agua purificada\nRecarga de agua alcalina\nRecarga de agua de manantial\n¿Necesitas garrafones nuevos? También tenemos botellas nuevas"
+    ],
+    [
+      "section.index.json.offers.offer_2.button_label:39mk9gnmt5bju",
+      "bfa53f0538ec17e0ee200fd1b5720c5ea1beaaf4d3b86132e64ee3cce0a719ed",
+      "Rellenar mi agua"
+    ],
+    [
+      "section.index.json.offers.offer_3.title:r88s8p2sk9v8",
+      "4a44b64c3472fdf53e63f628d8f3d96a73cbe704ed62008c88dbb7dfb200d0f9",
+      "Alkaid Alcalina de bluestar"
+    ],
+    [
+      "section.index.json.offers.offer_3.price:r88s8mg0j6m1",
+      "d303bd934b25833d6f17a1fd22ecd76d46a140dabcc546901bf9f8274bbc5e11",
+      "12 botellas de 1 L"
+    ],
+    [
+      "section.index.json.offers.offer_3.price_note:22jtoc4vs5kza",
+      "9aef2768dae8e16e81de14969d33e5bdb02a0403d436cfd3ba1f002cfcad44bd",
+      "agua alcalina embotellada"
+    ],
+    [
+      "section.index.json.offers.offer_3.points:1lnppqfl0avxn",
+      "0875d8278b6482f3875ba41e64804eff8c0532172e791cbfe8ca7d9128f2ea10",
+      "Agua alcalina ALKAID\nIdeal para la casa, la oficina y para llevar\nEntregas en Nueva York y Nueva Jersey"
+    ],
+    [
+      "section.index.json.offers.offer_3.button_label:37kvoyi0jtxvf",
+      "cc67a67d0aa6c61f9051c541779073f9719f7d4f1680fdfd12519727dfc9b118",
+      "Pedir agua"
+    ],
+    [
+      "section.index.json.shop.heading:1nyzytfmmgrg",
+      "336fda91ea5bd192472039509c9ae74f6e7943ce9c0f15b5c1a349c0c791836a",
+      "Pide agua a domicilio"
+    ],
+    [
+      "section.index.json.shop.text:13d0g6zv7gpm1",
+      "f6aafdb5f7285b220a38c6fc6c67579c840d6908c8f30d3394f826e0b726693a",
+      "¿Preguntas? Llama al 973-742-0435"
+    ],
+    [
+      "section.index.json.nj.eyebrow:3hn5t5agn9ip1",
+      "661972d4d578ed3d89655173469682bbfe61853fd305f5869403ca77645e8c4b",
+      "Agua a domicilio · Nueva Jersey y Nueva York"
+    ],
+    [
+      "section.index.json.nj.heading:3hn5qj9o3rel8",
+      "20a02a13bb4785e4e86d5190cf659e2d91e691734b6f7971a1165bebd61ca007",
+      "El servicio #1"
+    ],
+    [
+      "section.index.json.nj.heading_accent:2dtrjsyscvon1",
+      "46bc6b0af18c4d1b53ca75ddec3ecfa0c56f173aa11da079bf9da3cbf9e9a887",
+      "de agua a domicilio en Nueva Jersey."
+    ],
+    [
+      "section.index.json.nj.text:msbdazvok12h",
+      "794087d7fb9286eac41a1b8dede1c3fca5f44c12ce538ecc39a96a399c1235e4",
+      "¡Mantente hidratado sin complicaciones! Nuestro servicio de agua a domicilio en Nueva Jersey lleva el sabor fresco de la pureza directo a tu puerta, para que nunca te quedes sin agua. Disfruta de una comodidad y frescura como nunca antes — ¡calma tu sed sin preocupaciones con nosotros hoy!"
+    ],
+    [
+      "section.index.json.nj.badge:1f7h1x5x5wf3l",
+      "4a052820c356dd81662dbb1d9480ae446a7fac29e3f5dd6ed44ed77200a80d20",
+      "MEGA OFERTA"
+    ],
+    [
+      "section.index.json.nj.chip_1.text:1f33ugczvfqry",
+      "71bb62ba3015f89a2680ef5bdb5cc5ce8fb91371fc00574db0834283e728a599",
+      "🚚 Entregas en NJ y NY"
+    ],
+    [
+      "section.index.json.nj.chip_2.text:2lai64n45iyh9",
+      "6dc99661bad108c135273cfc658e977101901c34d8b3b3f87dfb9bfa9c7261fa",
+      "💧 Purificada · Alcalina · Manantial"
+    ],
+    [
+      "section.index.json.nj.chip_3.text:2ctu1rauu69fw",
+      "32b20e741bf336356794fca6ac3f4487d36ab6564c86c1a7d0b9336b65cd79bd",
+      "🗣️ Hablamos español"
+    ],
+    [
+      "section.index.json.bundles.heading:2vtc1vicwucov",
+      "c67f6f88cd3fb8aa15bd0071844b21585025f0830e5832c98a69199211008077",
+      "¿Buscas paquetes con descuento?"
+    ],
+    [
+      "section.index.json.bundles.text:3szmsdk0jknze",
+      "681cd52608a5bcf80c7a4a35794de5f4c12fe8a0105ee85ce64cc0c327451d9a",
+      "No busques más — dispensadores con botellas gratis."
+    ],
+    [
+      "section.index.json.accessories.heading:2pf4ehfg4pgym",
+      "b08648dbd62b71bd0027809076ca755dbfe4f120553ce6f60d910143082d70db",
+      "Accesorios"
+    ],
+    [
+      "section.index.json.accessories.text:2gi8b9uf190dn",
+      "2cb921fc812658e95c3e5351eb116098d818036f11833af6501ee6c624176594",
+      "Estantes y dispensadores"
+    ],
+    [
+      "section.index.json.water.eyebrow:1hn5iql73nmhg",
+      "c4a4ab8912a8310410d1cd3bddc97cbd2033440ce2c84912215deeb9d1604954",
+      "Nuestra agua"
+    ],
+    [
+      "section.index.json.water.heading:1hn5dmaelo0a5",
+      "6b3806b57eee796740244b368c11c7648aa5cf624d384d9192097a46d95bace1",
+      "¿Manantial, alcalina o purificada?"
+    ],
+    [
+      "section.index.json.water.text:1xdenqp0vv0jc",
+      "f02a55065f166950d9a61c69115f466a12193e04582e587d9606cbf11e5ac271",
+      "¿Preguntas? ¡Llámanos! 973-742-0435"
+    ],
+    [
+      "section.index.json.water.card_1.title:1s9zc5abe6sw4",
+      "a0f3fd5c71b09ab031293c22dc8461f1f223275691dd9e705f4ed28508a5e3c0",
+      "Agua de manantial"
+    ],
+    [
+      "section.index.json.water.card_1.subtitle:3gp3km22c47mo",
+      "b90399419f91b6bd14ff38296e008635f8ddfef7dcf52858d36a9628c8310460",
+      "De manantiales naturales en Pensilvania"
+    ],
+    [
+      "section.index.json.water.card_1.text:1l5p54xwahrw9",
+      "0277183d3e85d359b24997cd9943af809f9ae22045d9ba76791491673190e420",
+      "<p>Rica en minerales esenciales como <strong>calcio</strong>, <strong>hierro</strong>, <strong>magnesio</strong> y <strong>sulfato</strong>, que el agua absorbe de forma natural en su recorrido por las capas de la tierra. Un sabor refrescante con <strong>beneficios adicionales para la salud</strong> — entregada <strong>directo a tu puerta</strong>.</p>"
+    ],
+    [
+      "section.index.json.water.card_1.button_label:3ntcxweso6fwr",
+      "f11f241411194db0c84b019977b5f809ee4ae393f9e254f1c12733dd477bfd79",
+      "Comprar agua de manantial"
+    ],
+    [
+      "section.index.json.water.card_2.title:ug0gbvnvz3qf",
+      "723240c00b885e0af0b984f69157722dd024bcd3ef2e074c2d437eed4c008765",
+      "Agua alcalina"
+    ],
+    [
+      "section.index.json.water.card_2.subtitle:2dwz0y0bjj203",
+      "93f0c637b084353ba4c44057e7d1ab110353870a1a576a66c0e262cfb75d6b1d",
+      "pH más alto que el agua de la llave"
+    ],
+    [
+      "section.index.json.water.card_2.text:1smkklkhrota2",
+      "57d8b45d2445810e1890e1d5748d1a12bb6a30a344424cd9cac9612badc4792b",
+      "<p>Normalmente entre <strong>8 y 9 en la escala de pH</strong>, gracias a minerales alcalinos como <strong>calcio</strong>, <strong>magnesio</strong> y <strong>potasio</strong>. Entre sus posibles beneficios están una <strong>mejor hidratación</strong> y neutralizar sustancias ácidas en el cuerpo.</p>"
+    ],
+    [
+      "section.index.json.water.card_2.button_label:knx3apaujmvc",
+      "a3c48da12d1da76907838a2820fb45f332ca67ac8d331055e48bc5819f20eabe",
+      "Comprar agua alcalina"
+    ],
+    [
+      "section.index.json.water.card_3.title:m509f6py7zpi",
+      "6f6b33d5c3bf1809c4d686175ba6d601fa07b24c463ea12442ad100acdac3ccf",
+      "Agua purificada"
+    ],
+    [
+      "section.index.json.water.card_3.subtitle:3eqd99atsr6w2",
+      "8dac17a42b1f5dfc534397c75fcd8e25ef286aa63741f99ed1fd8f4c66d66441",
+      "Sabor fresco y limpio"
+    ],
+    [
+      "section.index.json.water.card_3.text:o5gndaohlkr",
+      "94070192f6e1ecb5bee5017a84fc21e933fa26ee458f3a5c6cede9f12e1cc374",
+      "<p>Nuestra purificación de última generación mantiene el agua libre de contaminantes e impurezas, y <strong>pruebas rigurosas</strong> cumplen los más altos estándares de calidad y seguridad — para la casa, la oficina, la escuela o el negocio.</p>"
+    ],
+    [
+      "section.index.json.water.card_3.button_label:3icw0onmwe16x",
+      "80364c5b1565e4f08d759e1797b4240493e053102e00d338ff8f5141d2aded35",
+      "Comprar agua purificada"
+    ],
+    [
+      "section.index.json.how.eyebrow:2ngq9338h6y4x",
+      "9c870aa6e5e93270170d5a81277ad3e623afe8d4efd186d3e28f3d2b646d52e6",
+      "Cómo funciona"
+    ],
+    [
+      "section.index.json.how.heading:2ngq6u4gfs06g",
+      "ec733b80f99dda8ebb69a1cb725659542f854639a57ddedad89444f582a2bd0f",
+      "Agua a domicilio en tres pasos"
+    ],
+    [
+      "section.index.json.how.step_1.title:1gevykz3lybaf",
+      "7e7a39893229ef2096198c4c3dfb6131a346f30c61e748cd768b8cfc63fc061f",
+      "Elige tu agua"
+    ],
+    [
+      "section.index.json.how.step_1.text:1tajcfas2alve",
+      "4961859959543367430713103a9d8132f1f4ccfd154d148b38be2ea9ce09c21c",
+      "Pide agua purificada, alcalina o de manantial en línea — recargas o botellas nuevas — o llama al 973-742-0435."
+    ],
+    [
+      "section.index.json.how.step_2.title:2e8uuedr460g4",
+      "ac3f26fd095c703edf2d960e915e0db79724c5772790e55b1f26d77353536e53",
+      "Te la llevamos"
+    ],
+    [
+      "section.index.json.how.step_2.text:1ltnwyo6l3khl",
+      "6997ee8bc25244d102224d92a3f4bf6e87be561ac4dbe5aa6b7bdb70653413f0",
+      "Nuestro equipo la entrega en tu puerta en Nueva Jersey y Nueva York."
+    ],
+    [
+      "section.index.json.how.step_3.title:2mjv1b2p1x4h1",
+      "6aad448fad6d51b21027f7d0e1a6a5ad4bb7b5b2f30f6487bd03d4a09da1349d",
+      "Recarga cuando quieras"
+    ],
+    [
+      "section.index.json.how.step_3.text:3ds30wvdoas6w",
+      "f8d85434de48bc450a3b360f3b8646e4cf2dd8da438666bc5ed6dcc26218296b",
+      "Cambia tus botellas vacías por llenas cada vez que necesites más agua."
+    ],
+    [
+      "section.index.json.delivery.eyebrow:dbfbm86lt8sd",
+      "52bfe584a5fc450539e2aa651b990fa2415060492a243816ab2994292089c6fd",
+      "Entregas"
+    ],
+    [
+      "section.index.json.delivery.heading:dbfd8hj1g950",
+      "d4bb7e11bcff50f7fa436bc4e5dd168a2dc780a1a0789329056f05abdc220747",
+      "Entregas en Nueva York y Nueva Jersey"
+    ],
+    [
+      "section.index.json.delivery.text:3dl9emq3ulm0h",
+      "29d31d64d380162adf8974ec88ca3b8d6baff16a980362d78d16f1c59d4fc906",
+      "¿Preguntas? Llámanos al 973-742-0435. Verifica tu código postal abajo."
+    ],
+    [
+      "section.index.json.delivery.zip_heading:pw9yirbzoibc",
+      "ddf5488f053b5c039d00f44f46510eeeda4fb80b323867e4ae73f43db4a11147",
+      "Verifica tu zona de entrega"
+    ],
+    [
+      "section.index.json.delivery.zip_note:j0qfp300qf0g",
+      "d6c275b452c5b20bb77c1e77158a9fa8fc44ab9b31fd171ecb9a8ad89b0154d3",
+      "¿No estás seguro de tu zona? Llama al 973-742-0435 — hablamos español."
+    ],
+    [
+      "section.index.json.delivery.list_heading:aftmsb2x4e61",
+      "7ef84dcd839c5fcfd660cf1d2745ded3006020dd13eec30a41824344b5f01422",
+      "Qué esperar"
+    ],
+    [
+      "section.index.json.delivery.points:32tolkxckzpg3",
+      "bc7e4a9e18b053a0bcaf3a839e530a45b2f1411f619e116d9f5a055f01ed14a1",
+      "Entregas en Nueva Jersey\nEntregas en Nueva York\nRecargas y botellas nuevas de 5 galones\nDispensadores, estantes y bombas para botellas\nL–V 8am – 6pm · Sáb 8am – 4pm"
+    ],
+    [
+      "section.index.json.newsletter.heading:1bca588es4bc9",
+      "89bffb38482534031f1f921db4e4e121c80c32bbe2444a1dc09cbb9f4dc1046d",
+      "¡No te pierdas nuestras ofertas!"
+    ],
+    [
+      "section.index.json.newsletter.text:fl7hdvvgyt4s",
+      "cb2769e715d380b3ae79b6077e7409e599bff4dfcfc06ba4e1a09fba3c87a91c",
+      "¡Suscríbete hoy con tu correo!"
+    ],
+    [
+      "section.index.json.newsletter.button_label:1vtw4bpurdmtq",
+      "cc0e38da9c41790bffef1b88af32d39ac285edce93da766810edc237cb2f1625",
+      "Suscribirme"
+    ],
+    [
+      "section.index.json.faq.eyebrow:1qok4ayf6xpef",
+      "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+      "Preguntas frecuentes"
+    ],
+    [
+      "section.index.json.faq.heading:1qojy6w1kbvfy",
+      "7b7e3d30ea88791863f367a84698eee344e05d434fdd69ee0e2fba944563c3c3",
+      "Tus preguntas, respondidas"
+    ],
+    [
+      "section.index.json.faq.contact:1qok1lecsma12",
+      "073a6bd8f7a29ec9fd253e2d095fd652a807e9b2bbca30703d993019ec5b01de",
+      "<p>¿Aún tienes preguntas? Llámanos al <strong>973-742-0435</strong> o <a href=\"/pages/contact\">envíanos un mensaje</a> — hablamos español.</p>"
+    ],
+    [
+      "section.index.json.faq.question_1.question:2zaycr28xm5mb",
+      "5446d2c4758397927815b844957e05dc821127797fd0b9fc05926e4c2d28e24b",
+      "¿Entregan en mi zona?"
+    ],
+    [
+      "section.index.json.faq.question_1.answer:1phieg3x6viqp",
+      "1292836f21e0dc79f8b555205b340695652c22c1debe4a3e0cfdb17f49a7e055",
+      "<p>Entregamos agua en todo <strong>Nueva Jersey y Nueva York</strong>. Verifica tu código postal en la sección de entregas, o llámanos al <a href=\"tel:9737420435\">973-742-0435</a>.</p>"
+    ],
+    [
+      "section.index.json.faq.question_2.question:newpa3uysz8w",
+      "9a95ab27bab59f0d1c015738509d013c86ec7e5eaecdb8f390d22e83ed8a4c3c",
+      "¿Qué tipos de agua ofrecen?"
+    ],
+    [
+      "section.index.json.faq.question_2.answer:zo4m7b06n8v6",
+      "215b4f1f719616dce3cac592d9e70e6f578805c07358ba3b0b30642ffda978c6",
+      "<p>Agua <strong>purificada</strong>, <strong>alcalina</strong> y <strong>de manantial</strong> de manantiales naturales en Pensilvania — como recarga para tus botellas o en botellas nuevas. También tenemos agua alcalina ALKAID en paquetes de 12 × 1 L.</p>"
+    ],
+    [
+      "section.index.json.faq.question_3.question:1t026aq55wodt",
+      "63abb2eb374b6c61543f2d611b5bae1edd7f0c4c88d2ec2d23ddce86bcea6e76",
+      "¿En qué consiste la oferta del dispensador?"
+    ],
+    [
+      "section.index.json.faq.question_3.answer:z6yy7trt506b",
+      "4328be3a4d6d47a1f61580bd5edf25647a235b7ec055ca7d57e8fc65edf4b31d",
+      "<p>Nuestra MEGA OFERTA: compra un dispensador de agua y llévate <strong>5 botellas de agua purificada GRATIS + 1 estante GRATIS</strong> — hasta agotar existencias.</p>"
+    ],
+    [
+      "section.index.json.faq.question_4.question:3lw2nqq80gvli",
+      "652b2b5632ecbd7d9d4ea3421ab73929668d13c7c3771581508552401fd260ba",
+      "¿Recarga o botella nueva? ¿Cuál es la diferencia?"
+    ],
+    [
+      "section.index.json.faq.question_4.answer:18e28uakicgtg",
+      "6b75c91b0fb9168419d75bd1c3c7cce209c823a35e2bead612d176f124b616eb",
+      "<p>Elige <strong>Recarga</strong> para rellenar las botellas que ya tienes, o <strong>Botella nueva</strong> si necesitas garrafones nuevos de 5 galones.</p>"
+    ],
+    [
+      "section.index.json.faq.question_5.question:ekp195rws2k7",
+      "792fc31f3095a1dae15a1e9c3d5aaae75a7ab4ca6b1689628807ddd3ed3262f2",
+      "¿Cuál es su horario?"
+    ],
+    [
+      "section.index.json.faq.question_5.answer:2603x7bkvpp5x",
+      "0d46069ea970322ad3a135688367f122469527eb13acc72845ce4613ffec5bee",
+      "<p>Lunes a viernes de 8am a 6pm (hora del Este) · Sábado de 8am a 4pm.</p>"
+    ],
+    [
+      "section.index.json.faq.question_6.question:1yu1et9k2rcz8",
+      "0ba8905818c5a73278aa010fe5fb13b534836f39b94166a0d74a920b7d96bee7",
+      "¿Blue Star es una empresa con licencia?"
+    ],
+    [
+      "section.index.json.faq.question_6.answer:1g6q4yinvhfae",
+      "241438fb4e5d16dfde6f8a9759a36cab1c33e47f26794d73a03f0f8409e02eb2",
+      "<p>Sí. Desde 2010 purificamos, embotellamos y distribuimos agua en Nueva Jersey y Nueva York, y somos una empresa de entrega de agua con licencia del Departamento de Salud de Nueva Jersey (Consumer and Environmental Health Service).</p>"
+    ],
+    [
+      "section.index.json.faq.question_7.question:34f6vtvu9v245",
+      "d5688ceb4baca73448e4b56527736a8fa89c46982efe84e98f4396699be9b72a",
+      "¿Hablan español?"
+    ],
+    [
+      "section.index.json.faq.question_7.answer:1fpkgz1fhz6lj",
+      "fe97106246a84c92f6697791680a1beb01ae61808ed391ea434b21cd253654c3",
+      "<p>¡Sí! Hablamos español. Llámanos al <a href=\"tel:9737420435\">973-742-0435</a>.</p>"
+    ],
+    [
+      "section.index.json.reviews.eyebrow:24uofzmco9z6w",
+      "84cb7871b741c32eb14f0a65e5e7e4db53ffae1a952ea8e2f1c2c48b1d134a9b",
+      "Reseñas"
+    ],
+    [
+      "section.index.json.reviews.heading:24uoi48pr3t5d",
+      "4fde379ff0cb361ee6505288a9e35125f38be05a0f5137755c8f427d4964e306",
+      "Lo que dicen nuestros clientes"
+    ]
   ],
   "OnlineStoreThemeJsonTemplate/page": [
-    ["section.page.json.refill.eyebrow:5m2gbjqd3ot0", "b354b1f10c7780244c1ede47ff3204bad0f2b87f023c02af11148d347847938d", "Recarga"],
-    ["section.page.json.refill.heading:5m2bbgtn23al", "a309ed181817c95779c76e5af895a2755d579e5da00fa0fab0fe6d7f4be2ff9a", "Cambia tus botellas vacías"],
-    ["section.page.json.new.eyebrow:8jz9ikpwkuds", "f4df8d3eccfd94dfbe9df4b969e5895a55ed3be6048b82cdade7d9ecd0867fc5", "Botellas nuevas"],
-    ["section.page.json.new.heading:8jz8dlc9ckvd", "5a7793c71a6bb7e022723ccf8132498b803c1df11d0804afe837e62c0eef50ca", "Pide botellas nuevas"],
-    ["section.page.json.bundle.eyebrow:m9ntgo30vhzs", "47e3b4928c62435d81b4a23b732076794e0ae5afaf883247acfc971258ba98b1", "Paquetes con dispensador"],
-    ["section.page.json.bundle.heading:m9o024ymd6sh", "5f4177832532bc18a00cb76e2a8abcb4db726ec71ca3c2992b213893251fd84a", "Compra el paquete y ahorra"],
-    ["section.page.json.featured_collection_HNDwnd.eyebrow:3tik7l1ouc2lx", "6e0dc1189cb10bfb6f69f0ca74fc6b26e4d02340c9035e660a9d569f122fcee9", "Agua Alkaid"],
-    ["section.page.json.featured_collection_HNDwnd.heading:3tik1gus194ng", "9efbfbd3bdd3be36b96a2f79103ad7232c78d3272e564935624cdc5ee9f782f1", "Botellas de agua alcalina"]
+    [
+      "section.page.json.refill.eyebrow:5m2gbjqd3ot0",
+      "b354b1f10c7780244c1ede47ff3204bad0f2b87f023c02af11148d347847938d",
+      "Recarga"
+    ],
+    [
+      "section.page.json.refill.heading:5m2bbgtn23al",
+      "a309ed181817c95779c76e5af895a2755d579e5da00fa0fab0fe6d7f4be2ff9a",
+      "Cambia tus botellas vacías"
+    ],
+    [
+      "section.page.json.new.eyebrow:8jz9ikpwkuds",
+      "f4df8d3eccfd94dfbe9df4b969e5895a55ed3be6048b82cdade7d9ecd0867fc5",
+      "Botellas nuevas"
+    ],
+    [
+      "section.page.json.new.heading:8jz8dlc9ckvd",
+      "5a7793c71a6bb7e022723ccf8132498b803c1df11d0804afe837e62c0eef50ca",
+      "Pide botellas nuevas"
+    ],
+    [
+      "section.page.json.bundle.eyebrow:m9ntgo30vhzs",
+      "47e3b4928c62435d81b4a23b732076794e0ae5afaf883247acfc971258ba98b1",
+      "Paquetes con dispensador"
+    ],
+    [
+      "section.page.json.bundle.heading:m9o024ymd6sh",
+      "5f4177832532bc18a00cb76e2a8abcb4db726ec71ca3c2992b213893251fd84a",
+      "Compra el paquete y ahorra"
+    ],
+    [
+      "section.page.json.featured_collection_HNDwnd.eyebrow:3tik7l1ouc2lx",
+      "6e0dc1189cb10bfb6f69f0ca74fc6b26e4d02340c9035e660a9d569f122fcee9",
+      "Agua Alkaid"
+    ],
+    [
+      "section.page.json.featured_collection_HNDwnd.heading:3tik1gus194ng",
+      "9efbfbd3bdd3be36b96a2f79103ad7232c78d3272e564935624cdc5ee9f782f1",
+      "Botellas de agua alcalina"
+    ]
   ],
   "OnlineStoreThemeJsonTemplate/page.about": [
-    ["section.page.about.json.hero.eyebrow:3poyxa3vtzsu7", "24682ab62ec7a74473eab02063a08c16d157e0155f09b9ea9bee0300ae6d30e5", "¿Quién es Blue Star?"],
-    ["section.page.about.json.hero.heading:3poz2rpw7rx6u", "fb5443bca5389a5634b9e474a0dfbbe84be5e49205e7ee871fe25e5cd5ce69b7", "Somos"],
-    ["section.page.about.json.hero.heading_accent:31gb206f5kctj", "966b92e720836b68d5f73bdf608e6fe0446c8c4ffab91ce32b332ad04bd0982a", "Bluestar."],
-    ["section.page.about.json.hero.text:6g2f0dct4cj7", "b356b69240809b306f1a382740be1fded7aac90279e2d25def972aa501fcbd58", "Desde 2010 purificamos, embotellamos y llevamos agua purificada, alcalina y de manantial a casas y oficinas en Nueva Jersey y Nueva York — una empresa de entrega de agua con licencia del Departamento de Salud de Nueva Jersey."],
-    ["section.page.about.json.hero.button_label:1yuwj7oe5pabl", "cc67a67d0aa6c61f9051c541779073f9719f7d4f1680fdfd12519727dfc9b118", "Pedir agua"],
-    ["section.page.about.json.hero.button2_label:2nxjuhpeo4z83", "98b67063cf8e584d75e53b88472ee85473e01e0ea16f29ece9cc98f4a2710494", "Contáctanos"],
-    ["section.page.about.json.hero.badge:20ktqbcmuy8x7", "4a052820c356dd81662dbb1d9480ae446a7fac29e3f5dd6ed44ed77200a80d20", "MEGA OFERTA"],
-    ["section.page.about.json.hero.image_alt:38zp9mkoyvd9r", "a627dfadeb749e951738b191349070294db03d2e8e610415fcf1292e234e2e60", "Agua Blue Star entregada en la puerta de un cliente"],
-    ["section.page.about.json.stats.stat_1.label:10a8jschqmx26", "13f513b04035dbbc7fec912b37fd586d94fcbc39123b0c5f5963b3df879747ef", "Sirviendo a NJ y NY desde"],
-    ["section.page.about.json.stats.stat_2.value:1f7u7gootuf3k", "87feb882165da17c91cb73f75b2f67e6015b63f25ebcdc963e878558be3bb175", "Con licencia"],
-    ["section.page.about.json.stats.stat_2.label:1f7u7ggg7sjgd", "2465351f7fbb87a027c4544881cd685ef9a8fb8dca9a728ad1829b808b317ede", "del Departamento de Salud de NJ"],
-    ["section.page.about.json.stats.stat_3.value:17zc2zw3ylaj5", "7dec04a463fd459af04bad008e7ddc25e15c9f9f7543e81b9e72af6659bf8950", "3 aguas"],
-    ["section.page.about.json.stats.stat_3.label:17zc2zsh1e4kc", "ba468a3dfd9d16de402e235ff09516f5f3e9dab4fae9a7cfad291f01b3bef22d", "Purificada · Alcalina · Manantial"],
-    ["section.page.about.json.stats.stat_4.value:287jt1u3myppy", "bd0298851af5c8a094f31d3045a9e1e218c5a9f760d155f7a9d36ff1c1599b8c", "NJ y NY"],
-    ["section.page.about.json.stats.stat_4.label:287jt1o8j14cb", "cb20eae4e2a781cd203a4371b9a29e867dc3fbf45de863ab67fc683b358b4c83", "Entrega a casas y oficinas · Hablamos español"],
-    ["section.page.about.json.intro.eyebrow:2ym3auhhr4bq9", "9247cb620a1c322140959500a5ed4d0dd6a65b433344565a10a354c53f1a2500", "Nuestra historia"],
-    ["section.page.about.json.intro.heading:2ym3c3k8afjmg", "e9ee0ba6d5ff82df97f9c05c6455f2d372c555e7b4f03244d473406cbfe13cea", "Agua pura a domicilio desde 2010"],
-    ["section.page.about.json.intro.body:h5zj4ivt81i8", "2c868a95da6dd968f946b76dc2d7a343393eb24378adcf72994f4f59f29b7f34", "<p>En un mundo donde la hidratación es clave para el bienestar, ofrecer productos de agua de la mejor calidad ha sido nuestra prioridad desde que abrimos en 2010. Somos una empresa de entrega de agua con licencia del Departamento de Salud de Nueva Jersey (Consumer and Environmental Health Service).</p><p>Nos enorgullece purificar, embotellar y distribuir agua alcalina, de manantial y purificada en Nueva Jersey y Nueva York, para que cada gota contribuya a tu salud y vitalidad.</p>"],
-    ["section.page.about.json.benefits.eyebrow:1ps4sadckmrhn", "ecc71a2b5ab7d0b92517afb9a12a2bd4194bb0a9639059e51b46c133f853cf08", "Somos Blue Star Pure Water"],
-    ["section.page.about.json.benefits.heading:1ps515oe2cd02", "10f638e01656019ae60fafe22d4ff8e8d498acc9124a6eb4478b36004555be75", "Descubre los beneficios de nuestras aguas para la salud"],
-    ["section.page.about.json.benefits.body:1emyerczfmf1m", "551dc9bf9cce0541924652a51fbe41e29bc4f1ded39cd26d0df3a5d40874d9c6", "<p>En Blue Star Pure Water somos más que el mejor servicio de agua a domicilio de NJ. Somos tu aliado en salud y bienestar, comprometidos con ofrecer productos de alta calidad que mejoran tu hidratación de cada día. Ya sea que tomes agua purificada, alcalina o de manantial, puedes confiar en que cada gota contribuye a tu bienestar.</p><p><strong>Agua purificada:</strong> Nuestro proceso de purificación garantiza la eliminación de impurezas y contaminantes, y te deja un agua limpia y refrescante que favorece la hidratación, ayuda a la digestión y contribuye a la desintoxicación. Con cada sorbo de nuestra agua purificada le das a tu cuerpo la hidratación que merece.</p><p><strong>Agua alcalina:</strong> Descubre los posibles beneficios del agua alcalina, que tiene un pH más alto que el agua de la llave. Se cree que ayuda a neutralizar la acidez del cuerpo, favoreciendo un equilibrio de pH saludable y posiblemente reduciendo problemas relacionados con la acidez, como el reflujo. Además, puede ofrecer propiedades antioxidantes y una mejor hidratación gracias a sus moléculas más pequeñas.</p><p><strong>Agua de manantial:</strong> Proveniente de manantiales naturales, nuestra agua de manantial es un tesoro de minerales esenciales como calcio, magnesio y potasio. Estos minerales cumplen funciones clave para la salud de los huesos, el funcionamiento de los músculos y el equilibrio de los electrolitos. Con nuestra agua de manantial no solo te hidratas — nutres tu cuerpo con lo mejor de la naturaleza.</p>"],
-    ["section.page.about.json.benefits.button_label:gxz6h3cwtxqt", "cc67a67d0aa6c61f9051c541779073f9719f7d4f1680fdfd12519727dfc9b118", "Pedir agua"],
-    ["section.page.about.json.benefits.button2_label:3up1g8lqq9ruv", "b20265f22a1ec382da8057121e7dc45baca63e07e26b6126e864303599c519bc", "Llámanos"]
+    [
+      "section.page.about.json.hero.eyebrow:3poyxa3vtzsu7",
+      "24682ab62ec7a74473eab02063a08c16d157e0155f09b9ea9bee0300ae6d30e5",
+      "¿Quién es Blue Star?"
+    ],
+    [
+      "section.page.about.json.hero.heading:3poz2rpw7rx6u",
+      "fb5443bca5389a5634b9e474a0dfbbe84be5e49205e7ee871fe25e5cd5ce69b7",
+      "Somos"
+    ],
+    [
+      "section.page.about.json.hero.heading_accent:31gb206f5kctj",
+      "966b92e720836b68d5f73bdf608e6fe0446c8c4ffab91ce32b332ad04bd0982a",
+      "Bluestar."
+    ],
+    [
+      "section.page.about.json.hero.text:6g2f0dct4cj7",
+      "b356b69240809b306f1a382740be1fded7aac90279e2d25def972aa501fcbd58",
+      "Desde 2010 purificamos, embotellamos y llevamos agua purificada, alcalina y de manantial a casas y oficinas en Nueva Jersey y Nueva York — una empresa de entrega de agua con licencia del Departamento de Salud de Nueva Jersey."
+    ],
+    [
+      "section.page.about.json.hero.button_label:1yuwj7oe5pabl",
+      "cc67a67d0aa6c61f9051c541779073f9719f7d4f1680fdfd12519727dfc9b118",
+      "Pedir agua"
+    ],
+    [
+      "section.page.about.json.hero.button2_label:2nxjuhpeo4z83",
+      "98b67063cf8e584d75e53b88472ee85473e01e0ea16f29ece9cc98f4a2710494",
+      "Contáctanos"
+    ],
+    [
+      "section.page.about.json.hero.badge:20ktqbcmuy8x7",
+      "4a052820c356dd81662dbb1d9480ae446a7fac29e3f5dd6ed44ed77200a80d20",
+      "MEGA OFERTA"
+    ],
+    [
+      "section.page.about.json.hero.image_alt:38zp9mkoyvd9r",
+      "a627dfadeb749e951738b191349070294db03d2e8e610415fcf1292e234e2e60",
+      "Agua Blue Star entregada en la puerta de un cliente"
+    ],
+    [
+      "section.page.about.json.stats.stat_1.label:10a8jschqmx26",
+      "13f513b04035dbbc7fec912b37fd586d94fcbc39123b0c5f5963b3df879747ef",
+      "Sirviendo a NJ y NY desde"
+    ],
+    [
+      "section.page.about.json.stats.stat_2.value:1f7u7gootuf3k",
+      "87feb882165da17c91cb73f75b2f67e6015b63f25ebcdc963e878558be3bb175",
+      "Con licencia"
+    ],
+    [
+      "section.page.about.json.stats.stat_2.label:1f7u7ggg7sjgd",
+      "2465351f7fbb87a027c4544881cd685ef9a8fb8dca9a728ad1829b808b317ede",
+      "del Departamento de Salud de NJ"
+    ],
+    [
+      "section.page.about.json.stats.stat_3.value:17zc2zw3ylaj5",
+      "7dec04a463fd459af04bad008e7ddc25e15c9f9f7543e81b9e72af6659bf8950",
+      "3 aguas"
+    ],
+    [
+      "section.page.about.json.stats.stat_3.label:17zc2zsh1e4kc",
+      "ba468a3dfd9d16de402e235ff09516f5f3e9dab4fae9a7cfad291f01b3bef22d",
+      "Purificada · Alcalina · Manantial"
+    ],
+    [
+      "section.page.about.json.stats.stat_4.value:287jt1u3myppy",
+      "bd0298851af5c8a094f31d3045a9e1e218c5a9f760d155f7a9d36ff1c1599b8c",
+      "NJ y NY"
+    ],
+    [
+      "section.page.about.json.stats.stat_4.label:287jt1o8j14cb",
+      "cb20eae4e2a781cd203a4371b9a29e867dc3fbf45de863ab67fc683b358b4c83",
+      "Entrega a casas y oficinas · Hablamos español"
+    ],
+    [
+      "section.page.about.json.intro.eyebrow:2ym3auhhr4bq9",
+      "9247cb620a1c322140959500a5ed4d0dd6a65b433344565a10a354c53f1a2500",
+      "Nuestra historia"
+    ],
+    [
+      "section.page.about.json.intro.heading:2ym3c3k8afjmg",
+      "e9ee0ba6d5ff82df97f9c05c6455f2d372c555e7b4f03244d473406cbfe13cea",
+      "Agua pura a domicilio desde 2010"
+    ],
+    [
+      "section.page.about.json.intro.body:h5zj4ivt81i8",
+      "2c868a95da6dd968f946b76dc2d7a343393eb24378adcf72994f4f59f29b7f34",
+      "<p>En un mundo donde la hidratación es clave para el bienestar, ofrecer productos de agua de la mejor calidad ha sido nuestra prioridad desde que abrimos en 2010. Somos una empresa de entrega de agua con licencia del Departamento de Salud de Nueva Jersey (Consumer and Environmental Health Service).</p><p>Nos enorgullece purificar, embotellar y distribuir agua alcalina, de manantial y purificada en Nueva Jersey y Nueva York, para que cada gota contribuya a tu salud y vitalidad.</p>"
+    ],
+    [
+      "section.page.about.json.benefits.eyebrow:1ps4sadckmrhn",
+      "ecc71a2b5ab7d0b92517afb9a12a2bd4194bb0a9639059e51b46c133f853cf08",
+      "Somos Blue Star Pure Water"
+    ],
+    [
+      "section.page.about.json.benefits.heading:1ps515oe2cd02",
+      "10f638e01656019ae60fafe22d4ff8e8d498acc9124a6eb4478b36004555be75",
+      "Descubre los beneficios de nuestras aguas para la salud"
+    ],
+    [
+      "section.page.about.json.benefits.body:1emyerczfmf1m",
+      "551dc9bf9cce0541924652a51fbe41e29bc4f1ded39cd26d0df3a5d40874d9c6",
+      "<p>En Blue Star Pure Water somos más que el mejor servicio de agua a domicilio de NJ. Somos tu aliado en salud y bienestar, comprometidos con ofrecer productos de alta calidad que mejoran tu hidratación de cada día. Ya sea que tomes agua purificada, alcalina o de manantial, puedes confiar en que cada gota contribuye a tu bienestar.</p><p><strong>Agua purificada:</strong> Nuestro proceso de purificación garantiza la eliminación de impurezas y contaminantes, y te deja un agua limpia y refrescante que favorece la hidratación, ayuda a la digestión y contribuye a la desintoxicación. Con cada sorbo de nuestra agua purificada le das a tu cuerpo la hidratación que merece.</p><p><strong>Agua alcalina:</strong> Descubre los posibles beneficios del agua alcalina, que tiene un pH más alto que el agua de la llave. Se cree que ayuda a neutralizar la acidez del cuerpo, favoreciendo un equilibrio de pH saludable y posiblemente reduciendo problemas relacionados con la acidez, como el reflujo. Además, puede ofrecer propiedades antioxidantes y una mejor hidratación gracias a sus moléculas más pequeñas.</p><p><strong>Agua de manantial:</strong> Proveniente de manantiales naturales, nuestra agua de manantial es un tesoro de minerales esenciales como calcio, magnesio y potasio. Estos minerales cumplen funciones clave para la salud de los huesos, el funcionamiento de los músculos y el equilibrio de los electrolitos. Con nuestra agua de manantial no solo te hidratas — nutres tu cuerpo con lo mejor de la naturaleza.</p>"
+    ],
+    [
+      "section.page.about.json.benefits.button_label:gxz6h3cwtxqt",
+      "cc67a67d0aa6c61f9051c541779073f9719f7d4f1680fdfd12519727dfc9b118",
+      "Pedir agua"
+    ],
+    [
+      "section.page.about.json.benefits.button2_label:3up1g8lqq9ruv",
+      "b20265f22a1ec382da8057121e7dc45baca63e07e26b6126e864303599c519bc",
+      "Llámanos"
+    ]
   ],
   "OnlineStoreThemeJsonTemplate/page.contact": [
-    ["section.page.contact.json.main.intro:31vt97u25b43a", "8139f068a58f5327497a976960a4e74a12d0bf977a025dec6d6fb95306d5106b", "<p>Somos el servicio de agua a domicilio #1 de Nueva Jersey, y nuestro equipo de atención al cliente está aquí para que tu experiencia sea fácil y satisfactoria. Ya sea que tengas preguntas sobre nuestros productos, los horarios de entrega o tu facturación, estamos listos para ayudarte de forma rápida y personalizada. Tu satisfacción es nuestra prioridad, y atendemos cualquier inquietud con cuidado y experiencia. No dudes en escribirnos — ¡siempre estamos para ayudarte!</p>"],
-    ["section.page.contact.json.main.aside_heading:ehpvat8kqsj9", "391dbda899757acf3cdd59d10bddf45bc62d12daa63da02f65342419dfae3850", "¡Ponte en contacto con nosotros!"],
-    ["section.page.contact.json.main.aside:31vt97pskup36", "8ab157163e148371a5ab946c449b7d4690a7be27f4da0b94155229de15557ccb", "<p><strong>Escríbenos un correo</strong><br/><a href=\"mailto:bluealkaiddistributor@gmail.com\">bluealkaiddistributor@gmail.com</a></p><p><strong>Llámanos</strong><br/><a href=\"tel:9737420435\">973-742-0435</a></p><p><strong>Horario de atención</strong><br/>L-V 8am - 6pm (hora del Este)<br/>Sábado 8am - 4pm</p><p>Hablamos español</p>"],
-    ["section.page.contact.json.main.aside_button_label:3gzx8nqbuyh8y", "b20265f22a1ec382da8057121e7dc45baca63e07e26b6126e864303599c519bc", "Llámanos"],
-    ["section.page.contact.json.main.aside_button2_label:1ol5kbh7gjhk0", "8b1a6c8923c79007c4b40abbfa7ee090de576e68784d646b19f06fde78b595ca", "Escríbenos"],
-    ["section.page.contact.json.offer.eyebrow:37p9sict0w4t6", "9c3418f5690d9b896bdaf2880557deebbb05940c298e93410be6670f7f7f8d89", "¡Llévate 5 botellas gratis!"],
-    ["section.page.contact.json.offer.heading:37p9z3tm409lv", "5f4177832532bc18a00cb76e2a8abcb4db726ec71ca3c2992b213893251fd84a", "Compra el paquete y ahorra"],
-    ["section.page.contact.json.offer.text:p4tnrqine7sm", "e760042ce25c8ba9ffe2658b2e688de1a6401b17eec856a463b4bde34145139b", "Compra un dispensador de agua y llévate 5 botellas de agua purificada + 1 estante GRATIS."]
+    [
+      "section.page.contact.json.main.intro:31vt97u25b43a",
+      "8139f068a58f5327497a976960a4e74a12d0bf977a025dec6d6fb95306d5106b",
+      "<p>Somos el servicio de agua a domicilio #1 de Nueva Jersey, y nuestro equipo de atención al cliente está aquí para que tu experiencia sea fácil y satisfactoria. Ya sea que tengas preguntas sobre nuestros productos, los horarios de entrega o tu facturación, estamos listos para ayudarte de forma rápida y personalizada. Tu satisfacción es nuestra prioridad, y atendemos cualquier inquietud con cuidado y experiencia. No dudes en escribirnos — ¡siempre estamos para ayudarte!</p>"
+    ],
+    [
+      "section.page.contact.json.main.aside_heading:ehpvat8kqsj9",
+      "391dbda899757acf3cdd59d10bddf45bc62d12daa63da02f65342419dfae3850",
+      "¡Ponte en contacto con nosotros!"
+    ],
+    [
+      "section.page.contact.json.main.aside:31vt97pskup36",
+      "8ab157163e148371a5ab946c449b7d4690a7be27f4da0b94155229de15557ccb",
+      "<p><strong>Escríbenos un correo</strong><br/><a href=\"mailto:bluealkaiddistributor@gmail.com\">bluealkaiddistributor@gmail.com</a></p><p><strong>Llámanos</strong><br/><a href=\"tel:9737420435\">973-742-0435</a></p><p><strong>Horario de atención</strong><br/>L-V 8am - 6pm (hora del Este)<br/>Sábado 8am - 4pm</p><p>Hablamos español</p>"
+    ],
+    [
+      "section.page.contact.json.main.aside_button_label:3gzx8nqbuyh8y",
+      "b20265f22a1ec382da8057121e7dc45baca63e07e26b6126e864303599c519bc",
+      "Llámanos"
+    ],
+    [
+      "section.page.contact.json.main.aside_button2_label:1ol5kbh7gjhk0",
+      "8b1a6c8923c79007c4b40abbfa7ee090de576e68784d646b19f06fde78b595ca",
+      "Escríbenos"
+    ],
+    [
+      "section.page.contact.json.offer.eyebrow:37p9sict0w4t6",
+      "9c3418f5690d9b896bdaf2880557deebbb05940c298e93410be6670f7f7f8d89",
+      "¡Llévate 5 botellas gratis!"
+    ],
+    [
+      "section.page.contact.json.offer.heading:37p9z3tm409lv",
+      "5f4177832532bc18a00cb76e2a8abcb4db726ec71ca3c2992b213893251fd84a",
+      "Compra el paquete y ahorra"
+    ],
+    [
+      "section.page.contact.json.offer.text:p4tnrqine7sm",
+      "e760042ce25c8ba9ffe2658b2e688de1a6401b17eec856a463b4bde34145139b",
+      "Compra un dispensador de agua y llévate 5 botellas de agua purificada + 1 estante GRATIS."
+    ]
   ],
   "OnlineStoreThemeJsonTemplate/page.privacy-policy": [
-    ["section.page.privacy-policy.json.policy.eyebrow:db57seg8caqx", "ecc71a2b5ab7d0b92517afb9a12a2bd4194bb0a9639059e51b46c133f853cf08", "Somos Blue Star Pure Water"],
-    ["section.page.privacy-policy.json.policy.heading:db5grxg0dgy8", "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a", "Política de privacidad"],
-    ["section.page.privacy-policy.json.policy.body:anfleojz19yg", "6d0272bc98d107495cb038784d6218e341b47dfd34cc0d95b84ac78b183621af", "<p>Estamos comprometidos con proteger la privacidad y la seguridad de tu información personal. Esta Política de privacidad explica cómo recopilamos, usamos y protegemos la información que nos das al usar nuestro sitio web y nuestros servicios.</p><p><strong>Información que recopilamos</strong></p><p>Podemos recopilar información personal, como tu nombre, dirección, correo electrónico y datos de pago, cuando haces un pedido de nuestro servicio de agua a domicilio. También podemos recopilar información no personal, como cookies y datos de uso, para mejorar el funcionamiento de nuestro sitio y tu experiencia.</p><p><strong>Cómo usamos tu información</strong></p><p>Usamos la información que recopilamos para prestar y entregar nuestro servicio de agua a domicilio, procesar pagos, comunicarnos contigo sobre tus pedidos y mejorar nuestros servicios y nuestro sitio. También podemos usar tu información con fines de marketing, como enviarte ofertas y novedades sobre nuestros productos y servicios.</p><p><strong>Información compartida</strong></p><p>Podemos compartir tu información con proveedores externos que nos ayudan a prestar nuestros servicios, procesar pagos y administrar nuestro sitio web. No vendemos ni alquilamos tu información personal a terceros con fines de marketing.</p><p><strong>Seguridad de los datos</strong></p><p>Aplicamos medidas de seguridad para proteger la confidencialidad e integridad de tu información personal. Usamos cifrado, controles de acceso y otras prácticas de seguridad estándar de la industria para evitar accesos no autorizados y filtraciones de datos.</p><p><strong>Tus derechos</strong></p><p>Tienes derecho a consultar, corregir o eliminar tu información personal. También puedes dejar de recibir comunicaciones de marketing en cualquier momento contactándonos con la información de abajo.</p><p><strong>Cookies y tecnologías de seguimiento</strong></p><p>Usamos cookies y tecnologías similares para mejorar tu experiencia en nuestro sitio y analizar el tráfico. Puedes administrar tus preferencias de cookies en la configuración de tu navegador.</p><p><strong>Enlaces de terceros</strong></p><p>Nuestro sitio puede contener enlaces a sitios o servicios de terceros con sus propias políticas de privacidad. No somos responsables de las prácticas de privacidad de esos terceros y te recomendamos revisar sus políticas.</p><p><strong>Cambios a esta política</strong></p><p>Podemos actualizar esta Política de privacidad periódicamente para reflejar cambios en nuestras prácticas. Te avisaremos de cualquier cambio importante publicando un aviso en nuestro sitio o enviándote una notificación.</p><p><strong>Contáctanos</strong></p><p>Si tienes preguntas o inquietudes sobre nuestra Política de privacidad o nuestras prácticas de datos, llámanos al 973-742-0435</p>"]
+    [
+      "section.page.privacy-policy.json.policy.eyebrow:db57seg8caqx",
+      "ecc71a2b5ab7d0b92517afb9a12a2bd4194bb0a9639059e51b46c133f853cf08",
+      "Somos Blue Star Pure Water"
+    ],
+    [
+      "section.page.privacy-policy.json.policy.heading:db5grxg0dgy8",
+      "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+      "Política de privacidad"
+    ],
+    [
+      "section.page.privacy-policy.json.policy.body:anfleojz19yg",
+      "6d0272bc98d107495cb038784d6218e341b47dfd34cc0d95b84ac78b183621af",
+      "<p>Estamos comprometidos con proteger la privacidad y la seguridad de tu información personal. Esta Política de privacidad explica cómo recopilamos, usamos y protegemos la información que nos das al usar nuestro sitio web y nuestros servicios.</p><p><strong>Información que recopilamos</strong></p><p>Podemos recopilar información personal, como tu nombre, dirección, correo electrónico y datos de pago, cuando haces un pedido de nuestro servicio de agua a domicilio. También podemos recopilar información no personal, como cookies y datos de uso, para mejorar el funcionamiento de nuestro sitio y tu experiencia.</p><p><strong>Cómo usamos tu información</strong></p><p>Usamos la información que recopilamos para prestar y entregar nuestro servicio de agua a domicilio, procesar pagos, comunicarnos contigo sobre tus pedidos y mejorar nuestros servicios y nuestro sitio. También podemos usar tu información con fines de marketing, como enviarte ofertas y novedades sobre nuestros productos y servicios.</p><p><strong>Información compartida</strong></p><p>Podemos compartir tu información con proveedores externos que nos ayudan a prestar nuestros servicios, procesar pagos y administrar nuestro sitio web. No vendemos ni alquilamos tu información personal a terceros con fines de marketing.</p><p><strong>Seguridad de los datos</strong></p><p>Aplicamos medidas de seguridad para proteger la confidencialidad e integridad de tu información personal. Usamos cifrado, controles de acceso y otras prácticas de seguridad estándar de la industria para evitar accesos no autorizados y filtraciones de datos.</p><p><strong>Tus derechos</strong></p><p>Tienes derecho a consultar, corregir o eliminar tu información personal. También puedes dejar de recibir comunicaciones de marketing en cualquier momento contactándonos con la información de abajo.</p><p><strong>Cookies y tecnologías de seguimiento</strong></p><p>Usamos cookies y tecnologías similares para mejorar tu experiencia en nuestro sitio y analizar el tráfico. Puedes administrar tus preferencias de cookies en la configuración de tu navegador.</p><p><strong>Enlaces de terceros</strong></p><p>Nuestro sitio puede contener enlaces a sitios o servicios de terceros con sus propias políticas de privacidad. No somos responsables de las prácticas de privacidad de esos terceros y te recomendamos revisar sus políticas.</p><p><strong>Cambios a esta política</strong></p><p>Podemos actualizar esta Política de privacidad periódicamente para reflejar cambios en nuestras prácticas. Te avisaremos de cualquier cambio importante publicando un aviso en nuestro sitio o enviándote una notificación.</p><p><strong>Contáctanos</strong></p><p>Si tienes preguntas o inquietudes sobre nuestra Política de privacidad o nuestras prácticas de datos, llámanos al 973-742-0435</p>"
+    ]
   ],
   "OnlineStoreThemeJsonTemplate/product": [
-    ["section.product.json.main.offer_note:1uskbrwe6ggrd", "24de9f62fe4e51c66e02500e86330869c0f337aa7321ec4549faa2de7a6a99df", "<p>🎁 Llévate 5 botellas de agua <strong>PURIFICADA GRATIS</strong> + 1 estante al comprar un <strong>dispensador de agua</strong> — <a href=\"/products/refurbished-water-dispenser-5-bottles-free\">ver la oferta</a>.</p>"],
-    ["section.product.json.main.trust:1yfl6jveumqka", "d78a7f1ee4c90bf381c937f720aebeea78268d4f63edb4c4386061d7e407092c", "Entregas en Nueva Jersey\nEntregas en Nueva York\nHablamos español"],
-    ["section.product.json.bundles.eyebrow:1nyjuvspdtf77", "5f4177832532bc18a00cb76e2a8abcb4db726ec71ca3c2992b213893251fd84a", "Compra el paquete y ahorra"],
-    ["section.product.json.bundles.heading:1nyjwi1zlox8q", "5f4177832532bc18a00cb76e2a8abcb4db726ec71ca3c2992b213893251fd84a", "Compra el paquete y ahorra"],
-    ["section.product.json.bundles.text:ky9idp5ouxdr", "659e79048cb0d8b359d43412d00c86e4fe708537b6122ddf8f200d99d3762cc7", "Dispensadores con botellas gratis."],
-    ["section.product.json.bundles.button_label:15r9ygn52j6h9", "b20265f22a1ec382da8057121e7dc45baca63e07e26b6126e864303599c519bc", "Llámanos"],
-    ["section.product.json.water.eyebrow:3plfjhi1esgo1", "b1cdebf648060849bbc34f25d20ed9bcf0d967d525076fa21791a1632bde1762", "Agua para los que aman el agua"],
-    ["section.product.json.water.heading:3plfkqkry3ok8", "b1cdebf648060849bbc34f25d20ed9bcf0d967d525076fa21791a1632bde1762", "Agua para los que aman el agua"],
-    ["section.product.json.water.text:1jc7covajb8tp", "5d38e0bd554b81e7068dc12d890fb9d22399785b686d5b97cedf78ab388d143a", "¿Preguntas? Llámanos al 973-742-0435"]
+    [
+      "section.product.json.main.offer_note:1uskbrwe6ggrd",
+      "24de9f62fe4e51c66e02500e86330869c0f337aa7321ec4549faa2de7a6a99df",
+      "<p>🎁 Llévate 5 botellas de agua <strong>PURIFICADA GRATIS</strong> + 1 estante al comprar un <strong>dispensador de agua</strong> — <a href=\"/products/refurbished-water-dispenser-5-bottles-free\">ver la oferta</a>.</p>"
+    ],
+    [
+      "section.product.json.main.trust:1yfl6jveumqka",
+      "d78a7f1ee4c90bf381c937f720aebeea78268d4f63edb4c4386061d7e407092c",
+      "Entregas en Nueva Jersey\nEntregas en Nueva York\nHablamos español"
+    ],
+    [
+      "section.product.json.bundles.eyebrow:1nyjuvspdtf77",
+      "5f4177832532bc18a00cb76e2a8abcb4db726ec71ca3c2992b213893251fd84a",
+      "Compra el paquete y ahorra"
+    ],
+    [
+      "section.product.json.bundles.heading:1nyjwi1zlox8q",
+      "5f4177832532bc18a00cb76e2a8abcb4db726ec71ca3c2992b213893251fd84a",
+      "Compra el paquete y ahorra"
+    ],
+    [
+      "section.product.json.bundles.text:ky9idp5ouxdr",
+      "659e79048cb0d8b359d43412d00c86e4fe708537b6122ddf8f200d99d3762cc7",
+      "Dispensadores con botellas gratis."
+    ],
+    [
+      "section.product.json.bundles.button_label:15r9ygn52j6h9",
+      "b20265f22a1ec382da8057121e7dc45baca63e07e26b6126e864303599c519bc",
+      "Llámanos"
+    ],
+    [
+      "section.product.json.water.eyebrow:3plfjhi1esgo1",
+      "b1cdebf648060849bbc34f25d20ed9bcf0d967d525076fa21791a1632bde1762",
+      "Agua para los que aman el agua"
+    ],
+    [
+      "section.product.json.water.heading:3plfkqkry3ok8",
+      "b1cdebf648060849bbc34f25d20ed9bcf0d967d525076fa21791a1632bde1762",
+      "Agua para los que aman el agua"
+    ],
+    [
+      "section.product.json.water.text:1jc7covajb8tp",
+      "5d38e0bd554b81e7068dc12d890fb9d22399785b686d5b97cedf78ab388d143a",
+      "¿Preguntas? Llámanos al 973-742-0435"
+    ]
   ],
   "OnlineStoreThemeSectionGroup/footer-group": [
-    ["section.sections/footer-group.json.footer.tagline:1sy4y8hcwyoix", "b3746e893c85fa174211536b0c2fbdab72187c2768f10f85c0cf9a79d2c53bb4", "Agua purificada, alcalina y de manantial a domicilio para casas y oficinas en Nueva Jersey y Nueva York."],
-    ["section.sections/footer-group.json.footer.bottom_text:285q9fcao28u0", "9735d4d91b4cd0921510aae60e4fea7a0fac06bc9db1252f22a2e0b6ceb2b562", "Empresa de entrega de agua con licencia · Sirviendo a NJ y NY desde 2010."],
-    ["section.sections/footer-group.json.footer.menu_1.heading:3lyljfo7old2z", "62b34994944f739cb6550cf26d8ed2d3e0bb3a6d44c273c5b5ee2b195918ed04", "Enlaces rápidos"],
-    ["section.sections/footer-group.json.footer.menu_2.heading:365ch91cint3s", "c46224060a24be84c29018719b6dfd29fc18963cb32bb8da73224e0e7cbf563b", "Enlaces útiles"]
+    [
+      "section.sections/footer-group.json.footer.tagline:1sy4y8hcwyoix",
+      "b3746e893c85fa174211536b0c2fbdab72187c2768f10f85c0cf9a79d2c53bb4",
+      "Agua purificada, alcalina y de manantial a domicilio para casas y oficinas en Nueva Jersey y Nueva York."
+    ],
+    [
+      "section.sections/footer-group.json.footer.bottom_text:285q9fcao28u0",
+      "9735d4d91b4cd0921510aae60e4fea7a0fac06bc9db1252f22a2e0b6ceb2b562",
+      "Empresa de entrega de agua con licencia · Sirviendo a NJ y NY desde 2010."
+    ],
+    [
+      "section.sections/footer-group.json.footer.menu_1.heading:3lyljfo7old2z",
+      "62b34994944f739cb6550cf26d8ed2d3e0bb3a6d44c273c5b5ee2b195918ed04",
+      "Enlaces rápidos"
+    ],
+    [
+      "section.sections/footer-group.json.footer.menu_2.heading:365ch91cint3s",
+      "c46224060a24be84c29018719b6dfd29fc18963cb32bb8da73224e0e7cbf563b",
+      "Enlaces útiles"
+    ]
   ],
   "OnlineStoreThemeSectionGroup/header-group": [
-    ["section.sections/header-group.json.announcement.highlight:1e70y71inbp23", "a2530d4e7309560348c2e714f1ecb11879b39c4a37fcd010e51508168ab2c035", "MEGA OFERTA:"],
-    ["section.sections/header-group.json.announcement.text:28t31itum3v3q", "dfc9d0b3f844a0b51774ec298738c5586a53c7a12a2da664cf8c17ea027d8847", "Dispensador + 5 botellas de agua purificada GRATIS + 1 estante GRATIS · Hablamos español · 973-742-0435"],
-    ["section.sections/header-group.json.header.search_placeholder:3r93et68mqvrb", "f137d2080f4df239eb055626ebd1602db34d7db7b5b6233a06c16e90cb445ae1", "Busca agua, dispensadores, accesorios…"]
+    [
+      "section.sections/header-group.json.announcement.highlight:1e70y71inbp23",
+      "a2530d4e7309560348c2e714f1ecb11879b39c4a37fcd010e51508168ab2c035",
+      "MEGA OFERTA:"
+    ],
+    [
+      "section.sections/header-group.json.announcement.text:28t31itum3v3q",
+      "dfc9d0b3f844a0b51774ec298738c5586a53c7a12a2da664cf8c17ea027d8847",
+      "Dispensador + 5 botellas de agua purificada GRATIS + 1 estante GRATIS · Hablamos español · 973-742-0435"
+    ],
+    [
+      "section.sections/header-group.json.header.search_placeholder:3r93et68mqvrb",
+      "f137d2080f4df239eb055626ebd1602db34d7db7b5b6233a06c16e90cb445ae1",
+      "Busca agua, dispensadores, accesorios…"
+    ]
   ],
   "links": [
-    ["gid://shopify/Link/424549449908", "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c", "Inicio"],
-    ["gid://shopify/Link/424549515444", "2e79bd897edbd135e24f7acf1346d56e88248508b331e1bd76eeb91e0e6183ee", "Horario de atención"],
-    ["gid://shopify/Link/444048703668", "fb45121de0a21eb8146707a4ab32e1f09da2c5bf58d03c92fd311e3d548cc051", "Ubicaciones"],
-    ["gid://shopify/Link/450452488372", "56978cf1d606a2c94d2292d4e355a7733688da21b77b376bfe20df93ef386e01", "¿Quién es bluestar?"],
-    ["gid://shopify/Link/592482009401", "5e4a0359a58e37031cc3f00c8ab506f11fa62c902b5be5a78e7c8bfe62a65768", "Pedir agua"],
-    ["gid://shopify/Link/592597713209", "b08648dbd62b71bd0027809076ca755dbfe4f120553ce6f60d910143082d70db", "Accesorios"],
-    ["gid://shopify/Link/592808051001", "98b67063cf8e584d75e53b88472ee85473e01e0ea16f29ece9cc98f4a2710494", "Contáctanos"],
-    ["gid://shopify/Link/592827515193", "c481d182be5cfb1a5f6edc06a719fd3c5f5405f019569d3f19348714ad681cd5", "¿A qué nos dedicamos?"],
-    ["gid://shopify/Link/592827973945", "988f1b594178964c80948c4c34a597e4a5a3bd084c0648a7737eba4b11f9401f", "Garrafones GRATIS"],
-    ["gid://shopify/Link/592828760377", "9a0f24d212905e228c0ab9100c840707520d063cce457e765d79a5509cf6aa99", "¿Necesitas ayuda? Contáctanos"],
-    ["gid://shopify/Link/593163223353", "5e7814cb8434553f03d361645c8d6749ce4985ea4d67d898e2338246ea311c8c", "Política de privacidad"],
-    ["gid://shopify/Link/601876758841", "8c6bc099534a0251b576f6b88bd2db124ae9497c64bd9242e92a6aec23e6a73a", "Blog"]
-  ]
+    [
+      "gid://shopify/Link/424549449908",
+      "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+      "Inicio"
+    ],
+    [
+      "gid://shopify/Link/424549515444",
+      "2e79bd897edbd135e24f7acf1346d56e88248508b331e1bd76eeb91e0e6183ee",
+      "Horario de atención"
+    ],
+    [
+      "gid://shopify/Link/450452488372",
+      "56978cf1d606a2c94d2292d4e355a7733688da21b77b376bfe20df93ef386e01",
+      "¿Quién es bluestar?"
+    ],
+    [
+      "gid://shopify/Link/592482009401",
+      "5e4a0359a58e37031cc3f00c8ab506f11fa62c902b5be5a78e7c8bfe62a65768",
+      "Pedir agua"
+    ],
+    [
+      "gid://shopify/Link/592597713209",
+      "b08648dbd62b71bd0027809076ca755dbfe4f120553ce6f60d910143082d70db",
+      "Accesorios"
+    ],
+    [
+      "gid://shopify/Link/592808051001",
+      "98b67063cf8e584d75e53b88472ee85473e01e0ea16f29ece9cc98f4a2710494",
+      "Contáctanos"
+    ],
+    [
+      "gid://shopify/Link/592827515193",
+      "c481d182be5cfb1a5f6edc06a719fd3c5f5405f019569d3f19348714ad681cd5",
+      "¿A qué nos dedicamos?"
+    ],
+    [
+      "gid://shopify/Link/592827973945",
+      "988f1b594178964c80948c4c34a597e4a5a3bd084c0648a7737eba4b11f9401f",
+      "Garrafones GRATIS"
+    ],
+    [
+      "gid://shopify/Link/592828760377",
+      "9a0f24d212905e228c0ab9100c840707520d063cce457e765d79a5509cf6aa99",
+      "¿Necesitas ayuda? Contáctanos"
+    ],
+    [
+      "gid://shopify/Link/593163223353",
+      "5e7814cb8434553f03d361645c8d6749ce4985ea4d67d898e2338246ea311c8c",
+      "Política de privacidad"
+    ],
+    [
+      "gid://shopify/Link/601876758841",
+      "8c6bc099534a0251b576f6b88bd2db124ae9497c64bd9242e92a6aec23e6a73a",
+      "Blog"
+    ]
+  ],
+  "product_titles": {
+    "gid://shopify/Product/6688699089076": "Agua purificada - Recarga",
+    "gid://shopify/Product/6688699547828": "Agua de manantial - Recarga",
+    "gid://shopify/Product/6688700432564": "Agua alcalina - Recarga",
+    "gid://shopify/Product/6753494040756": "Agua purificada - Botella nueva",
+    "gid://shopify/Product/6753521369268": "Agua alcalina - Botella nueva",
+    "gid://shopify/Product/6753522614452": "Agua de manantial - Botella nueva",
+    "gid://shopify/Product/7121106075828": "Mini dispensador de agua fría y al tiempo + 3 botellas gratis",
+    "gid://shopify/Product/7121116594356": "Mini dispensador de agua negro + 3 botellas gratis",
+    "gid://shopify/Product/7121119445172": "Dispensador de agua fría y caliente blanco de carga superior + 5 botellas gratis",
+    "gid://shopify/Product/7121122197684": "Dispensador de agua fría y caliente gris de carga inferior + 5 botellas gratis",
+    "gid://shopify/Product/7121124163764": "Dispensador de agua fría y caliente gris de carga inferior + 5 botellas gratis",
+    "gid://shopify/Product/7124467056820": "Estante para botellas de agua de 8 niveles (5 galones)",
+    "gid://shopify/Product/7124471840948": "Estante para botellas de agua de 5 niveles (5 galones)",
+    "gid://shopify/Product/7124473774260": "Estante para botellas de agua de 4 niveles (5 galones)",
+    "gid://shopify/Product/7124476035252": "Bomba dispensadora de agua digital",
+    "gid://shopify/Product/7202671952052": "Agua alcalina Alkaid de bluestar - 12 botellas de 1 L",
+    "gid://shopify/Product/8368983015737": "Agua alcalina Alkaid - 12 botellas de 1 L",
+    "gid://shopify/Product/9104509370681": "MEGA OFERTA: Dispensador de agua + 5 botellas purificadas GRATIS + 1 estante GRATIS"
+  }
 }
