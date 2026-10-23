@@ -1,17 +1,10 @@
 from PIL import Image, ImageFilter, ImageDraw, ImageEnhance
 R=''  # run from the repo root
+GRACE='product-photos/src/grace-spring-jug-cutout.png'  # made with product-photos/src/jug_cutout.py
 bg=Image.open('product-photos/src/doorstep-original.png').convert('RGBA')
 S=2; bg=bg.resize((bg.width*S,bg.height*S),Image.LANCZOS)
 def load(p): j=Image.open(R+p).convert('RGBA'); return j.crop(j.getbbox())
-spring=load('page.js'); blue=load('RoutesTab.js'); alk=load('purified-5gal.png')
-# white cap for the spring jug (top ~95px of the cutout)
-px=spring.load()
-for y in range(0,96):
-    for x in range(spring.width):
-        r,g,b,a=px[x,y]
-        if a and b>110 and r<90:
-            l=(0.3*r+0.59*g+0.11*b)/255
-            v=int(205+50*min(1,l*1.6)); px[x,y]=(v,v,min(255,v+4),a)
+spring=Image.open(GRACE).convert('RGBA'); spring=spring.crop(spring.getbbox()); spring=ImageEnhance.Color(spring).enhance(0.8); spring=ImageEnhance.Brightness(spring).enhance(1.04); blue=load('RoutesTab.js'); alk=load('purified-5gal.png')
 # drop the grey floor shadow baked into the ALKAID cutout
 ap=alk.load()
 for y in range(alk.height-110,alk.height):
@@ -21,7 +14,7 @@ for y in range(alk.height-110,alk.height):
 alk=alk.crop(alk.getbbox())
 out=bg.copy()
 def soften(j):
-    j=ImageEnhance.Contrast(j).enhance(0.9); j=ImageEnhance.Color(j).enhance(0.92)
+    j=ImageEnhance.Contrast(j).enhance(0.88); j=ImageEnhance.Color(j).enhance(0.88); j=ImageEnhance.Brightness(j).enhance(0.94)
     return j.filter(ImageFilter.GaussianBlur(0.5))
 def shadow(cx,yb,w):
     pad=40; h=14; m=Image.new('L',(w+2*pad,h+2*pad),0)
