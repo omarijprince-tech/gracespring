@@ -129,6 +129,7 @@
         "anchor": "shop",
         "eyebrow": "",
         "heading": "Order water  —  for delivery",
+        "heading_tag": "h2",
         "text": "Questions? Call 973-742-0435",
         "product_list": [
           "blue-star-purified-water",
@@ -189,8 +190,8 @@
         "product": "",
         "show_price": true,
         "badge": "MEGA SALE",
-        "image": "shopify://shop_images/heart_0ea11101-5b90-4a6d-afdd-8646445b2c8d.png",
-        "image_alt": "",
+        "image": "shopify://shop_images/doorstep-delivery-blue-star-jugs.jpg",
+        "image_alt": "Grace Spring, Blue Star purified and ALKAID alkaline 5-gallon jugs delivered to a front door",
         "background_style": "gradient",
         "wave_top": "#f2f9ff",
         "wave_bottom": "#cfe8fb",
@@ -210,13 +211,11 @@
         "anchor": "bundles",
         "eyebrow": "",
         "heading": "Looking for bundle deals?",
+        "heading_tag": "h2",
         "text": "Look no further — water coolers with free bottles.",
         "product_list": [
-          "water-cooler-5-bottles-fre-bottledown",
           "white-water-cooler-5-bottles-fre-bottledown",
-          "gray-water-cooler-5-bottles-fre-bottledown",
-          "small-black-water-coller-3-bottles-free",
-          "small-white-water-cooler-3-bottles-free"
+          "refurbished-water-dispenser-5-bottles-free"
         ],
         "collection": "",
         "limit": 12,
@@ -233,6 +232,7 @@
         "anchor": "accessories",
         "eyebrow": "",
         "heading": "Accessories",
+        "heading_tag": "h2",
         "text": "Stands and Dispensers",
         "product_list": [
           "water-bottle-stand-8-levels-5-gallons",
