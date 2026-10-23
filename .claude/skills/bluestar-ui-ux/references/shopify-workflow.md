@@ -3,6 +3,16 @@
 Store: Blue Star Pure Water. Work only on the unpublished theme **bluestar-theme**
 (`gid://shopify/OnlineStoreTheme/191125225785`). The live theme is "Copy of Essentials--shailaworking" — read-only.
 
+## Check which store is connected (every session, before any Shopify call that writes)
+
+The Shopify connector is shared. Prince sometimes connects his own store, **Anchored**
+(`www.wearanchored.shop`, `0p3jfx-6i.myshopify.com`), which then replaces Blue Star.
+
+1. Call `get-shop-info` first. Continue only if it is Blue Star Pure Water (`bluestarpurewater.com`).
+2. If it is Anchored (or any other store): change nothing there. Remind the owner that Prince connected
+   his store again and needs to disconnect it, then switch back to Blue Star (`switch-shop`, the owner
+   signs in again and picks Blue Star).
+
 ## Pull before editing (the owner edits in the theme editor)
 
 1. Query the theme's files with `checksumMd5`/`updatedAt` and compare with `md5sum` of local files.

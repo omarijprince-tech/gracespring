@@ -45,6 +45,8 @@ The theme lives in `shopify-theme-bluestar/` and is the Grace Spring design adap
 
 ## Workflow for a change
 
+0. **Confirm the connected store is Blue Star** (`get-shop-info`). If it is Prince's store Anchored, change nothing,
+   remind the owner to have it disconnected, and switch back (`references/shopify-workflow.md`).
 1. Read the relevant section(s) and `references/design-system.md`. For UX questions, query the base:
    `python3 .claude/skills/ui-ux-pro-max/scripts/search.py "<topic>" --domain ux` (also `style`, `typography`, `landing`).
 2. **Pull before you edit**: compare store checksums with local files (`references/shopify-workflow.md`). If the
