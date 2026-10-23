@@ -1,7 +1,14 @@
 # Shopify workflow and gotchas
 
-Store: Blue Star Pure Water. Work only on the unpublished theme **bluestar-theme**
-(`gid://shopify/OnlineStoreTheme/191125225785`). The live theme is "Copy of Essentials--shailaworking" — read-only.
+Store: Blue Star Pure Water. Since 2026-10-22 **bluestar-theme is live** ("bluestar-theme -- Live v1.0",
+`gid://shopify/OnlineStoreTheme/191125225785`, MAIN). The Shopify tool refuses theme-file writes to the live theme,
+so edit the draft **"Bluestar-Theme -- Copy"** (`gid://shopify/OnlineStoreTheme/191212945721`) and the owner publishes it.
+Before editing the copy, check it still matches the live theme (the owner may keep editing the live one in the editor).
+The old "Copy of Essentials--shailaworking" theme is unpublished.
+
+Spanish content: editor text is translated with `translationsRegister` (locale `es`) for both the live theme and the
+copy; source strings and digests live in `shopify-content/es-translations.json`. When the owner changes English text,
+its digest changes and the Spanish string must be registered again.
 
 ## Check which store is connected (every session, before any Shopify call that writes)
 
