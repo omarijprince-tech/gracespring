@@ -12,6 +12,19 @@ for y in range(alk.height-110,alk.height):
         r,g,b,a=ap[x,y]
         if a and abs(r-g)<14 and abs(g-b)<16 and b-r<18: ap[x,y]=(r,g,b,0)
 alk=alk.crop(alk.getbbox())
+# match the Grace glass color to the Blue Star / ALKAID jugs (glass pixels only, not label or cap)
+import numpy as np
+def glass_stats(im):
+    a=np.array(im).astype(float); m=(a[:,:,3]>200)&(a[:,:,2]-a[:,:,0]>35)
+    return a[m][:,:3].mean(0), a[m][:,:3].std(0)
+mu_t=(glass_stats(blue)[0]+glass_stats(alk)[0])/2; sd_t=(glass_stats(blue)[1]+glass_stats(alk)[1])/2
+a=np.array(spring).astype(float); m=(a[:,:,3]>200)&(a[:,:,2]-a[:,:,0]>35)
+mu_s,sd_s=a[m][:,:3].mean(0),a[m][:,:3].std(0)
+w=np.clip((a[:,:,2]-a[:,:,0]-20)/30,0,1)[...,None]*(a[:,:,3:4]>0)
+matched=(a[:,:,:3]-mu_s)/sd_s*sd_t+mu_t
+a[:,:,:3]=np.clip(a[:,:,:3]*(1-w)+matched*w,0,255)
+spring=Image.fromarray(a.astype('uint8'),'RGBA')
+print('grace glass after match', glass_stats(spring)[0].round(1), 'target', mu_t.round(1))
 out=bg.copy()
 def soften(j):
     
